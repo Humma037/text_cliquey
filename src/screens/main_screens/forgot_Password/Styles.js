@@ -6,15 +6,11 @@ const styles = StyleSheet.create({
     Container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
     },
     pana_style: {
         width: 230,
         height: 200,
-        marginTop:20
-    },
-    image_style:{
-        marginBottom:80
+        marginTop:60
     },
     button_style:{
         margin:15,

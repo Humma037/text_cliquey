@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, email, Image } from 'react-native'
 import React from 'react'
-import ProceedButton from '../../../assets/components/reusable/ProceedButton'
+import ProceedButton from '../../../assets/components/reusable_buttons/ProceedButton'
 import MainStyles from '../../../assets/styles/MainStyles'
 import styles from './Styles'
 import colors from '../../../assets/theme/Color'

@@ -1,11 +1,11 @@
 
 import { StyleSheet, Text, View, email, Image } from 'react-native'
 import React from 'react'
-import ProceedButton from '../../../assets/components/reusable/ProceedButton'
+import ProceedButton from '../../../assets/components/reusable_buttons/ProceedButton'
 import MainStyles from '../../../assets/styles/MainStyles'
 import styles from './Styles'
 import InputField from '../../../assets/components/reusable/InputField'
-import ClickableText from '../../../assets/components/reusable/ClickableText'
+import ClickableText from '../../../assets/components/reusable_buttons/ClickableText'
 import CustomHeader from '../../../assets/components/CustomHeader'
 
 const Login = ({ navigation }) => {

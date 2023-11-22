@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
   paginationContainer: {
     position: 'absolute',
-    top: '22%', 
+    top: '25%', 
   },
   pagination: {
     flexDirection: 'row',

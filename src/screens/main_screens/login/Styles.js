@@ -7,10 +7,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
     },
+    // mainImage
     pana_style: {
-        width: 150,
-        height: 200,
-        marginTop:20
+        margin:25
     },
     button_style:{
         margin:25,

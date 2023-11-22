@@ -1,9 +1,10 @@
 import { Text, View, email, Image } from 'react-native'
 import React from 'react'
-import ProceedButton from '../../../assets/components/reusable/ProceedButton'
+import ProceedButton from '../../../assets/components/reusable_buttons/ProceedButton'
 import MainStyles from '../../../assets/styles/MainStyles'
 import styles from './Styles'
 import InputField from '../../../assets/components/reusable/InputField'
+import CustomHeader from '../../../assets/components/CustomHeader'
 
 const ForgotPassword = ({ navigation }) => {
 
@@ -13,15 +14,7 @@ const ForgotPassword = ({ navigation }) => {
 
     return (
         <View style={styles.Container}>
-            <View>
-                <View style={styles.image_style}>
-                    <Image
-                        source={require('../../../assets/Images/Logo.png')}
-                        style={styles.logo_style}
-                        resizeMode="cover"
-                    />
-                </View>
-            </View>
+            <CustomHeader navigation={navigation} style={styles.header_style} />
             <View style={styles.pana_style}>
                 <Image
                     source={require('../../../assets/Images/pana_fourth.png')}
