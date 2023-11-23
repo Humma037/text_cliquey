@@ -68,6 +68,9 @@ const MainStyles = StyleSheet.create({
         fontSize: 18,
         color:colors.heading_second
     },
+    space_between:{
+        justifyContent:'space-between'
+    }
 
 })
 

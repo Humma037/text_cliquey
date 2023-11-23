@@ -5,6 +5,7 @@ import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
 import MainStyles from '../../assets/styles/MainStyles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 
 const Profile = () => {
     const navigation = useNavigation();
@@ -13,10 +14,8 @@ const Profile = () => {
     const [bio, setBio] = useState('Lorem ipsum dolor sit amet.'); // Initial bio
 
     const handleSaveChanges = () => {
-        // Handle saving changes, you can send the updated name and bio to your backend or perform other actions
         console.log('Name:', name);
         console.log('Bio:', bio);
-        // Add logic to save changes
     };
 
     const handleIcon2Press = () => {
@@ -42,12 +41,7 @@ const Profile = () => {
     return (
         <ScrollView contentContainerStyle={styles.container}>
             {/* Header section */}
-            <View style={MainStyles.Direction_Horizental}>
-                <TouchableOpacity onPress={handleIcon2Press}>
-                    <FontAwesome name="angle-left" size={35} style={styles.bars_Icon} />
-                </TouchableOpacity>
-                <Text style={styles.name_style}>Lady Gaga</Text>
-            </View>
+            <SecondHeader  name="Edit Profile" onPress={handleIcon2Press}/>
 
             {/* Text and ImageBackground section */}
             <ScrollView>

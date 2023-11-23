@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import colors from '../theme/Color';
+import colors from '../../theme/Color';
 
 const CustomHeader = ({ navigation }) => (
     <View style={styles.header}>
         <AntDesign name="left" size={25} onPress={() => navigation.goBack()} style={styles.icon_style} />
         <View style={styles.image_style}>
             <Image
-                source={require('../../assets/Images/Logo.png')}
+                source={require('../../Images/Logo.png')}
                 style={styles.logo_style}
                 resizeMode="cover"
             />

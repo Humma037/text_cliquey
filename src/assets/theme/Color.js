@@ -17,7 +17,9 @@ const colors = {
     text_color:'#929292',
     orange_color:'#E8A644',
     heading_second:'#595959',
-    blue_color:'#6A79FF'
+    blue_color:'#6A79FF',
+    light_black:'#333232',
+    color_red:'#E84D44'
   };
   export default colors;
   

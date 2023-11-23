@@ -4,7 +4,7 @@ import ProceedButton from '../../../assets/components/reusable_buttons/ProceedBu
 import MainStyles from '../../../assets/styles/MainStyles'
 import styles from './Styles'
 import InputField from '../../../assets/components/reusable/InputField'
-import CustomHeader from '../../../assets/components/CustomHeader'
+import CustomHeader from '../../../assets/components/custom_hearder/CustomHeader'
 
 const ForgotPassword = ({ navigation }) => {
 

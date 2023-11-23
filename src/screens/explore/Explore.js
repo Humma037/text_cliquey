@@ -6,7 +6,7 @@ import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
 import SearchBarWithIcons from '../../assets/components/search_bar/CustomSearchBar';
 import MainStyles from '../../assets/styles/MainStyles';
-import ProfileImage from '../../assets/components/ProfileImage';
+import ProfileImage from '../../assets/components/profile/ProfileImage';
 import Categories from '../../assets/components/Categories';
 
 const Explore = () => {

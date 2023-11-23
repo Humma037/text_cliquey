@@ -3,7 +3,7 @@ import React from 'react'
 import ProceedButton from '../../../assets/components/reusable_buttons/ProceedButton'
 import MainStyles from '../../../assets/styles/MainStyles'
 import styles from './Styles'
-import CustomHeader from '../../../assets/components/CustomHeader'
+import CustomHeader from '../../../assets/components/custom_hearder/CustomHeader'
 
 const CreateAccount = ({ navigation }) => {
 

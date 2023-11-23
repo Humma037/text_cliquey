@@ -5,9 +5,9 @@ import SearchBarWithIcons from '../../assets/components/search_bar/CustomSearchB
 import MainStyles from '../../assets/styles/MainStyles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import styles from './Styles';
-import ProfileImage from '../../assets/components/ProfileImage';
+import ProfileImage from '../../assets/components/profile/ProfileImage';
 import SearchbarSecond from '../../assets/components/search_bar/SearchbarSecond';
-import ProfileData from '../../assets/components/ProfileData';
+import ProfileData from '../../assets/components/profile/ProfileData';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -21,13 +21,17 @@ const HomeScreen = () => {
   };
 
   const handleIcon2Press = () => {
-    navigation.navigate('Explore');
+    navigation.navigate('Likes');
+  };
+
+  const handleSettingBarPress = () => {
+    navigation.navigate('Setting');
   };
 
   return (
     <View style={styles.Container}>
       <View style={MainStyles.Direction_Horizental}>
-        <TouchableOpacity onPress={handleIcon2Press}>
+        <TouchableOpacity onPress={handleSettingBarPress}>
           <FontAwesome name="bars" size={35} style={styles.bars_Icon} />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>

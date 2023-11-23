@@ -5,7 +5,7 @@ import MainStyles from '../../../assets/styles/MainStyles'
 import styles from './Styles'
 import InputField from '../../../assets/components/reusable/InputField'
 import ClickableText from '../../../assets/components/reusable_buttons/ClickableText'
-import CustomHeader from '../../../assets/components/CustomHeader'
+import CustomHeader from '../../../assets/components/custom_hearder/CustomHeader'
 
 const Register = ({ navigation }) => {
 

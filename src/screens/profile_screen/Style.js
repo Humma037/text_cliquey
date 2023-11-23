@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
         width: 1,
         height: 40,
         margin: 7,
-
     },
     numbers_heading: {
         fontSize: 18,

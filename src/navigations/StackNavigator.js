@@ -10,6 +10,12 @@ import Design from '../screens/design/Design';
 import Favourites from '../screens/favourites/Favourites';
 import EditProfile from '../screens/edit_profile/EditProfile';
 import MainProfile from '../screens/main_profile/MainProfile';
+import Setting from '../screens/setting/Setting';
+import Notifications from '../screens/notifications/Notifications';
+import Followers from '../screens/followers/Followers';
+import Following from '../screens/following/Following';
+import Compares from '../screens/compares/Compares';
+import Likes from '../screens/likes/Likes';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +34,12 @@ const StackNav = () => {
       <Stack.Screen name="Favourites" component={Favourites} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
       <Stack.Screen name="MainProfile" component={MainProfile} />
+      <Stack.Screen name="Setting" component={Setting} />
+      <Stack.Screen name="Notifications" component={Notifications} />
+      <Stack.Screen name="Followers" component={Followers} />
+      <Stack.Screen name="Following" component={Following} />
+      <Stack.Screen name="Compares" component={Compares} />
+      <Stack.Screen name="Likes" component={Likes} />
     </Stack.Navigator>
   );
 };

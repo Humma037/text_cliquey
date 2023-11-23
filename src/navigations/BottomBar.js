@@ -33,7 +33,7 @@ const BottomBar = () => {
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size, focused }) => (
             <AntDesign
-              name="user"
+              name="home"
               color={focused ? 'black' : color}
               size={24}
               style={{
@@ -85,7 +85,7 @@ const BottomBar = () => {
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size, focused }) => (
             <AntDesign
-              name="heart"
+              name="user"
               color={focused ? 'black' : color}
               size={24}
               style={{

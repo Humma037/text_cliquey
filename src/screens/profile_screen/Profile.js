@@ -3,8 +3,8 @@ import { ScrollView, View, TouchableOpacity, ImageBackground, Image } from 'reac
 import { Text } from 'react-native-paper';
 import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
-import MainStyles from '../../assets/styles/MainStyles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 
 const Profile = () => {
   const navigation = useNavigation();
@@ -32,12 +32,7 @@ const Profile = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {/* Header section */}
-      <View style={MainStyles.Direction_Horizental}>
-        <TouchableOpacity onPress={handleIcon2Press}>
-          <FontAwesome name="angle-left" size={35} style={styles.bars_Icon} />
-        </TouchableOpacity>
-        <Text style={styles.name_style}>Lady Gaga</Text>
-      </View>
+      <SecondHeader  name="Lady Gaga" onPress={handleIcon2Press}/>
 
       {/* Text and ImageBackground section */}
       <View>

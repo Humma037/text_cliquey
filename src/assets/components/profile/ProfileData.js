@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import colors from '../theme/Color';
-import MainStyles from '../styles/MainStyles';
-import PostButton from './reusable_buttons/PostButton';
+import colors from '../../theme/Color';
+import MainStyles from '../../styles/MainStyles';
+import PostButton from '../reusable_buttons/PostButton';
 
 const ProfileData = () => {
     return (
