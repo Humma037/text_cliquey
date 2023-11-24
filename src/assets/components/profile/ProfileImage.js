@@ -22,6 +22,5 @@ const styles = StyleSheet.create({
         paddingVertical:15,
         borderRadius:50,
         color:colors.DividingLine,
-        margin:5
     }
 })

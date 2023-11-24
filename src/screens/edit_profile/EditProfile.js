@@ -3,15 +3,14 @@ import { ScrollView, View, TouchableOpacity, TextInput } from 'react-native';
 import { Text } from 'react-native-paper';
 import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
-import MainStyles from '../../assets/styles/MainStyles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 
 const Profile = () => {
     const navigation = useNavigation();
 
-    const [name, setName] = useState('John Doe'); // Initial name
-    const [bio, setBio] = useState('Lorem ipsum dolor sit amet.'); // Initial bio
+    const [name, setName] = useState('John Doe'); 
+    const [bio, setBio] = useState('Lorem ipsum dolor sit amet.'); 
 
     const handleSaveChanges = () => {
         console.log('Name:', name);

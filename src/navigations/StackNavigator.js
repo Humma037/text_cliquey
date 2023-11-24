@@ -16,6 +16,7 @@ import Followers from '../screens/followers/Followers';
 import Following from '../screens/following/Following';
 import Compares from '../screens/compares/Compares';
 import Likes from '../screens/likes/Likes';
+import UploadPhoto from '../screens/upload_photo/UploadPhoto';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +41,7 @@ const StackNav = () => {
       <Stack.Screen name="Following" component={Following} />
       <Stack.Screen name="Compares" component={Compares} />
       <Stack.Screen name="Likes" component={Likes} />
+      <Stack.Screen name="UploadPhoto" component={UploadPhoto} />
     </Stack.Navigator>
   );
 };

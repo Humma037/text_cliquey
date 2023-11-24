@@ -9,7 +9,7 @@ import colors from '../../assets/theme/Color';
 const Compares = () => {
     return (
         <View style={styles.Container}>
-            <SecondHeader name="Compares" />
+            <SecondHeader name="Likes" icon="angle-left"/>
             <View style={styles.second_sub_container}>
                 <View style={styles.notification}>
                     <View style={styles.data_container}>

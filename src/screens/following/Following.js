@@ -9,7 +9,7 @@ import colors from '../../assets/theme/Color';
 const Following = () => {
     return (
         <View style={styles.Container}>
-            <SecondHeader name="Following" />
+            <SecondHeader name="Following" icon="angle-left"/>
             <View style={styles.sub_container}>
                 <View style={styles.notification}>
                     <View style={styles.data_container}>

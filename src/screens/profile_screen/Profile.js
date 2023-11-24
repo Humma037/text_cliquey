@@ -32,7 +32,7 @@ const Profile = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {/* Header section */}
-      <SecondHeader  name="Lady Gaga" onPress={handleIcon2Press}/>
+      <SecondHeader  name="Lady Gaga" onPress={handleIcon2Press} icon="angle-left"/>
 
       {/* Text and ImageBackground section */}
       <View>

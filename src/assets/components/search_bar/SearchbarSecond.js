@@ -4,7 +4,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import colors from '../../theme/Color';
 
 const CustomButton = ({ onPress, iconName, buttonText, iconColor, buttonColor }) => (
-  <TouchableOpacity onPress={onPress} style={[styles.button, { backgroundColor: buttonColor }]}>
+  <TouchableOpacity onPress={onPress} style={[styles.button]}>
     <FontAwesome name={iconName} size={20} color={iconColor} style={styles.icon} />
     <Text style={styles.buttonText}>{buttonText}</Text>
   </TouchableOpacity>
@@ -35,25 +35,29 @@ const styles = StyleSheet.create({
   },
   search_Input: {
     height: 35,
-    width: '65%',
+    width: '55%',
     fontSize: 10,
     paddingHorizontal: 15,
     backgroundColor: colors.themeLightGrey,
     color: colors.BLACK,
     borderRadius: 25,
-    margin:5
+    margin:3
   },
   searchbar_style: {
     flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    height: 70,
+    // alignItems: 'center',
+    // paddingHorizontal: 16,
+    // height: 70,
+    margin:12
   },
   button: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
     borderRadius: 25,
+    backgroundColor:colors.themeLightGrey,
+    height:35,
+    margin:3
   },
   icon: {
     marginRight: 5,

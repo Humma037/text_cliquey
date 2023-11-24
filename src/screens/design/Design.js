@@ -35,6 +35,8 @@ const Design = () => {
             onSearch={handleSearch}
             onIcon1Press={handleIcon1Press}
             onIcon2Press={handleIcon2Press}
+            icon1="send-o"
+            icon2="bell-o"
           />
         </View>
       </View>
@@ -56,7 +58,7 @@ const Design = () => {
         </View>
 
         {/* Categories section */}
-        <View>
+        <ScrollView>
           {/* Row 1 */}
           <View style={MainStyles.Direction_Horizental}>
             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
@@ -98,7 +100,19 @@ const Design = () => {
               </View>
             </TouchableOpacity>
           </View>
-        </View>
+          <View style={MainStyles.Direction_Horizental}>
+            <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <View style={styles.catgories_margin}>
+                <CategoriesDesign backgroundImage={require('../../assets/Images/Group_five.png')} title="Mehndi Designs" />
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <View style={styles.catgories_margin}>
+                <CategoriesDesign backgroundImage={require('../../assets/Images/Group_three.png')} title="Mehndi Designs" />
+              </View>
+            </TouchableOpacity>
+          </View>
+        </ScrollView>
       </ScrollView>
     </ScrollView>
   );

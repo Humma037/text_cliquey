@@ -10,7 +10,7 @@ const ProfileData = () => {
         <View style={styles.Container}>
             <View style={styles.data_direction}>
                 <View style={MainStyles.Direction_Horizental}>
-                    <FontAwesome name="user" size={30} style={styles.user_Icon} />
+                    <FontAwesome name="user" size={25} style={styles.user_Icon} />
                     <View style={styles.userData}>
                         <View >
                             <Text style={styles.text_name}>Lady Gaga</Text>
@@ -19,13 +19,15 @@ const ProfileData = () => {
                     </View>
                 </View>
                 <View>
-                    <FontAwesome name="ellipsis-v" size={35} style={styles.ellipsis_Icon} />
+                    <FontAwesome name="ellipsis-v" size={30} style={styles.ellipsis_Icon} />
                 </View>
             </View>
-            <View style={styles.post_image}>
-                <FontAwesome name="image" size={55} style={styles.icon_image} />
+            <View style={styles.post_image_container}>
+                <View style={styles.post_image}>
+                    <FontAwesome name="image" size={45} style={styles.icon_image} />
+                </View>
             </View>
-            <View style={MainStyles.Direction_Horizental}>
+            <View style={styles.container_post_Button}>
                 <View style={styles.post_Button}>
                     <PostButton
                         // onPress={handleButtonPress}
@@ -59,11 +61,11 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     user_Icon: {
-        width: 60,
-        height: 60,
+        width: 50,
+        height: 50,
         backgroundColor: colors.seprator,
-        paddingHorizontal: 20,
-        paddingVertical: 15,
+        paddingHorizontal: 17,
+        paddingVertical: 10,
         borderRadius: 50,
         color: colors.DividingLine,
         margin: 5
@@ -71,44 +73,54 @@ const styles = StyleSheet.create({
     data_direction: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: 325,
+        width: '100%',
         alignItems: 'center',
+        paddingHorizontal: 18,
+        paddingVertical: 10
     },
     userData: {
         flexDirection: 'row',
         alignItems: 'center',
     },
     text_name: {
-        fontSize: 15,
+        fontSize: 13,
         fontWeight: 'bold',
         color: colors.BLACK,
         marginLeft: 5
     },
     text_description: {
-        fontSize: 10,
+        fontSize: 9,
         color: colors.BLACK,
         marginLeft: 7
     },
     ellipsis_Icon: {
         color: colors.DividingLine,
-        marginLeft: 10,
+    },
+    post_image_container: {
+        paddingHorizontal: 20
     },
     post_image: {
+        width: '100%',
+        height: 220,
         backgroundColor: colors.seprator,
-        width: 330,
-        height: 190,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 30,
-        margin: 10,
+        borderRadius: 25,
+    },
+    container_post_Button:{
+        justifyContent: 'space-between',
+        width: '100%',
+        flexDirection:'row',
+        paddingHorizontal:'15%',
+        marginVertical:10
     },
     post_Button: {
         backgroundColor: colors.seprator,
         paddingHorizontal: 9,
-        borderRadius: 20,
-        marginLeft: 25
+        borderRadius: 12,
     },
-    icon_image:{
-        color:colors.DividingLine
-    }
+    icon_image: {
+        color: colors.DividingLine,
+    },
+
 });

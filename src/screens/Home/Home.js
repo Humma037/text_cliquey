@@ -2,7 +2,6 @@ import React from 'react';
 import { View, TouchableOpacity, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import SearchBarWithIcons from '../../assets/components/search_bar/CustomSearchBar';
-import MainStyles from '../../assets/styles/MainStyles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import styles from './Styles';
 import ProfileImage from '../../assets/components/profile/ProfileImage';
@@ -17,11 +16,11 @@ const HomeScreen = () => {
   };
 
   const handleIcon1Press = () => {
-    navigation.navigate('Explore');
+    navigation.navigate('Setting');
   };
 
   const handleIcon2Press = () => {
-    navigation.navigate('Likes');
+    navigation.navigate('Setting');
   };
 
   const handleSettingBarPress = () => {
@@ -30,7 +29,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.Container}>
-      <View style={MainStyles.Direction_Horizental}>
+      <View style={styles.sub_ontainer}>
         <TouchableOpacity onPress={handleSettingBarPress}>
           <FontAwesome name="bars" size={35} style={styles.bars_Icon} />
         </TouchableOpacity>
@@ -39,25 +38,27 @@ const HomeScreen = () => {
             onSearch={handleSearch}
             onIcon1Press={handleIcon1Press}
             onIcon2Press={handleIcon2Press}
+            icon1="send-o"
+            icon2="bell-o"
           />
         </View>
       </View>
-      <View style={styles.sub_container}>
-        <View style={MainStyles.Direction_Horizental}>
-          <ProfileImage />
-          <View style={styles.SearchbarSecond}>
-            <SearchbarSecond />
-          </View>
+      <View style={styles.second_searchBar_container}>
+        <ProfileImage />
+        <View style={styles.SearchbarSecond}>
+          <SearchbarSecond />
         </View>
       </View>
 
-      {/* Scrollable content */}
-      <ScrollView style={styles.scrollableContent}>
-        <ProfileData />
-        <View style={styles.sub}><ProfileData /></View>
+      <ScrollView>
+        <View style={styles.scrollableContent}>
+          <ProfileData />
+          <ProfileData />
+        </View>
       </ScrollView>
     </View>
   );
 };
 
 export default HomeScreen;
+

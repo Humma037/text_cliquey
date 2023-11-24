@@ -10,7 +10,7 @@ import LikesComp from '../../assets/components/LikesComp';
 const Likes = () => {
     return (
         <View style={styles.Container}>
-            <SecondHeader name="Likes" />
+            <SecondHeader name="Likes" icon="angle-left"/>
             <View style={styles.second_sub_container}>
                 <View style={styles.notification}>
                     <View style={styles.data_container}>

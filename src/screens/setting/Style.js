@@ -68,7 +68,8 @@ const styles = StyleSheet.create({
     },
     setting_last_options_container:{
         width: '100%',
-        marginLeft:15,
+        alignItems: 'center',
+        justifyContent:'center',
     }
 
 });

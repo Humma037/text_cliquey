@@ -11,14 +11,14 @@ const styles = StyleSheet.create({
         marginLeft:25,
         padding:5
     },
-    searchbar_style:{
-        margin:5,
-        flexDirection:'row',
-        width:320
-    },
+    // searchbar_style:{
+    //     margin:5,
+    //     flexDirection:'row',
+    //     width:320
+    // },
     catgories_style:{
-        position:'absolute',
-        top:300,
+        // position:'absolute',
+        // top:300,
     },
     heading_second:{
         marginLeft:18
@@ -31,16 +31,16 @@ const styles = StyleSheet.create({
         height:155,
         marginLeft:15
     },
-    bars_Icon: {
-        color: colors.BLACK,
-        marginLeft: 15,
-        marginTop: 19,
-        backgroundColor: colors.themeLightGrey,
-        paddingHorizontal: 15,
-        paddingVertical:3,
-        borderRadius: 25,
-        color: colors.themeGrey
-    },
+    // bars_Icon: {
+    //     color: colors.BLACK,
+    //     marginLeft: 15,
+    //     marginTop: 19,
+    //     backgroundColor: colors.themeLightGrey,
+    //     paddingHorizontal: 15,
+    //     paddingVertical:3,
+    //     borderRadius: 25,
+    //     color: colors.themeGrey
+    // },
 });
 
 export default styles;

@@ -5,27 +5,26 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
-        alignItems: 'center',
     },
-    sub_container: {
-        width: 360,
-        margin: 20
+    sub_ontainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '110%'
+    },
+    second_searchBar_container: {
+        flexDirection: 'row',
+        marginHorizontal:15
     },
     bars_Icon: {
         color: colors.BLACK,
-        marginLeft: 35,
-        marginTop: 22
-    },
-    searchbar_style: {
-        margin: 5
-    },
-    SearchbarSecond: {
-        position: 'absolute',
-        right: 10
+        margin: 17
     },
     sub: {
         marginTop: 15,
-        marginBottom:100
+        marginBottom: 100
+    },
+    scrollableContent:{
+       marginBottom:'22%'
     }
 
 });

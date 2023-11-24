@@ -19,7 +19,8 @@ const colors = {
     heading_second:'#595959',
     blue_color:'#6A79FF',
     light_black:'#333232',
-    color_red:'#E84D44'
+    color_red:'#E84D44',
+    light_gray:'#E6E6E6'
   };
   export default colors;
   
