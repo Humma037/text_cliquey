@@ -9,17 +9,19 @@ const styles = StyleSheet.create({
     sub_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '100%'
-    },
-    text_style: {
-        fontSize: 12,
-        padding: 10,
-        marginLeft: 10
-    },
-    image_Container: {
         width: '100%',
-        paddingHorizontal: 17,
+        paddingRight:'10%'
     },
+    search_Input: {
+        height: 40,
+        width: 250,  
+        fontSize: 14,
+        paddingHorizontal: 15,
+        backgroundColor: colors.themeLightGrey,
+        color: colors.BLACK,
+        borderRadius: 25,
+        margin:13,
+      },
     searchbar_style: {
         margin: 5,
     },

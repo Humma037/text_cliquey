@@ -19,7 +19,6 @@ const GetStarted = ({ navigation }) => {
                     <View style={styles.image_style}>
                         <Image
                             source={require('../../../assets/Images/image_one.png')}
-                            // style={styles.image_vertical_long}
                             resizeMode="cover"
                         />
                     </View>
@@ -27,14 +26,12 @@ const GetStarted = ({ navigation }) => {
                         <View style={styles.image_style}>
                             <Image
                                 source={require('../../../assets/Images/image_two.png')}
-                                // style={styles.image_square}
                                 resizeMode="cover"
                             />
                         </View>
                         <View style={styles.image_style}>
                             <Image
                                 source={require('../../../assets/Images/image_three.png')}
-                                // style={styles.image_square}
                                 resizeMode="cover"
                             />
                         </View>
@@ -43,7 +40,6 @@ const GetStarted = ({ navigation }) => {
                 <View style={styles.image_style}>
                     <Image
                         source={require('../../../assets/Images/image_six.png')}
-                        // style={styles.image_horizenatl_long}
                         resizeMode="cover"
                     />
                 </View>
@@ -51,20 +47,17 @@ const GetStarted = ({ navigation }) => {
                     <View style={styles.image_style}>
                         <Image
                             source={require('../../../assets/Images/image_five.png')}
-                            // style={styles.image_square}
                             resizeMode="cover"
                         />
                     </View>
                     <View style={styles.image_style}>
                         <Image
                             source={require('../../../assets/Images/image_four.png')}
-                            // style={styles.image_square}
                             resizeMode="cover"
                         />
                     </View>
                 </View>
             </View>
-
             <ProceedButton title="Get Started" onPress={handleContinuePress} />
         </View>
     )

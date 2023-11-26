@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     Container: {
         flex: 1,
     },
-    sub_ontainer: {
+    sub_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '110%'

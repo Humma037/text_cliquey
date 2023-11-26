@@ -76,8 +76,7 @@ const styles = StyleSheet.create({
   slide: {
     width: imageWidth,
     height: 200, 
-    alignItems: 'center',
-    borderRadius: 25, 
+    borderRadius: 20, 
     overflow: 'hidden', 
     marginRight: imageSpacing,
   },
@@ -88,7 +87,7 @@ const styles = StyleSheet.create({
   },
   paginationContainer: {
     position: 'absolute',
-    top: '25%', 
+    bottom: '15%', 
   },
   pagination: {
     flexDirection: 'row',

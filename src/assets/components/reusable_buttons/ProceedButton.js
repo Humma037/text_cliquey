@@ -5,7 +5,7 @@ import MainStyles from '../../styles/MainStyles';
 
 const ProceedButton = ({ title, onPress }) => {
     return (
-        <TouchableOpacity onPress={onPress} style={[styles.button_Container, MainStyles.Items_Center ]}>
+        <TouchableOpacity onPress={onPress} style={[styles.button_Container, MainStyles.Items_Center]}>
             <Text style={styles.Button_text}>{title}</Text>
         </TouchableOpacity>
     );
@@ -15,15 +15,17 @@ const ProceedButton = ({ title, onPress }) => {
 const styles = StyleSheet.create({
     button_Container: {
         backgroundColor: colors.Button_Background_Color,
-        borderRadius: 28,
-        width: 280,
+        width: '80%',
         height: 55,
+        flexDirection: 'row',
+        borderRadius: 28,
+        marginTop: 10,
+        paddingLeft: 20
     },
     Button_text: {
-        fontFamily: "Metropolis-ExtraBold",
         fontSize: 16,
         color: colors.WHITE,
-        fontWeight:'bold',
+        fontWeight: 'bold',
     },
 });
 

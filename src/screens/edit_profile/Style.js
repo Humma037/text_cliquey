@@ -7,25 +7,32 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     text_style: {
-        fontSize: 12,
+        fontSize: 10,
         marginLeft: 25,
         padding: 5
     },
     profile: {
-        marginTop: 90
+        width: '100%',
+        height: 150,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     profile_text: {
-        marginTop: 50,
-        marginLeft: 90
+        fontSize: 12,
+        width: '100%',
+        textAlign:'center'
+    },
+    profile_cover_container:{
+        width: '100%',
+        padding:20,
+        marginTop:'7%'
     },
     profile_cover: {
-        width: 330,
         height: 150,
         backgroundColor: colors.seprator,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 30,
-        marginLeft: 25,
     },
     cover_Icon: {
         color: colors.DividingLine
@@ -36,31 +43,6 @@ const styles = StyleSheet.create({
     },
     upload_profile_cover_text:{
         textAlign:'center',
-        margin:10
-    },
-  
-    name_style: {
-        margin: 25,
-        textAlign: 'center',
-        fontWeight: 'bold',
-        position: 'absolute',
-        left: 120
-    },
-    imageContainer: {
-        width: 330,
-        height: 148,
-        marginLeft: 27,
-        marginTop: 15
-    },
-    bars_Icon: {
-        color: colors.BLACK,
-        marginLeft: 15,
-        marginTop: 19,
-        backgroundColor: colors.themeLightGrey,
-        paddingHorizontal: 15,
-        paddingVertical: 3,
-        borderRadius: 25,
-        color: colors.themeGrey
     },
     user_Icon: {
         width: 100,
@@ -70,34 +52,6 @@ const styles = StyleSheet.create({
         paddingVertical: 19,
         borderRadius: 50,
         color: colors.DividingLine,
-        position: 'absolute',
-        bottom: -45,
-        left: 140
-    },
-    user_name: {
-        color: colors.BLACK,
-        textAlign: 'center',
-        fontSize: 18,
-        fontWeight: 'bold',
-        zIndex: 1
-    },
-    description_text: {
-        color: colors.DividingLine,
-        textAlign: 'center',
-        fontSize: 12,
-        width: 280,
-    },
-    user_data: {
-        alignItems: 'center',
-        margin: 50
-    },
-    accountsDirection: {
-        flexDirection: 'row',
-        width: 300,
-        justifyContent: 'space-between',
-        position: 'absolute',
-        bottom: 360,
-        left: 45
     },
     heading: {
         fontSize: 11,
@@ -127,23 +81,22 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 16,
       },
-      inputContainer: {
-        marginBottom: 20,
+      input_Container: {
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        padding:5
       },
       label:{
         textAlign:'center',
-        margin:10
+        margin:20
     },
       input: {
-        height: 55,
+        width:'100%',
         borderColor: 'gray',
         borderWidth: 1,
-        borderRadius: 20,
+        borderRadius: 15,
         paddingHorizontal: 15,
         fontSize: 16,
-        width:330,
         color: '#000',
       },
       bioInput: {

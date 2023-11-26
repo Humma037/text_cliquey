@@ -1,7 +1,5 @@
-
 import { StyleSheet } from 'react-native';
 import colors from '../../assets/theme/Color';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
     container: {
@@ -12,44 +10,46 @@ const styles = StyleSheet.create({
         marginLeft: 25,
         padding: 5
     },
-    imageContainer: {
-        width: 330,
-        height: 148,
-        marginLeft: 27,
-        marginTop: 34
+    name_style: {
+        margin: 25,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        position: 'absolute',
+        left: 120
     },
-    photo_cover_Icon: {
-        color: colors.white,
-        position:'absolute',
-        top:135,
-        right:40,
-        backgroundColor:colors.BLACK,
-        paddingHorizontal:10,
-        paddingVertical:10,
-        borderRadius:25
+    profile_cover: {
+        width: '100%',
+        height: 120,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: colors.seprator,
+        borderRadius: 20,
+        padding: 20
     },
-    profile_edit_Icon: {
-        color: colors.white,
-        position:'absolute',
-        top:185,
-        right:140,
-        backgroundColor:colors.BLACK,
-        paddingHorizontal:8,
-        paddingVertical:8,
-        borderRadius:25,
-        zIndex:1
+    cover_photo: {
+        width: '100%',
+        height: 143,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: colors.seprator,
+        borderRadius: 30,
+        position: 'absolute',
     },
     user_Icon: {
         width: 100,
         height: 100,
-        backgroundColor: colors.seprator,
-        paddingHorizontal: 32,
-        paddingVertical: 19,
+        backgroundColor: colors.themeLightGrey,
+        paddingHorizontal: 33,
+        paddingVertical: 20,
         borderRadius: 50,
         color: colors.DividingLine,
-        position: 'absolute',
-        bottom: -45,
-        left: 140
+        zIndex: 999,
+        marginTop: 65
+    },
+    sub_Container: {
+        alignItems: 'center',
+        height: 200,
+        padding: 20
     },
     user_name: {
         color: colors.BLACK,
@@ -61,61 +61,90 @@ const styles = StyleSheet.create({
     description_text: {
         color: colors.DividingLine,
         textAlign: 'center',
-        fontSize: 12,
-        width: 280,
+        fontSize: 10,
+        width: '75%',
     },
     user_data: {
         alignItems: 'center',
-        margin: 50
     },
     accountsDirection: {
         flexDirection: 'row',
-        width: 320,
+        width: '100%',
         justifyContent: 'space-between',
-        position: 'absolute',
-        bottom: 400,
-        left: 35
+        paddingHorizontal: 60,
+        paddingTop: 30
     },
     heading: {
-        fontSize: 11,
+        fontSize: 10,
         color: '#767676',
+        textAlign: 'center'
     },
     line: {
         backgroundColor: '#767676',
         width: 1,
         height: 40,
         margin: 7,
-
     },
     numbers_heading: {
-        fontSize: 18,
+        fontSize: 15,
         color: '#000',
         fontWeight: 'bold'
     },
+    numbers_margin: {
+        alignItems: 'center'
+    },
     button_container: {
-        padding: 20,
-        marginTop: 20,
-        alignItems:'center'
+        paddingVertical: 25,
+        width:'100%',
+        alignItems:'center',
     },
     button: {
-        // flex: 1,
+        flexDirection: 'row',
         backgroundColor: '#eee',
-        paddingHorizontal: 25,
+        padding: 10,
         borderRadius: 30,
+        paddingHorizontal: '5%',
         borderWidth:1,
-        borderColor:'#000',
-        paddingVertical:12
+        borderColor:colors.BLACK,
     },
     buttonText: {
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginLeft: 5,
+        fontSize:12,
+    },
+    editIcon: {
+        color: colors.BLACK,
+    },
+    photo_cover_Icon: {
+        color: colors.white,
+        position:'absolute',
+        top:'20%',
+        right:40,
+        backgroundColor:colors.BLACK,
+        paddingHorizontal:8,
+        paddingVertical:8,
+        borderRadius:25,
+    },
+    profile_edit_Icon: {
+        color: colors.white,
+        position:'absolute',
+        top:'25%',
+        right:'36%',
+        backgroundColor:colors.BLACK,
+        paddingHorizontal:7,
+        paddingVertical:7,
+        borderRadius:25,
+        zIndex:1
     },
     text_container: {
         flexDirection: 'row',
-        padding: 16,
-        position: 'absolute',
-        bottom: 280,
-        left: 10
+        width: '60%',
+        justifyContent: 'space-between',
+        paddingHorizontal: 25,
+    },
+    images_container: {
+        marginTop: 20
     },
     activeTab: {
         borderBottomWidth: 1,
@@ -127,18 +156,16 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginHorizontal: 15
     },
-    images_container: {
-        marginTop: 20,
-    },
     images_sub_container: {
+        width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-
+        paddingHorizontal: 20,
     },
     image: {
-        width: 105,
-        height: 95,
+        width: '30%',
+        height:95,
         margin: 7,
     },
     images_sub: {

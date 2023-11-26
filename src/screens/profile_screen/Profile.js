@@ -30,37 +30,34 @@ const Profile = () => {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView Style={styles.container}>
       {/* Header section */}
-      <SecondHeader  name="Lady Gaga" onPress={handleIcon2Press} icon="angle-left"/>
+      <SecondHeader name="Lady Gaga" onPress={handleIcon2Press} icon="angle-left" />
 
       {/* Text and ImageBackground section */}
-      <View>
-        <ImageBackground
-          source={require('../../assets/Images/Rectangle_profile.png')}
-          style={styles.imageContainer}
-          resizeMode="cover"
-        />
+      <View style={styles.sub_Container}>
+        <View style={styles.cover_photo} />
         <TouchableOpacity onPress={handleProfilePress}>
         <FontAwesome name="user" size={50} style={styles.user_Icon} />
         </TouchableOpacity>
       </View>
+
       <View style={styles.user_data}>
         <Text style={styles.user_name}>Lady Gaga</Text>
-        <Text style={styles.description_text}>Lorem ipsum consectetur dolor sit amet consectetur pulvinar .</Text>
+        <Text style={styles.description_text}>Lorem ipsum dolor sit amet consectetur. Tellus pulvinar .</Text>
       </View>
       <View style={styles.accountsDirection}>
-        <View style={styles.margin}>
+        <View style={styles.numbers_margin}>
           <Text style={styles.numbers_heading}>3.9M</Text>
           <Text style={styles.heading}>Compares</Text>
         </View>
         <View style={styles.line} />
-        <View style={styles.margin}>
+        <View style={styles.numbers_margin}>
           <Text style={styles.numbers_heading}>35.5K</Text>
           <Text style={styles.heading}>Followers</Text>
         </View>
         <View style={styles.line} />
-        <View style={styles.margin}>
+        <View style={styles.numbers_margin}>
           <Text style={styles.numbers_heading}>3.2K</Text>
           <Text style={styles.heading}>Following</Text>
         </View>

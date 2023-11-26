@@ -6,29 +6,54 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    catgories_style:{
-        marginTop:40
+    sub_container: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '100%'
     },
-    heading_second:{
-        marginLeft:18
+    text_style: {
+        fontSize: 12,
+        padding: 10,
+        marginLeft: 10
     },
-    catgories_margin:{
-        margin:12
+    image_Container: {
+        width: '100%',
+        paddingHorizontal: 17,
     },
-    imageContainer:{
-        width:350,
-        height:155,
-        marginLeft:15
+    searchbar_style: {
+        margin: 5,
+    },
+    heading_all_design: {
+        paddingHorizontal: 25,
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: colors.themeGrey,
+        marginTop: '10%'
+    },
+    catgories_image_container: {
+        marginBottom: '20%'
+    },
+    catgories_image_sub_container: {
+        flexDirection: 'row',
+        margin: 12,
+        justifyContent: 'space-between',
+    },
+    catgories_margin: {
+        width: '100%',
+        paddingLeft: 5,
+        paddingRight: 5,
+    },
+    image_style: {
+        width: '100%',
+        height: 155,
     },
     bars_Icon: {
         color: colors.BLACK,
-        marginLeft: 15,
-        marginTop: 19,
         backgroundColor: colors.themeLightGrey,
         paddingHorizontal: 15,
-        paddingVertical:3,
+        paddingVertical: 3,
         borderRadius: 25,
-        color: colors.themeGrey
+        margin: 17
     },
 });
 

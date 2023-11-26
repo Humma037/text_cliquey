@@ -8,19 +8,31 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     pana_style: {
-        width: 230,
-        height: 200,
-        marginTop:60
+        alignItems: 'center',
+        width: '100%',
+        padding: '20%'
     },
-    button_style:{
-        margin:15,
+    Text_container: {
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingHorizontal: '12%'
     },
-    heading_style:{
-        marginVertical:30
+    Text: {
+        fontSize: 12,
+        color: colors.themeGrey,
+        textAlign: 'center',
+        padding: 5
     },
-    backIcon:{
-        color:colors.BLACK
-    }
+    sub_container: {
+        paddingVertical: '10%'
+    },
+    button_style: {
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 15
+    },
 });
 
 export default styles;

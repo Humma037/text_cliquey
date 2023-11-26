@@ -15,36 +15,42 @@ const styles = StyleSheet.create({
         margin: 25,
         textAlign: 'center',
         fontWeight: 'bold',
+        position: 'absolute',
+        left: 120
+    },
+    profile_cover: {
+        width: '100%',
+        height:120,
+        alignItems: 'center',
+        justifyContent:'center',
+        backgroundColor: colors.seprator,
+        borderRadius: 20,
+        padding:20
+    },
+    cover_photo: {
+        width: '100%',
+        height:143,
+        alignItems: 'center',
+        justifyContent:'center',
+        backgroundColor: colors.seprator,
+        borderRadius: 30,
         position:'absolute',
-        left:120
-    },
-    imageContainer: {
-        width: 330,
-        height: 148,
-        marginLeft: 27,
-        marginTop:15
-    },
-    bars_Icon: {
-        color: colors.BLACK,
-        marginLeft: 15,
-        marginTop: 19,
-        backgroundColor: colors.themeLightGrey,
-        paddingHorizontal: 15,
-        paddingVertical: 3,
-        borderRadius: 25,
-        color: colors.themeGrey
     },
     user_Icon: {
         width: 100,
         height: 100,
-        backgroundColor: colors.seprator,
-        paddingHorizontal: 32,
-        paddingVertical: 19,
+        backgroundColor: colors.themeLightGrey,
+        paddingHorizontal: 33,
+        paddingVertical: 20,
         borderRadius: 50,
         color: colors.DividingLine,
-        position: 'absolute',
-        bottom: -45,
-        left: 140
+        zIndex:999,
+        marginTop:65
+    },
+    sub_Container:{
+        alignItems: 'center',
+        height:200,
+        padding:20
     },
     user_name: {
         color: colors.BLACK,
@@ -56,24 +62,23 @@ const styles = StyleSheet.create({
     description_text: {
         color: colors.DividingLine,
         textAlign: 'center',
-        fontSize: 12,
-        width: 280,
+        fontSize: 10,
+        width: '75%',
     },
     user_data: {
         alignItems: 'center',
-        margin: 50
     },
     accountsDirection: {
         flexDirection: 'row',
-        width: 300,
+        width: '100%',
         justifyContent: 'space-between',
-        position: 'absolute',
-        bottom: 360,
-        left: 45
+        paddingHorizontal:60,
+        paddingTop:30
     },
     heading: {
-        fontSize: 11,
+        fontSize: 10,
         color: '#767676',
+        textAlign:'center'
     },
     line: {
         backgroundColor: '#767676',
@@ -82,22 +87,25 @@ const styles = StyleSheet.create({
         margin: 7,
     },
     numbers_heading: {
-        fontSize: 18,
+        fontSize: 15,
         color: '#000',
         fontWeight: 'bold'
+    },
+    numbers_margin:{
+        alignItems:'center'
     },
     button_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        padding: 35,
-        marginTop: 5
+        paddingHorizontal: 65,
+        paddingVertical: 25,
     },
     button: {
         flex: 1,
         backgroundColor: '#eee',
-        padding: 15,
+        padding: 10,
         borderRadius: 30,
-        marginRight: 8,
+        marginHorizontal: 5,
         alignItems: 'center',
     },
     activeButton: {
@@ -109,9 +117,12 @@ const styles = StyleSheet.create({
     },
     text_container: {
         flexDirection: 'row',
-        padding: 16,
-        position: 'absolute',
-        bottom: 230,
+        width:'60%',
+        justifyContent: 'space-between',
+        paddingHorizontal: 25,
+    },
+    images_container:{
+       marginTop:20
     },
     activeTab: {
         borderBottomWidth: 1,
@@ -123,22 +134,20 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginHorizontal: 15
     },
-    images_container: {
-        marginTop: 20,
-    },
     images_sub_container: {
+        width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-    
+        paddingHorizontal:20,
     },
     image: {
-        width: 105,
-        height: 95,
+        width: '30%',
+        height:95,
         margin: 7,
     },
-    images_sub:{
-        marginBottom: 100
+    images_sub: {
+        marginBottom: '25%'
     }
 
 });

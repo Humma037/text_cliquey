@@ -20,7 +20,7 @@ const HomeScreen = () => {
   };
 
   const handleIcon2Press = () => {
-    navigation.navigate('Setting');
+    navigation.navigate('Notifications');
   };
 
   const handleSettingBarPress = () => {
@@ -29,7 +29,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.Container}>
-      <View style={styles.sub_ontainer}>
+      <View style={styles.sub_container}>
         <TouchableOpacity onPress={handleSettingBarPress}>
           <FontAwesome name="bars" size={35} style={styles.bars_Icon} />
         </TouchableOpacity>

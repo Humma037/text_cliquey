@@ -3,14 +3,24 @@ import { ScrollView, View, TouchableOpacity, ImageBackground, Image } from 'reac
 import { Text } from 'react-native-paper';
 import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
-import MainStyles from '../../assets/styles/MainStyles';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 
-const MainProfile = () => {
+const Profile = () => {
     const navigation = useNavigation();
+
+    const handleIcon2Press = () => {
+        navigation.navigate('Favourites');
+    };
 
     const handleProfilePress = () => {
         navigation.navigate('EditProfile');
+    };
+
+    const [activeButton, setActiveButton] = useState(1);
+
+    const handleButtonPress = (buttonNumber) => {
+        setActiveButton(buttonNumber);
     };
 
     const [activeTab, setActiveTab] = useState(1);
@@ -20,33 +30,37 @@ const MainProfile = () => {
     };
 
     return (
-        <ScrollView contentContainerStyle={styles.container}>
-            <View>
-                <ImageBackground
-                    source={require('../../assets/Images/Rectangle_profile.png')}
-                    style={styles.imageContainer}
-                    resizeMode="cover"
-                />
-                <FontAwesome name="camera" size={18} style={styles.photo_cover_Icon} />
-                <FontAwesome name="camera" size={14} style={styles.profile_edit_Icon} />
-                <FontAwesome name="user" size={50} style={styles.user_Icon} />
+        <ScrollView Style={styles.container}>
+            {/* Header section */}
+            <SecondHeader name="Lady Gaga" onPress={handleIcon2Press} icon="angle-left" />
+
+            {/* Text and ImageBackground section */}
+            <View style={styles.sub_Container}>
+                <View style={styles.cover_photo} />
+                <TouchableOpacity onPress={handleProfilePress}>
+                    <FontAwesome name="user" size={50} style={styles.user_Icon} />
+                </TouchableOpacity>
             </View>
+
+            <FontAwesome name="camera" size={16} style={styles.photo_cover_Icon} />
+            <FontAwesome name="camera" size={14} style={styles.profile_edit_Icon} />
+
             <View style={styles.user_data}>
                 <Text style={styles.user_name}>Lady Gaga</Text>
-                <Text style={styles.description_text}>Lorem ipsum consectetur dolor sit amet consectetur pulvinar .</Text>
+                <Text style={styles.description_text}>Lorem ipsum dolor sit amet consectetur. Tellus pulvinar .</Text>
             </View>
             <View style={styles.accountsDirection}>
-                <View style={styles.margin}>
+                <View style={styles.numbers_margin}>
                     <Text style={styles.numbers_heading}>3.9M</Text>
                     <Text style={styles.heading}>Compares</Text>
                 </View>
                 <View style={styles.line} />
-                <View style={styles.margin}>
+                <View style={styles.numbers_margin}>
                     <Text style={styles.numbers_heading}>35.5K</Text>
                     <Text style={styles.heading}>Followers</Text>
                 </View>
                 <View style={styles.line} />
-                <View style={styles.margin}>
+                <View style={styles.numbers_margin}>
                     <Text style={styles.numbers_heading}>3.2K</Text>
                     <Text style={styles.heading}>Following</Text>
                 </View>
@@ -54,6 +68,7 @@ const MainProfile = () => {
 
             <View style={styles.button_container}>
                 <TouchableOpacity style={styles.button} onPress={handleProfilePress}>
+                    <FontAwesome name="edit" size={20} style={styles.editIcon} />
                     <Text style={styles.buttonText}>Edit Profile</Text>
                 </TouchableOpacity>
             </View>
@@ -140,4 +155,4 @@ const MainProfile = () => {
     );
 };
 
-export default MainProfile;
+export default Profile;

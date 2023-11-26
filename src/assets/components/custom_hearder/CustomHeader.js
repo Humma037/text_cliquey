@@ -19,14 +19,17 @@ const CustomHeader = ({ navigation }) => (
 const styles = StyleSheet.create({
     header: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 16,
-        width: '90%',
+        width: '100%',
         height: 100,
+        paddingHorizontal:'10%',
     },
     image_style: {
-        marginRight: 90
+        alignItems: 'center',
+        justifyContent:'center',
+        width: '75%',
+        padding:10
+
     },
     icon_style: {
         backgroundColor: colors.themeLightGrey,

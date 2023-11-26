@@ -9,8 +9,8 @@ import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 const Profile = () => {
     const navigation = useNavigation();
 
-    const [name, setName] = useState('John Doe'); 
-    const [bio, setBio] = useState('Lorem ipsum dolor sit amet.'); 
+    const [name, setName] = useState('John Doe');
+    const [bio, setBio] = useState('Lorem ipsum dolor sit amet.');
 
     const handleSaveChanges = () => {
         console.log('Name:', name);
@@ -40,7 +40,7 @@ const Profile = () => {
     return (
         <ScrollView contentContainerStyle={styles.container}>
             {/* Header section */}
-            <SecondHeader  name="Edit Profile" onPress={handleIcon2Press}/>
+            <SecondHeader name="Edit Profile" onPress={handleIcon2Press} icon="angle-left" />
 
             {/* Text and ImageBackground section */}
             <ScrollView>
@@ -50,19 +50,16 @@ const Profile = () => {
                     </TouchableOpacity>
                 </View>
                 <Text style={styles.profile_text}>Upload Profile Picture</Text>
-                <View style={styles.user_data}>
-                    <Text style={styles.user_name}>Lady Gaga</Text>
-                    <Text style={styles.description_text}>Lorem ipsum consectetur dolor sit amet consectetur pulvinar .</Text>
-                </View>
-                <View style={styles.profile_cover}>
-                    <FontAwesome name="image" size={40} style={styles.cover_Icon} />
-                    <Text style={styles.profile_cover_text}>Upload Cover photo</Text>
+                <View style={styles.profile_cover_container}>
+                    <View style={styles.profile_cover}>
+                        <FontAwesome name="image" size={40} style={styles.cover_Icon} />
+                        <Text style={styles.profile_cover_text}>Upload Cover photo</Text>
+                    </View>
                 </View>
                 <Text style={styles.upload_profile_cover_text}>Upload Cover photo</Text>
-
-
+                {/* Change Name */}
                 <View style={styles.container_dummy}>
-                    <View style={styles.inputContainer}>
+                    <View style={styles.input_Container}>
                         <Text style={styles.label}>Change Name</Text>
                         <TextInput
                             style={styles.input}
@@ -73,7 +70,7 @@ const Profile = () => {
                         />
                     </View>
 
-                    <View style={styles.inputContainer}>
+                    <View style={styles.input_Container}>
                         <Text style={styles.label}>Change Bio</Text>
                         <TextInput
                             style={[styles.input, styles.bioInput]}
