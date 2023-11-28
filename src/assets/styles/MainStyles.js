@@ -50,10 +50,9 @@ const MainStyles = StyleSheet.create({
     margin_vertical: {
         marginVertical: 15
     },
-    
     heading: {
         fontWeight: "bold",
-        fontSize: 20,
+        fontSize: 18.5,
         color:colors.BLACK
     },
     text_size:{
@@ -70,6 +69,9 @@ const MainStyles = StyleSheet.create({
     },
     space_between:{
         justifyContent:'space-between'
+    },
+    margin_top:{
+        marginTop:20
     }
 
 })

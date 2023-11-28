@@ -15,15 +15,14 @@ const ProceedButton = ({ title, onPress }) => {
 const styles = StyleSheet.create({
     button_Container: {
         backgroundColor: colors.Button_Background_Color,
-        width: '80%',
-        height: 55,
+        width: 247,
+        height: 49,
         flexDirection: 'row',
         borderRadius: 28,
         marginTop: 10,
-        paddingLeft: 20
     },
     Button_text: {
-        fontSize: 16,
+        fontSize: 14,
         color: colors.WHITE,
         fontWeight: 'bold',
     },

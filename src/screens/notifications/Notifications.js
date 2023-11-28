@@ -3,12 +3,14 @@ import React from 'react'
 import SecondHeader from '../../assets/components/custom_hearder/SecondHeader'
 import styles from './Style';
 import Notification from '../../assets/components/NotificationComp';
-
+import { useNavigation } from '@react-navigation/native';
 
 const Notifications = () => {
+  const navigation = useNavigation({navigation});
+
   return (
     <View style={styles.Container}>
-      <SecondHeader name="Notifications" icon="angle-left"/>
+      <SecondHeader navigation={navigation} name="Likes" icon="angle-left" />
       <View style={styles.sub_container}>
         <View style={styles.notification}>
           <Text style={styles.text}>You have 2 new notifications!</Text>

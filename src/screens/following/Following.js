@@ -4,12 +4,14 @@ import SecondHeader from '../../assets/components/custom_hearder/SecondHeader'
 import styles from './Style';
 import FollowersComp from '../../assets/components/FollowersComp';
 import colors from '../../assets/theme/Color';
-
+import { useNavigation } from '@react-navigation/native';
 
 const Following = () => {
+    const navigation = useNavigation();
+
     return (
         <View style={styles.Container}>
-            <SecondHeader name="Following" icon="angle-left"/>
+      <SecondHeader navigation={navigation} name="Following" icon="angle-left" />
             <View style={styles.sub_container}>
                 <View style={styles.notification}>
                     <View style={styles.data_container}>

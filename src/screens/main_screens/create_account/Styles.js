@@ -11,24 +11,38 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: '100%',
     },
+    image_style:{
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        height:110
+    },
     text_style: {
-        color: colors.themeGrey,
-        fontSize: 10,
+        color: colors.text_color ,       
+        fontSize: 11,
         paddingHorizontal: '12%',
         textAlign: 'center',
-        paddingVertical: 5
+        paddingVertical: 10
     },
     pana_style: {
         width: '100%',
         height: 300,
-        margin: 35,
+        marginTop: 15,
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    image_width:{
+        width:222.6,
+        height:217.45
+    },
+    button_container:{
+        marginTop: '12%', 
     },
     button_style: {
         width: '100%',
         justifyContent: 'center',
-        alignItems: 'center',    },
+        alignItems: 'center',   
+    },
 
 });
 

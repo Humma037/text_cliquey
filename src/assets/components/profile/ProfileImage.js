@@ -6,7 +6,7 @@ import colors from '../../theme/Color';
 const ProfileImage = () => {
   return (
     <View>
-          <FontAwesome name="user" size={30} style={styles.user_Icon} />
+          <FontAwesome name="user" size={25} style={styles.user_Icon} />
     </View>
   )
 }
@@ -15,11 +15,11 @@ export default ProfileImage
 
 const styles = StyleSheet.create({
     user_Icon:{
-        width:60,
-        height:60,
+        width:50,
+        height:50,
         backgroundColor:colors.seprator,
-        paddingHorizontal:20,
-        paddingVertical:15,
+        paddingHorizontal:16,
+        paddingVertical:10,
         borderRadius:50,
         color:colors.DividingLine,
     }

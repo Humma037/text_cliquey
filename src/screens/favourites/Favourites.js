@@ -26,15 +26,16 @@ const Favourites = () => {
     <View Style={styles.container}>
       <View style={styles.sub_container}>
         <TouchableOpacity onPress={handleIcon2Press}>
-          <FontAwesome name="angle-left" size={35} style={styles.bars_Icon} icon="angle-left"/>
+          <FontAwesome name="angle-left" size={25} style={styles.bars_Icon} icon="angle-left"/>
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons
             onSearch={handleSearch}
-            onIcon1Press={handleIcon1Press}
-            onIcon2Press={handleIcon2Press}
+            // onIcon1Press={handleIcon1Press}
+            // onIcon2Press={handleIcon2Press}
             icon1="send-o"
-            icon2="heart-o"
+            icon2="heart"
+            isFavoriteScreen={true}
           />
         </View>
       </View>
@@ -50,28 +51,28 @@ const Favourites = () => {
           {/* Row 1 */}
           <View style={styles.catgories_image_container}>
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              </View>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
                 </View>
-              </TouchableOpacity>
+              </View>
             </View>
 
             {/* Row 2 */}
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_four.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_four.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
             </View>
@@ -80,12 +81,12 @@ const Favourites = () => {
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
             </View>
@@ -93,24 +94,24 @@ const Favourites = () => {
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
             </View>
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
                 </View>
               </TouchableOpacity>
             </View>

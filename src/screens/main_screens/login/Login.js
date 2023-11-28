@@ -23,12 +23,13 @@ const Register = ({ navigation }) => {
           <Image
             source={require('../../../assets/Images/pana_third.png')}
             resizeMode="cover"
+            style={styles.Image_style}
           />
         </View>
         {/* about */}
         <View style={styles.Text_container}>
         <Text style={[MainStyles.heading]}>Login to your Account</Text>
-        <Text style={styles.Text}>Lorem ipsum dolor sit amet consectetur. Id congue pretium curabitur cras. </Text>
+        <Text style={styles.Text}>Lorem ipsum dolor sit amet consectetur. Id congue pretium curabitur cras. Massa quam convallis phasellus </Text>
         </View>
         {/* inputs */}
         <View style={styles.TextInput}>
@@ -57,7 +58,7 @@ const Register = ({ navigation }) => {
         </View>
         {/* bottomText */}
         <View style={styles.account_Register_contanier}>
-          <Text style={styles.account_text}>Don’t have an account?</Text>
+          <Text style={styles.account_text}>Dont have an account?</Text>
           <ClickableText
             text="Sign Up"
             onPress={() => {

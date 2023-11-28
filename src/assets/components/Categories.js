@@ -8,7 +8,6 @@ const Categories = ({ backgroundImage, title }) => {
   const navigation = useNavigation();
 
   const handlePress = () => {
-    // Navigate to the new screen here
     navigation.navigate('Design');
   };
 
@@ -35,9 +34,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   background_Image: {
-    flex: 1,
-    width: 168,
-    height: 155,
+    // flex: 1,
+    width: 165,
+    height: 150,
     position: 'absolute',
   },
   icons_Container: {

@@ -13,6 +13,11 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: '10%'
   },
+  Image_style:{
+    width:175.46,
+    height:154.52,
+    marginBottom:15
+  },
   Text_container: {
     width: '100%',
     justifyContent: 'center',
@@ -20,10 +25,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: '12%'
   },
   Text: {
-    fontSize: 12,
-    color: colors.themeGrey,
+    fontSize: 11,
+    color: colors.text_color ,       
     textAlign: 'center',
-    padding: 5
+    padding: 8
+  },
+  TextInput:{
+    paddingVertical:3
   },
   button_style: {
     width: '100%',
@@ -35,23 +43,24 @@ const styles = StyleSheet.create({
     color: colors.orange_color,
     marginLeft: 7,
     fontWeight: 'bold',
-    fontSize:13
+    fontSize:11
   },
   account_text: {
     color: colors.text_color,
-    fontSize:12,
+    fontSize:10,
   },
   account_Register_contanier:{
     alignItems:'center',
     flexDirection:'row',
     justifyContent:'center',
-    paddingVertical:25
+    paddingVertical:15
   },
   Clickable_Text: {
     color: colors.text_color,
     textAlign: 'center',
     padding: 10,
-    marginLeft: '30%'
+    marginLeft: '25%',
+    fontSize:10
   }
 });
 

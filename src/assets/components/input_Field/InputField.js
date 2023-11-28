@@ -28,12 +28,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   Input_sub_Container: {
-    width: '80%',
-    height: 55,
+    width:247,
+    height: 49,
     flexDirection: 'row',
     borderRadius: 28,
     marginTop: 10,
-    backgroundColor: colors.themeLightGrey,
+    backgroundColor: colors.seprator,
     paddingLeft: 20
   },
   inputIcon: {
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     color: '#000',
+    fontSize:12
   },
 });
 

@@ -9,22 +9,28 @@ const styles = StyleSheet.create({
     sub_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '110%'
+        width: '103%',
+        paddingHorizontal: 20
+    },
+    ProfileImage: {
+        padding: 10
     },
     second_searchBar_container: {
         flexDirection: 'row',
-        marginHorizontal:15
+        justifyContent: 'space-between',
+        marginHorizontal: 20,
+        width: '100%'
     },
     bars_Icon: {
         color: colors.BLACK,
-        margin: 17
+        marginVertical: 22
     },
     sub: {
         marginTop: 15,
         marginBottom: 100
     },
-    scrollableContent:{
-       marginBottom:'22%'
+    scrollableContent: {
+        marginBottom: '22%'
     }
 
 });

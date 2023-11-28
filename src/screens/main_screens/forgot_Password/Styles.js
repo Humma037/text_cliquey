@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
         width: '100%',
         padding: '20%'
     },
+    Image_style:{
+        width:230,
+        height:152.52,
+      },
     Text_container: {
         width: '100%',
         justifyContent: 'center',
@@ -19,19 +23,19 @@ const styles = StyleSheet.create({
         paddingHorizontal: '12%'
     },
     Text: {
-        fontSize: 12,
-        color: colors.themeGrey,
+        fontSize: 11,
         textAlign: 'center',
-        padding: 5
+        padding: 8,
+        color: colors.text_color        
     },
     sub_container: {
-        paddingVertical: '10%'
+        paddingVertical: 10
     },
     button_style: {
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingVertical: 15
+        paddingVertical: 5
     },
 });
 

@@ -1,9 +1,13 @@
+// CategoriesDesign.js
 import React from 'react';
 import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import { useNavigation } from '@react-navigation/native';
 
-const CategoriesDesign = ({ backgroundImage, title }) => {
+const CategoriesDesign = ({ backgroundImage, title, isFavoriteScreen }) => {
     const navigation = useNavigation();
 
     const handlePress = () => {
@@ -20,14 +24,13 @@ const CategoriesDesign = ({ backgroundImage, title }) => {
                 />
                 <View style={styles.color} />
                 <View style={styles.icons_Container}>
-                    <FontAwesome name="save" size={15} color="black" style={styles.icon_style} />
-                    <FontAwesome name="download" size={15} color="black" style={styles.icon_style} />
-                    <FontAwesome name="share-alt" size={15} color="black" style={styles.icon_style} />
-                    <FontAwesome name="heart-o" size={15} color="black" style={styles.icon_style} />
+                    <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
+                    <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
+                    <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
+                    <FontAwesome name="heart" size={13} color={isFavoriteScreen ? 'red' : 'black'} style={styles.icon_style} />
                 </View>
             </TouchableOpacity>
         </View>
-
     );
 };
 
@@ -39,7 +42,7 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: 155,
-        position:'absolute'
+        position: 'absolute'
     },
     color: {
         backgroundColor: 'rgba(255, 255, 255, 0.7)',

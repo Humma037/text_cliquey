@@ -53,11 +53,11 @@ const styles = StyleSheet.create({
   },
   textAndButtonContainer: {
     flexDirection: 'row',
-    width: '97%',
+    width: '100%',
     justifyContent: 'space-between',
     paddingHorizontal: 15,
     backgroundColor: colors.seprator,
-    paddingVertical: 8,
+    paddingVertical: 9,
     borderRadius: 25,
   },
   textContainer: {

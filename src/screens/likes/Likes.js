@@ -1,16 +1,16 @@
-import { ScrollView, Text, View } from 'react-native'
-import React from 'react'
-import SecondHeader from '../../assets/components/custom_hearder/SecondHeader'
+import React from 'react';
+import { ScrollView, Text, View } from 'react-native';
+import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 import styles from './Style';
-import FollowersComp from '../../assets/components/FollowersComp';
-import colors from '../../assets/theme/Color';
 import LikesComp from '../../assets/components/LikesComp';
-
+import { useNavigation } from '@react-navigation/native';
 
 const Likes = () => {
+    const navigation = useNavigation({navigation});
+
     return (
         <View style={styles.Container}>
-            <SecondHeader name="Likes" icon="angle-left"/>
+      <SecondHeader navigation={navigation} name="Likes" icon="angle-left" />
             <View style={styles.second_sub_container}>
                 <View style={styles.notification}>
                     <View style={styles.data_container}>
@@ -48,7 +48,7 @@ const Likes = () => {
                         <View style={styles.notification_details}>
                             <LikesComp />
                         </View>
-                   
+
                     </ScrollView>
                 </View>
             </View>

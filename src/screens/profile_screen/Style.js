@@ -20,21 +20,21 @@ const styles = StyleSheet.create({
     },
     profile_cover: {
         width: '100%',
-        height:120,
+        height: 120,
         alignItems: 'center',
-        justifyContent:'center',
+        justifyContent: 'center',
         backgroundColor: colors.seprator,
         borderRadius: 20,
-        padding:20
+        padding: 20
     },
     cover_photo: {
         width: '100%',
-        height:143,
+        height: 143,
         alignItems: 'center',
-        justifyContent:'center',
+        justifyContent: 'center',
         backgroundColor: colors.seprator,
         borderRadius: 30,
-        position:'absolute',
+        position: 'absolute',
     },
     user_Icon: {
         width: 100,
@@ -44,13 +44,13 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
         borderRadius: 50,
         color: colors.DividingLine,
-        zIndex:999,
-        marginTop:65
+        zIndex: 999,
+        marginTop: 65
     },
-    sub_Container:{
+    sub_Container: {
         alignItems: 'center',
-        height:200,
-        padding:20
+        height: 200,
+        padding: 20
     },
     user_name: {
         color: colors.BLACK,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     description_text: {
         color: colors.DividingLine,
         textAlign: 'center',
-        fontSize: 10,
+        fontSize: 11,
         width: '75%',
     },
     user_data: {
@@ -72,18 +72,18 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '100%',
         justifyContent: 'space-between',
-        paddingHorizontal:60,
-        paddingTop:30
+        paddingHorizontal: 60,
+        paddingTop: 30
     },
     heading: {
         fontSize: 10,
         color: '#767676',
-        textAlign:'center'
+        textAlign: 'center'
     },
     line: {
         backgroundColor: '#767676',
         width: 1,
-        height: 40,
+        height: 35,
         margin: 7,
     },
     numbers_heading: {
@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
         color: '#000',
         fontWeight: 'bold'
     },
-    numbers_margin:{
-        alignItems:'center'
+    numbers_margin: {
+        alignItems: 'center'
     },
     button_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 65,
+        paddingHorizontal: 60,
         paddingVertical: 25,
     },
     button: {
@@ -107,22 +107,25 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         marginHorizontal: 5,
         alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'transparent', 
     },
     activeButton: {
         backgroundColor: colors.orange_color,
     },
     buttonText: {
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize:12
     },
     text_container: {
         flexDirection: 'row',
-        width:'60%',
+        width: '60%',
         justifyContent: 'space-between',
         paddingHorizontal: 25,
     },
-    images_container:{
-       marginTop:20
+    images_container: {
+        marginTop: 20
     },
     activeTab: {
         borderBottomWidth: 1,
@@ -139,11 +142,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal:20,
+        paddingHorizontal: 20,
     },
     image: {
         width: '30%',
-        height:95,
+        height: 95,
         margin: 7,
     },
     images_sub: {

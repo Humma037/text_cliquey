@@ -27,12 +27,13 @@ const Downloads = () => {
         <View Style={styles.container}>
             <View style={styles.sub_container}>
                 <TouchableOpacity onPress={handleIcon2Press}>
-                    <FontAwesome name="angle-left" size={35} style={styles.bars_Icon} icon="angle-left"/>
+                    <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} />
                 </TouchableOpacity>
                 <View style={styles.searchbar_style}>
                     <TextInput
                         style={styles.search_Input}
                         placeholder="Search"
+                        placeholderTextColor='#A6A6A6'
                         // onChangeText={(text) => onSearch(text)}
                     />
                 </View>

@@ -3,109 +3,70 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home/Home';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Explore from '../screens/explore/Explore';
-import Profile from '../screens/profile_screen/Profile';
 import colors from '../assets/theme/Color';
+import MainProfile from '../screens/main_profile/MainProfile';
 
 const Tab = createBottomTabNavigator();
 
 const BottomBar = () => {
-  return (
-    <Tab.Navigator
-      screenOptions={{
-        headerShown: false,
-        tabBarStyle: {
-          position: 'absolute',
-          bottom: 15,
-          left: 25,
-          right: 25,
-          height: 70,
-          backgroundColor: colors.seprator,
-          borderRadius:45
-        },
-        tabBarInactiveTintColor: 'black',
-        tabBarActiveTintColor: 'black',
-      }}
-    >
-      <Tab.Screen
-        name="Home"
-        component={Home}
-        options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ color, size, focused }) => (
-            <AntDesign
-              name="home"
-              color={focused ? 'black' : color}
-              size={24}
-              style={{
-                backgroundColor: focused ? colors.orange_color : 'transparent',
-                borderRadius: 20,
-                padding: 8,
-              }}
+    return (
+        <Tab.Navigator
+            screenOptions={{
+                headerShown: false,
+                tabBarStyle: {
+                    position: 'absolute',
+                    bottom: 10,
+                    left: 30,
+                    right: 30,
+                    borderRadius: 40,
+                    height: 75,
+                    backgroundColor: colors.seprator, 
+                },
+                tabBarInactiveTintColor: 'black',
+                tabBarActiveTintColor: colors.orange_color,
+            }}
+        >
+            <Tab.Screen
+                name="Home"
+                component={Home}
+                options={{
+                    tabBarLabel: 'Home',
+                    tabBarIcon: ({ color, size }) => (
+                        <AntDesign name="home" color={color} size={size} />
+                    ),
+                    tabBarItemStyle: {
+                        padding: 15,
+                    },
+                }}
             />
-          ),
-          tabBarLabelStyle: {
-            fontSize: 10,
-            color: 'black',
-          },
-          tabBarIconStyle: {
-            color: 'black',
-          },
-        }}
-      />
-      <Tab.Screen
-        name="Explore"
-        component={Explore}
-        options={{
-          tabBarLabel: 'Explore',
-          tabBarIcon: ({ color, size, focused }) => (
-            <AntDesign
-              name="contacts"
-              color={focused ? 'black' : color}
-              size={24}
-              style={{
-                backgroundColor: focused ? colors.orange_color : 'transparent',
-                borderRadius: 20,
-                padding: 8,
-              }}
+            <Tab.Screen
+                name="Contact"
+                component={Explore}
+                options={{
+                    tabBarLabel: 'Explore',
+                    tabBarIcon: ({ color, size }) => (
+                        <AntDesign name="rocket1" color={color} size={size} />
+                    ),
+                    tabBarItemStyle: {
+                        padding: 15,
+                    },
+                }}
             />
-          ),
-          tabBarLabelStyle: {
-            fontSize: 10,
-            color: 'black',
-          },
-          tabBarIconStyle: {
-            color: 'black',
-          },
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color, size, focused }) => (
-            <AntDesign
-              name="user"
-              color={focused ? 'black' : color}
-              size={24}
-              style={{
-                backgroundColor: focused ? colors.orange_color : 'transparent',
-                borderRadius: 20,
-                padding: 8,
-              }}
+            <Tab.Screen
+                name="User"
+                component={MainProfile}
+                options={{
+                    tabBarLabel: 'Profile',
+                    tabBarIcon: ({ color, size }) => (
+                        <AntDesign name="user" color={color} size={size} />
+                    ),
+                    tabBarItemStyle: {
+                        padding: 15,
+                    },
+                }}
             />
-          ),
-          tabBarLabelStyle: {
-            fontSize: 10,
-            color: 'black',
-          },
-          tabBarIconStyle: {
-            color: 'black',
-          },
-        }}
-      />
-    </Tab.Navigator>
-  );
+        </Tab.Navigator>
+    );
 };
 
 export default BottomBar;

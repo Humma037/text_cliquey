@@ -4,12 +4,14 @@ import SecondHeader from '../../assets/components/custom_hearder/SecondHeader'
 import styles from './Style';
 import FollowersComp from '../../assets/components/FollowersComp';
 import colors from '../../assets/theme/Color';
-
+import { useNavigation } from '@react-navigation/native';
 
 const Compares = () => {
+    const navigation = useNavigation({navigation});
+
     return (
         <View style={styles.Container}>
-            <SecondHeader name="Likes" icon="angle-left"/>
+      <SecondHeader navigation={navigation} name="Compares" icon="angle-left" />
             <View style={styles.second_sub_container}>
                 <View style={styles.notification}>
                     <View style={styles.data_container}>

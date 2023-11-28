@@ -8,12 +8,16 @@ const styles = StyleSheet.create({
     },
     sub_Container:{
         alignItems: 'center',
-        height:200,
+        height:170,
     },
-    bar_Icon:{
+    bars_Icon:{
         fontSize: 30,
         color: colors.BLACK,
-        margin:10
+        margin:20,
+    },
+    setting_options_icon:{
+        fontSize: 30,
+        color: colors.BLACK,
     },
     cover_photo: {
         width: '92%',
@@ -23,18 +27,16 @@ const styles = StyleSheet.create({
         backgroundColor: colors.seprator,
         borderRadius: 20,
         position:'absolute',
-        top:60,
+        top:40,
     },
     user_Icon: {
         width: 80,
         height: 80,
-        backgroundColor: colors.themeLightGrey,
+        backgroundColor: colors.seprator,
         paddingHorizontal: 26,
         paddingVertical: 15,
         borderRadius: 50,
         color: colors.DividingLine,
-        position:'absolute',
-        top:20,
         zIndex:999
     },
     user_name: {
@@ -59,7 +61,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         backgroundColor: colors.seprator,
         borderRadius: 20,
-        margin:4,
+        margin:5,
     },
     setting_options_text:{
         fontSize: 14,

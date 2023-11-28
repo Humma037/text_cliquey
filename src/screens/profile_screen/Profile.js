@@ -38,7 +38,7 @@ const Profile = () => {
       <View style={styles.sub_Container}>
         <View style={styles.cover_photo} />
         <TouchableOpacity onPress={handleProfilePress}>
-        <FontAwesome name="user" size={50} style={styles.user_Icon} />
+          <FontAwesome name="user" size={50} style={styles.user_Icon} />
         </TouchableOpacity>
       </View>
 
@@ -65,14 +65,22 @@ const Profile = () => {
       {/* HorizontalButtons */}
       <View style={styles.button_container}>
         <TouchableOpacity
-          style={[styles.button, activeButton === 1 && styles.activeButton]}
+          style={[
+            styles.button,
+            activeButton === 1 && styles.activeButton,
+            activeButton !== 1 && { borderColor: 'black' },
+          ]}
           onPress={() => handleButtonPress(1)}
         >
           <Text style={styles.buttonText}>Follow</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={[styles.button, activeButton === 2 && styles.activeButton]}
+          style={[
+            styles.button,
+            activeButton === 2 && styles.activeButton,
+            activeButton !== 2 && { borderColor: 'black' }, 
+          ]}
           onPress={() => handleButtonPress(2)}
         >
           <Text style={styles.buttonText}>Message</Text>

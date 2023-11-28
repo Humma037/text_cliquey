@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 
-const Profile = () => {
+const MainProfile = () => {
     const navigation = useNavigation();
 
     const handleIcon2Press = () => {
@@ -32,7 +32,7 @@ const Profile = () => {
     return (
         <ScrollView Style={styles.container}>
             {/* Header section */}
-            <SecondHeader name="Lady Gaga" onPress={handleIcon2Press} icon="angle-left" />
+            <SecondHeader name="Lady Gaga"  icon="angle-left" navigation={navigation}/>
 
             {/* Text and ImageBackground section */}
             <View style={styles.sub_Container}>
@@ -155,4 +155,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default MainProfile;

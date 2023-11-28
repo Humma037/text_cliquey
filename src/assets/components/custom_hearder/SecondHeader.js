@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '65%',
-    paddingHorizontal: 20,
-    paddingVertical: 20,
+    width: '67%',
+    paddingHorizontal: 30,
+    paddingVertical: 25,
   },
   bars_Icon: {
     backgroundColor: colors.seprator,

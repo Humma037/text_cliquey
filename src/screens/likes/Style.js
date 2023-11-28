@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     notification: {
-        width: '90%',
+        width: '85%',
     },
     text: {
         fontWeight: "bold",
@@ -25,10 +25,10 @@ const styles = StyleSheet.create({
         margin: 8
     },
     data_container: {
-        width: '93%',
+        width: '87%',
         flexDirection:'row',
         justifyContent:'space-between',
-        margin:5
+        marginHorizontal:17
     },
     this_week_notification: {
         height: 655,

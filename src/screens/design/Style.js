@@ -49,11 +49,12 @@ const styles = StyleSheet.create({
     },
     bars_Icon: {
         color: colors.BLACK,
-        backgroundColor: colors.themeLightGrey,
-        paddingHorizontal: 15,
-        paddingVertical: 3,
+        backgroundColor: colors.seprator,
+        paddingHorizontal: 12,
+        paddingVertical: 4,
         borderRadius: 25,
-        margin: 17
+        marginTop: 23,
+        marginLeft:16
     },
 });
 

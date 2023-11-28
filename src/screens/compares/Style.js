@@ -7,19 +7,20 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     notification: {
-        width: '90%',
+        width: '100%',
+        paddingHorizontal:20
     },
     text: {
         fontWeight: "bold",
         fontSize: 12,
         color: colors.light_black,
-        margin: 5
+        margin:5
     },
     text_heading: {
         fontWeight: "bold",
         fontSize: 15,
         color: colors.light_black,
-        margin: 5
+        marginHorizontal: 15
     },
     notification_details: {
         margin: 8
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
         width: '93%',
         flexDirection:'row',
         justifyContent:'space-between',
-        margin:5
+        marginVertical:15
     },
     this_week_notification: {
         height: 655,

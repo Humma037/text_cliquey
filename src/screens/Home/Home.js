@@ -8,7 +8,7 @@ import ProfileImage from '../../assets/components/profile/ProfileImage';
 import SearchbarSecond from '../../assets/components/search_bar/SearchbarSecond';
 import ProfileData from '../../assets/components/profile/ProfileData';
 
-const HomeScreen = () => {
+const Home = () => {
   const navigation = useNavigation();
 
   const handleSearch = (text) => {
@@ -27,11 +27,15 @@ const HomeScreen = () => {
     navigation.navigate('Setting');
   };
 
+  const handleProfileImagePress = () => {
+    navigation.navigate('Likes');
+  };
+
   return (
     <View style={styles.Container}>
       <View style={styles.sub_container}>
         <TouchableOpacity onPress={handleSettingBarPress}>
-          <FontAwesome name="bars" size={35} style={styles.bars_Icon} />
+          <FontAwesome name="bars" size={25} style={styles.bars_Icon} />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons
@@ -44,7 +48,9 @@ const HomeScreen = () => {
         </View>
       </View>
       <View style={styles.second_searchBar_container}>
+        <TouchableOpacity onIcon2Press={handleProfileImagePress}>
         <ProfileImage />
+        </TouchableOpacity>
         <View style={styles.SearchbarSecond}>
           <SearchbarSecond />
         </View>
@@ -60,5 +66,5 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default Home;
 

@@ -11,7 +11,11 @@ const styles = StyleSheet.create({
   pana_style: {
     alignItems: 'center',
     width: '100%',
-    padding: '5%'
+    paddingBottom:'12%'
+  },
+  image_size:{
+    width:175,
+    height:175
   },
   Text_container: {
     width: '100%',
@@ -19,34 +23,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: '12%'
   },
+  TextInput:{
+    paddingVertical:3
+  },
   Text: {
-    fontSize: 12,
-    color: colors.themeGrey,
+    fontSize: 11,
+    color: colors.text_color,
     textAlign: 'center',
-    padding: 5
+    padding: 8
   },
   button_style: {
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical:10
+    paddingVertical:5
   },
   account_Register: {
     flexDirection: 'row',
     color: colors.orange_color,
     marginLeft: 7,
     fontWeight: 'bold',
-    fontSize:13
+    fontSize:11
   },
   account_text: {
     color: colors.text_color,
-    fontSize:12,
+    fontSize:10,
   },
   account_Register_contanier:{
     alignItems:'center',
     flexDirection:'row',
     justifyContent:'center',
-    paddingVertical:25
+    paddingVertical:5
   },
 });
 

@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         color: colors.DividingLine
     },
     profile_cover_text:{
-        fontSize:12,
+        fontSize:8,
         color:colors.DividingLine
     },
     upload_profile_cover_text:{
@@ -60,22 +60,32 @@ const styles = StyleSheet.create({
     button_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        padding: 35,
+        paddingHorizontal: 60,
+        paddingVertical: 25,
     },
     button: {
         flex: 1,
         backgroundColor: '#eee',
-        padding: 15,
+        padding: 10,
         borderRadius: 30,
-        marginRight: 8,
+        marginHorizontal: 5,
         alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'transparent', 
     },
     activeButton: {
         backgroundColor: colors.orange_color,
     },
     buttonText: {
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize:12
+    },
+    text_container: {
+        flexDirection: 'row',
+        width: '60%',
+        justifyContent: 'space-between',
+        paddingHorizontal: 25,
     },
     container_dummy: {
         flex: 1,
@@ -92,12 +102,11 @@ const styles = StyleSheet.create({
     },
       input: {
         width:'100%',
-        borderColor: 'gray',
-        borderWidth: 1,
-        borderRadius: 15,
+        borderRadius: 30,
         paddingHorizontal: 15,
-        fontSize: 16,
+        fontSize: 14,
         color: '#000',
+        backgroundColor:colors.seprator
       },
       bioInput: {
         height: 140,

@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 
-const Profile = () => {
+const EditProfile = () => {
     const navigation = useNavigation();
 
     const [name, setName] = useState('John Doe');
@@ -40,7 +40,7 @@ const Profile = () => {
     return (
         <ScrollView contentContainerStyle={styles.container}>
             {/* Header section */}
-            <SecondHeader name="Edit Profile" onPress={handleIcon2Press} icon="angle-left" />
+            <SecondHeader navigation={navigation} name="Edit Profile" icon="angle-left" />
 
             {/* Text and ImageBackground section */}
             <ScrollView>
@@ -52,7 +52,7 @@ const Profile = () => {
                 <Text style={styles.profile_text}>Upload Profile Picture</Text>
                 <View style={styles.profile_cover_container}>
                     <View style={styles.profile_cover}>
-                        <FontAwesome name="image" size={40} style={styles.cover_Icon} />
+                        <FontAwesome name="image" size={30} style={styles.cover_Icon} />
                         <Text style={styles.profile_cover_text}>Upload Cover photo</Text>
                     </View>
                 </View>
@@ -87,14 +87,22 @@ const Profile = () => {
                 {/* HorizontalButtons */}
                 <View style={styles.button_container}>
                     <TouchableOpacity
-                        style={[styles.button, activeButton === 1 && styles.activeButton]}
+                        style={[
+                            styles.button,
+                            activeButton === 1 && styles.activeButton,
+                            activeButton !== 1 && { borderColor: 'black' },
+                        ]}
                         onPress={() => handleButtonPress(1)}
                     >
-                        <Text style={styles.buttonText}>Cancle</Text>
+                        <Text style={styles.buttonText}>Cancel</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={[styles.button, activeButton === 2 && styles.activeButton]}
+                        style={[
+                            styles.button,
+                            activeButton === 2 && styles.activeButton,
+                            activeButton !== 2 && { borderColor: 'black' },
+                        ]}
                         onPress={() => handleButtonPress(2)}
                     >
                         <Text style={styles.buttonText}>Save</Text>
@@ -105,4 +113,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default EditProfile;

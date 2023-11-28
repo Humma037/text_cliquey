@@ -26,7 +26,7 @@ const Design = () => {
     <View Style={styles.container}>
       <View style={styles.sub_container}>
         <TouchableOpacity onPress={handleIcon2Press}>
-          <FontAwesome size={35} style={styles.bars_Icon} icon="angle-left"/>
+        <FontAwesome name="angle-left" size={25} style={styles.bars_Icon} icon="angle-left"/>
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons

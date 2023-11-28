@@ -86,44 +86,49 @@ const Register = ({ navigation }) => {
           <Image
             source={require('../../../assets/Images/pana_two.png')}
             resizeMode="cover"
+            style={styles.image_size}
           />
         </View>
         {/* about */}
         <View style={styles.Text_container}>
-          <Text style={[MainStyles.heading]}>Login to your Account</Text>
-          <Text style={styles.Text}>Lorem ipsum dolor sit amet consectetur. Id congue pretium curabitur cras. </Text>
+          <Text style={[MainStyles.heading]}>Create Account</Text>
+          <Text style={styles.Text}>Lorem ipsum dolor sit amet. Id congue pretium curabitur cras. Massa ultrices quam convallis phasellus</Text>
         </View>
         {/* inputs */}
-        <View style={styles.TextInput}>
-          <InputField
-            placeholder="Name"
-            keyboardType="default"
-          />
-          <InputField
-            placeholder="Email"
-            secureTextEntry={false}
-          />
-        </View>
-        <View style={styles.TextInput}>
-          <InputField
-            placeholder="Password"
-            secureTextEntry={true}
-          />
-        </View>
-        <View style={styles.button_style}>
-          {/* Loginbutton */}
-          <ProceedButton title="Sign Up" onPress={handleSignInPress} />
-        </View>
-        {/* bottomText */}
-        <View style={styles.account_Register_contanier}>
-          <Text style={styles.account_text}>Already have an account?</Text>
-          <ClickableText
-            text="Sign In"
-            onPress={() => {
-              navigation.navigate('Home');
-            }}
-            style={styles.account_Register}
-          />
+        <View>
+          <View style={styles.TextInput}>
+            <InputField
+              placeholder="Name"
+              keyboardType="default"
+            />
+          </View>
+          <View style={styles.TextInput}>
+            <InputField
+              placeholder="Email"
+              secureTextEntry={false}
+            />
+          </View>
+          <View style={styles.TextInput}>
+            <InputField
+              placeholder="Password"
+              secureTextEntry={true}
+            />
+          </View>
+          <View style={styles.button_style}>
+            {/* Loginbutton */}
+            <ProceedButton title="Sign Up" onPress={handleSignInPress} />
+          </View>
+          {/* bottomText */}
+          <View style={styles.account_Register_contanier}>
+            <Text style={styles.account_text}>Already have an account?</Text>
+            <ClickableText
+              text="Sign In"
+              onPress={() => {
+                navigation.navigate('Login');
+              }}
+              style={styles.account_Register}
+            />
+          </View>
         </View>
       </ScrollView>
     </View>

@@ -10,17 +10,19 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '100%',
-        paddingRight:'10%'
+        paddingRight:'10%',
+        marginTop:20
     },
     search_Input: {
-        height: 40,
-        width: 250,  
-        fontSize: 14,
+        height: 37,
+        width: 230,  
+        fontSize: 12,
         paddingHorizontal: 15,
-        backgroundColor: colors.themeLightGrey,
+        backgroundColor: colors.seprator,
         color: colors.BLACK,
         borderRadius: 25,
         margin:13,
+        padding:4
       },
     searchbar_style: {
         margin: 5,
@@ -51,8 +53,8 @@ const styles = StyleSheet.create({
     },
     bars_Icon: {
         color: colors.BLACK,
-        backgroundColor: colors.themeLightGrey,
-        paddingHorizontal: 15,
+        backgroundColor: colors.seprator,
+        paddingHorizontal: 13,
         paddingVertical: 3,
         borderRadius: 25,
         margin: 17
