@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     Container: {
         flex: 1,
         alignItems: 'center',
+        backgroundColor:colors.white
     },
     pana_style: {
         alignItems: 'center',

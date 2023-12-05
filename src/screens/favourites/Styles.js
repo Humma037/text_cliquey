@@ -10,49 +10,53 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '100%',
-        padding:5
+        paddingHorizontal:5,
+        height:80,
     },
     text_style: {
         // fontSize: 12,
         // padding: 10,
-        marginLeft: 25
+        marginLeft: 27
     },
     image_Container: {
         width: '100%',
-        // paddingHorizontal: 17,
     },
     searchbar_style: {
         margin: 5,
     },
-    heading_all_design: {
+    heading_Favorites: {
         paddingHorizontal: 25,
         fontSize: 15,
         fontWeight: 'bold',
         color: colors.themeGrey,
-        marginTop: '10%'
+        // marginTop: '5%'
     },
     catgories_image_container: {
         marginBottom: '20%',
-        padding:7
+        // paddingHorizontal:6
     },
     catgories_image_sub_container: {
         flexDirection: 'row',
-        marginHorizontal: 12,
+        marginHorizontal: 18,
         marginVertical:11,
         justifyContent: 'space-between',
+        // width: '100%',
     },
     catgories_margin: {
         width: '100%',
     },
     bars_Icon: {
-        color: colors.BLACK,
-        backgroundColor: colors.seprator,
+        color: colors.white,
+        backgroundColor: colors.orange_color,
         paddingHorizontal: 12,
-        paddingVertical: 4,
+        paddingVertical: 2,
         borderRadius: 25,
         marginTop: 23,
-        marginLeft:16
+        marginLeft:13
     },
+    last_catgorie_container:{
+        marginBottom:10
+    }
 });
 
 export default styles;

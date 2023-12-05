@@ -9,18 +9,8 @@ import SecondHeader from '../../assets/components/custom_hearder/SecondHeader';
 const MainProfile = () => {
     const navigation = useNavigation();
 
-    const handleIcon2Press = () => {
-        navigation.navigate('Favourites');
-    };
-
     const handleProfilePress = () => {
         navigation.navigate('EditProfile');
-    };
-
-    const [activeButton, setActiveButton] = useState(1);
-
-    const handleButtonPress = (buttonNumber) => {
-        setActiveButton(buttonNumber);
     };
 
     const [activeTab, setActiveTab] = useState(1);
@@ -32,7 +22,7 @@ const MainProfile = () => {
     return (
         <ScrollView Style={styles.container}>
             {/* Header section */}
-            <SecondHeader name="Lady Gaga"  icon="angle-left" navigation={navigation}/>
+            <SecondHeader name="Lady Gaga" icon="angle-left" navigation={navigation} />
 
             {/* Text and ImageBackground section */}
             <View style={styles.sub_Container}>
@@ -42,8 +32,8 @@ const MainProfile = () => {
                 </TouchableOpacity>
             </View>
 
-            <FontAwesome name="camera" size={16} style={styles.photo_cover_Icon} />
-            <FontAwesome name="camera" size={14} style={styles.profile_edit_Icon} />
+            <FontAwesome name="camera" size={13} style={styles.photo_cover_Icon} />
+            <FontAwesome name="camera" size={11} style={styles.profile_edit_Icon} />
 
             <View style={styles.user_data}>
                 <Text style={styles.user_name}>Lady Gaga</Text>
@@ -52,14 +42,18 @@ const MainProfile = () => {
             <View style={styles.accountsDirection}>
                 <View style={styles.numbers_margin}>
                     <Text style={styles.numbers_heading}>3.9M</Text>
-                    <Text style={styles.heading}>Compares</Text>
+                    <Text style={styles.heading}>Likes</Text>
                 </View>
-                <View style={styles.line} />
+                <View style={styles.line_container}>
+                    <View style={styles.line} />
+                </View>
                 <View style={styles.numbers_margin}>
                     <Text style={styles.numbers_heading}>35.5K</Text>
                     <Text style={styles.heading}>Followers</Text>
                 </View>
-                <View style={styles.line} />
+                <View style={styles.line_container}>
+                    <View style={styles.line} />
+                </View>
                 <View style={styles.numbers_margin}>
                     <Text style={styles.numbers_heading}>3.2K</Text>
                     <Text style={styles.heading}>Following</Text>
@@ -75,58 +69,96 @@ const MainProfile = () => {
 
             {/* HorizontalTextTabs */}
             <View style={styles.text_container}>
-                <TouchableOpacity
-                    style={[styles.tab, activeTab === 1 && styles.activeTab]}
-                    onPress={() => handleTabPress(1)}
-                >
-                    <Text style={styles.tabText}>All</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={[styles.tab, activeTab === 2 && styles.activeTab]}
-                    onPress={() => handleTabPress(2)}
-                >
-                    <Text style={styles.tabText}>Images</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                    style={[styles.tab, activeTab === 3 && styles.activeTab]}
-                    onPress={() => handleTabPress(3)}
-                >
-                    <Text style={styles.tabText}>Videos</Text>
-                </TouchableOpacity>
+                <View style={styles.tab_container}>
+                    <TouchableOpacity
+                        style={[styles.tab, activeTab === 1 && styles.activeTab]}
+                        onPress={() => handleTabPress(1)}
+                    >
+                        <Text style={styles.tabText}>All</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.tab_container}>
+                    <TouchableOpacity
+                        style={[styles.tab, activeTab === 2 && styles.activeTab]}
+                        onPress={() => handleTabPress(2)}
+                    >
+                        <Text style={styles.tabText}>Images</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.tab_container}>
+                    <TouchableOpacity
+                        style={[styles.tab, activeTab === 3 && styles.activeTab]}
+                        onPress={() => handleTabPress(3)}
+                    >
+                        <Text style={styles.tabText}>Videos</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
             <ScrollView style={styles.images_container}>
                 <View style={styles.images_sub_container}>
                     <Image
-                        source={require('../../assets/Images/Rectangle_272.png')}
+                        source={require('../../assets/Images/mehndi_design.jpg')}
                         style={styles.image}
                         resizeMode="cover"
                     />
                     <Image
-                        source={require('../../assets/Images/Rectangle_273.png')}
+                        source={require('../../assets/Images/mehndi_design2.jpg')}
                         style={styles.image}
                         resizeMode="cover"
                     />
                     <Image
-                        source={require('../../assets/Images/Rectangle_275.png')}
+                        source={require('../../assets/Images/mehndi_design3.jpg')}
                         style={styles.image}
                         resizeMode="cover"
                     />
                 </View>
                 <View style={styles.images_sub_container}>
                     <Image
-                        source={require('../../assets/Images/Rectangle_276.png')}
+                        source={require('../../assets/Images/mehndi_design4.jpg')}
                         style={styles.image}
                         resizeMode="cover"
                     />
                     <Image
-                        source={require('../../assets/Images/Rectangle_279.png')}
+                        source={require('../../assets/Images/mehndi_design.jpg')}
                         style={styles.image}
                         resizeMode="cover"
                     />
                     <Image
-                        source={require('../../assets/Images/Rectangle_2711.png')}
+                        source={require('../../assets/Images/mehndi_design2.jpg')}
+                        style={styles.image}
+                        resizeMode="cover"
+                    />
+                </View>
+                <View style={styles.images_sub_container}>
+                    <Image
+                        source={require('../../assets/Images/mehndi_design3.jpg')}
+                        style={styles.image}
+                        resizeMode="cover"
+                    />
+                    <Image
+                        source={require('../../assets/Images/mehndi_design4.jpg')}
+                        style={styles.image}
+                        resizeMode="cover"
+                    />
+                    <Image
+                        source={require('../../assets/Images/mehndi_design.jpg')}
+                        style={styles.image}
+                        resizeMode="cover"
+                    />
+                </View>
+                <View style={styles.images_sub_container}>
+                    <Image
+                        source={require('../../assets/Images/mehndi_design3.jpg')}
+                        style={styles.image}
+                        resizeMode="cover"
+                    />
+                    <Image
+                        source={require('../../assets/Images/mehndi_design2.jpg')}
+                        style={styles.image}
+                        resizeMode="cover"
+                    />
+                    <Image
+                        source={require('../../assets/Images/mehndi_design.jpg')}
                         style={styles.image}
                         resizeMode="cover"
                     />
@@ -134,17 +166,17 @@ const MainProfile = () => {
                 <View style={styles.images_sub}>
                     <View style={styles.images_sub_container}>
                         <Image
-                            source={require('../../assets/Images/Rectangle_272.png')}
+                            source={require('../../assets/Images/mehndi_design2.jpg')}
                             style={styles.image}
                             resizeMode="cover"
                         />
                         <Image
-                            source={require('../../assets/Images/Rectangle_273.png')}
+                            source={require('../../assets/Images/mehndi_design4.jpg')}
                             style={styles.image}
                             resizeMode="cover"
                         />
                         <Image
-                            source={require('../../assets/Images/Rectangle_275.png')}
+                            source={require('../../assets/Images/mehndi_design3.jpg')}
                             style={styles.image}
                             resizeMode="cover"
                         />

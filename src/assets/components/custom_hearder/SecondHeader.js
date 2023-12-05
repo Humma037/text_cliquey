@@ -6,7 +6,7 @@ import colors from '../../theme/Color';
 const SecondHeader = ({ navigation, name, icon }) => (
   <View style={styles.header}>
     <TouchableOpacity onPress={() => navigation.goBack()}>
-      <FontAwesome name={icon} size={35} style={styles.bars_Icon} />
+      <FontAwesome name={icon} size={30} style={styles.bars_Icon} />
     </TouchableOpacity>
     <Text style={styles.name_style}>{name}</Text>
   </View>
@@ -16,21 +16,21 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '67%',
-    paddingHorizontal: 30,
+    width: '72%',
+    paddingHorizontal: 25,
     paddingVertical: 25,
   },
   bars_Icon: {
-    backgroundColor: colors.seprator,
+    backgroundColor: colors.orange_color,
     paddingHorizontal: 12,
-    paddingVertical: 0.5,
+    paddingBottom: 3,
+    paddingVertical:2,
     borderRadius: 25,
-    color: colors.themeGrey,
+    color: colors.white,
   },
   name_style: {
     fontWeight: 'bold',
     color: colors.BLACK,
-    alignItems: 'center',
     margin: 5,
     fontSize: 15,
   },

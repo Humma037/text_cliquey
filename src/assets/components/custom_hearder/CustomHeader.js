@@ -30,10 +30,10 @@ const styles = StyleSheet.create({
         width: '85%',
     },
     icon_style: {
-        backgroundColor: colors.seprator,
-        padding: 5,
+        backgroundColor: colors.orange_color,
+        padding: 9,
         borderRadius: 20,
-        color: colors.themeGrey
+        color: colors.white,
     }
 });
 

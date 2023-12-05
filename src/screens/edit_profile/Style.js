@@ -5,6 +5,7 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     text_style: {
         fontSize: 10,
@@ -13,19 +14,21 @@ const styles = StyleSheet.create({
     },
     profile: {
         width: '100%',
-        height: 150,
+        // height: 150,
         alignItems: 'center',
         justifyContent: 'center',
     },
     profile_text: {
         fontSize: 12,
         width: '100%',
-        textAlign:'center'
+        textAlign:'center',
+        marginTop:12
     },
     profile_cover_container:{
         width: '100%',
-        padding:20,
-        marginTop:'7%'
+        paddingHorizontal:20,
+        paddingVertical:10,
+        marginTop:'5%'
     },
     profile_cover: {
         height: 150,
@@ -43,6 +46,7 @@ const styles = StyleSheet.create({
     },
     upload_profile_cover_text:{
         textAlign:'center',
+        
     },
     user_Icon: {
         width: 100,
@@ -98,7 +102,8 @@ const styles = StyleSheet.create({
       },
       label:{
         textAlign:'center',
-        margin:20
+        margin:10,
+        marginTop:20
     },
       input: {
         width:'100%',

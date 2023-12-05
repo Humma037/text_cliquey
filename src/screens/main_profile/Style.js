@@ -4,6 +4,7 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     text_style: {
         fontSize: 12,
@@ -17,22 +18,22 @@ const styles = StyleSheet.create({
         position: 'absolute',
         left: 120
     },
-    profile_cover: {
-        width: '100%',
-        height: 120,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: colors.seprator,
-        borderRadius: 20,
-        padding: 20
-    },
+    // profile_cover: {
+    //     width: '100%',
+    //     height: 120,
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    //     backgroundColor: colors.seprator,
+    //     borderRadius: 20,
+    //     padding: 20
+    // },
     cover_photo: {
         width: '100%',
         height: 143,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: colors.seprator,
-        borderRadius: 30,
+        borderRadius: 20,
         position: 'absolute',
     },
     user_Icon: {
@@ -54,15 +55,16 @@ const styles = StyleSheet.create({
     user_name: {
         color: colors.BLACK,
         textAlign: 'center',
-        fontSize: 18,
+        fontSize: 15,
         fontWeight: 'bold',
         zIndex: 1
     },
     description_text: {
-        color: colors.DividingLine,
+        color: '#767676',
         textAlign: 'center',
-        fontSize: 10,
+        fontSize: 11,
         width: '75%',
+        paddingTop:3
     },
     user_data: {
         alignItems: 'center',
@@ -72,21 +74,24 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         paddingHorizontal: 60,
-        paddingTop: 30
+        paddingTop: 20
     },
     heading: {
-        fontSize: 10,
+        fontSize: 11,
         color: '#767676',
         textAlign: 'center'
+    },
+    line_container: {
+        marginTop: 4
     },
     line: {
         backgroundColor: '#767676',
         width: 1,
-        height: 40,
+        height: 27,
         margin: 7,
     },
     numbers_heading: {
-        fontSize: 15,
+        fontSize: 14,
         color: '#000',
         fontWeight: 'bold'
     },
@@ -101,9 +106,9 @@ const styles = StyleSheet.create({
     button: {
         flexDirection: 'row',
         backgroundColor: '#eee',
-        padding: 10,
+        padding: 9,
         borderRadius: 30,
-        paddingHorizontal: '5%',
+        paddingHorizontal: '4%',
         borderWidth:1,
         borderColor:colors.BLACK,
     },
@@ -119,57 +124,55 @@ const styles = StyleSheet.create({
     photo_cover_Icon: {
         color: colors.white,
         position:'absolute',
-        top:'20%',
-        right:40,
-        backgroundColor:colors.BLACK,
-        paddingHorizontal:8,
-        paddingVertical:8,
+        top:'16.5%',
+        right:30,
+        backgroundColor:'rgba(67, 66, 64, 1)',
+        padding:7,
         borderRadius:25,
     },
     profile_edit_Icon: {
         color: colors.white,
         position:'absolute',
-        top:'25%',
-        right:'36%',
-        backgroundColor:colors.BLACK,
-        paddingHorizontal:7,
-        paddingVertical:7,
+        top:'20%',
+        right:'37%',
+        backgroundColor:'rgba(67, 66, 64, 1)',
+        padding:6,
         borderRadius:25,
         zIndex:1
     },
     text_container: {
         flexDirection: 'row',
-        width: '60%',
+        width: '63%',
         justifyContent: 'space-between',
-        paddingHorizontal: 25,
-    },
-    images_container: {
-        marginTop: 20
+        paddingHorizontal: 30,
     },
     activeTab: {
-        borderBottomWidth: 1,
+        borderBottomWidth: 1.5,
         borderBottomColor: 'orange',
     },
     tabText: {
         color: 'black',
-        fontSize: 12,
+        fontSize: 13,
         fontWeight: 'bold',
-        marginHorizontal: 15
+        // marginHorizontal: 1,
+    },
+    images_container: {
+        marginTop: 15,
     },
     images_sub_container: {
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: 20,
+        paddingHorizontal: 15,
     },
     image: {
         width: '30%',
         height:95,
-        margin: 7,
+        margin: 5,
     },
     images_sub: {
-        marginBottom: 10
+        marginBottom: '25%'
     }
 
 });

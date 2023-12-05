@@ -32,7 +32,7 @@ const SearchbarSecond = ({ onSearch, onIcon1Press, onIcon2Press }) => {
           iconName="image"
           buttonText="Upload image"
           iconColor={colors.customIconColor}
-          buttonColor='#bfbfbf' 
+          buttonColor='#A6A6A6' 
         />
       </View>
     </View>
@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   search_Input: {
-    height: 30,
-    width: '54.5%',
-    fontSize: 8,
+    height: 35,
+    width: '54%',
+    fontSize: 11,
     paddingHorizontal: 15,
     backgroundColor: colors.seprator,
     color: colors.BLACK,
@@ -55,26 +55,25 @@ const styles = StyleSheet.create({
   },
   searchbar_style: {
     flexDirection: 'row',
-    margin:10
+    margin:10,
   },
   button: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 10,
-    padding:5,
+    paddingHorizontal: 7,
     borderRadius: 25,
     backgroundColor:colors.seprator,
-    height:30,
-    marginHorizontal:7,
+    height:34,
+    marginHorizontal:4,
   },
   icon: {
     marginRight: 5,
     color: colors.BLACK,
-    fontSize:12
+    fontSize:13
   },
   buttonText: {
     color: colors.BLACK,
-    fontSize: 7,
+    fontSize: 9,
   },
 });
 

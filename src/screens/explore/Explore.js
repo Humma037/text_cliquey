@@ -11,36 +11,38 @@ import Carousel from '../../assets/components/Carousel';
 const Explore = () => {
   const navigation = useNavigation();
 
+  const handleImagePress = () => {
+    navigation.navigate('MainProfile');
+  };
+
   const handleSearch = (text) => {
     console.log('Search:', text);
   };
 
-  const handleIcon1Press = () => {
-    navigation.navigate('Explore');
-  };
+  // const handleIcon1Press = () => {
+  //   navigation.navigate('Home');
+  // };
 
   const handleIcon2Press = () => {
     navigation.navigate('Favourites');
   };
 
   const data = [
-    { id: 1, image: require('../../assets/Images/image_six.png') },
-    { id: 2, image: require('../../assets/Images/image_six.png') },
-    { id: 3, image: require('../../assets/Images/image_six.png') },
+    { id: 1, image: require('../../assets/Images/group_image.webp') },
+    { id: 2, image: require('../../assets/Images/group_image.webp') },
+    { id: 3, image: require('../../assets/Images/group_image.webp') },
   ];
 
   return (
     <View Style={styles.container}>
       <View style={styles.sub_container}>
-        <TouchableOpacity onPress={handleIcon2Press}>
-          <View style={styles.Profile_Image}>
-            <ProfileImage />
-          </View>
+        <TouchableOpacity onPress={handleImagePress} style={styles.Profile_Image}>
+          <ProfileImage />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons
             onSearch={handleSearch}
-            onIcon1Press={handleIcon1Press}
+            // onIcon1Press={handleIcon1Press}
             onIcon2Press={handleIcon2Press}
             icon1="send-o"
             icon2="heart-o"
@@ -54,79 +56,82 @@ const Explore = () => {
             <Carousel data={data} />
           </View>
           <ImageBackground
-            source={require('../../assets/Images/Rectangle.png')}
+            source={require('../../assets/Images/group_image.webp')}
             style={styles.image_style}
             resizeMode="cover"
           />
         </View>
+
+        {/* Scrollable content section */}
+        <ScrollView>
+          <View style={styles.catgories_style}>
+            <View style={styles.heading_second}>
+              <Text style={styles.heading_all_categories}>All Categories</Text>
+            </View>
+
+            {/* Categories section */}
+            {/* Row 1 */}
+            <View style={styles.catgories_image_container}>
+              <View style={styles.catgories_image_sub_container}>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <Categories backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <Categories backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Mehndi Designs" />
+                  </View>
+                </TouchableOpacity>
+              </View>
+
+              {/* Row 2 */}
+              <View style={styles.catgories_image_sub_container}>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <Categories backgroundImage={require('../../assets/Images/mehndi_design.jpg')} title="Mehndi Designs" />
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <Categories backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Hair Style" />
+                  </View>
+                </TouchableOpacity>
+              </View>
+
+              {/* Row 3 */}
+              <View style={styles.catgories_image_sub_container}>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <Categories backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Mehndi Designs" />
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <Categories backgroundImage={require('../../assets/Images/images_mehndi.jpg')} title="Mehndi Designs" />
+                  </View>
+                </TouchableOpacity>
+              </View>
+              {/* row 4 */}
+              <View style={styles.last_catgorie_container}>
+                <View style={styles.catgories_image_sub_container}>
+                  <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                    <View style={styles.catgories_margin}>
+                      <Categories backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Mehndi Designs" />
+                    </View>
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                    <View style={styles.catgories_margin}>
+                      <Categories backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          </View>
+        </ScrollView>
       </ScrollView>
 
-      {/* Scrollable content section */}
-      <ScrollView>
-        <View style={styles.catgories_style}>
-          <View style={styles.heading_second}>
-            <Text style={styles.heading_all_categories}>All Categories</Text>
-          </View>
-
-          {/* Categories section */}
-          {/* Row 1 */}
-          <View style={styles.catgories_image_container}>
-            <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/five.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/one.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-            </View>
-
-            {/* Row 2 */}
-            <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/one.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/two.png')} title="Hair Style" />
-                </View>
-              </TouchableOpacity>
-            </View>
-
-            {/* Row 3 */}
-            <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/three.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/four.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-            </View>
-            {/* row 4 */}
-            <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/five.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <Categories backgroundImage={require('../../assets/Images/one.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </View>
-      </ScrollView>
     </View >
   );
 };

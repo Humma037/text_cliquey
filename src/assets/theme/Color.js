@@ -20,7 +20,8 @@ const colors = {
     blue_color:'#6A79FF',
     light_black:'#333232',
     color_red:'#E84D44',
-    light_gray:'#E6E6E6'
+    light_gray:'#E6E6E6',
+    white_rgb:'rgb(253, 243, 288)'
   };
   export default colors;
   

@@ -1,10 +1,11 @@
+// BottomBar.js
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home/Home';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 import Explore from '../screens/explore/Explore';
-import colors from '../assets/theme/Color';
 import MainProfile from '../screens/main_profile/MainProfile';
+import colors from '../assets/theme/Color';
+import { Avatar, Home_bar, Shuttle } from '../assets/svg/index';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +21,7 @@ const BottomBar = () => {
                     right: 30,
                     borderRadius: 40,
                     height: 75,
-                    backgroundColor: colors.seprator, 
+                    backgroundColor: colors.seprator,
                 },
                 tabBarInactiveTintColor: 'black',
                 tabBarActiveTintColor: colors.orange_color,
@@ -31,8 +32,12 @@ const BottomBar = () => {
                 component={Home}
                 options={{
                     tabBarLabel: 'Home',
-                    tabBarIcon: ({ color, size }) => (
-                        <AntDesign name="home" color={color} size={size} />
+                    tabBarIcon: ({ color, size, focused }) => (
+                        <Home_bar
+                            width={size}
+                            height={size}
+                            fill={focused ? colors.orange_color : color}
+                        />
                     ),
                     tabBarItemStyle: {
                         padding: 15,
@@ -44,8 +49,12 @@ const BottomBar = () => {
                 component={Explore}
                 options={{
                     tabBarLabel: 'Explore',
-                    tabBarIcon: ({ color, size }) => (
-                        <AntDesign name="rocket1" color={color} size={size} />
+                    tabBarIcon: ({ color, size, focused }) => (
+                        <Shuttle
+                            width={size}
+                            height={size}
+                            fill={focused ? colors.orange_color : color}
+                        />
                     ),
                     tabBarItemStyle: {
                         padding: 15,
@@ -57,8 +66,12 @@ const BottomBar = () => {
                 component={MainProfile}
                 options={{
                     tabBarLabel: 'Profile',
-                    tabBarIcon: ({ color, size }) => (
-                        <AntDesign name="user" color={color} size={size} />
+                    tabBarIcon: ({ color, size, focused }) => (
+                        <Avatar
+                            width={size}
+                            height={size}
+                            fill={focused ? colors.orange_color : color}
+                        />
                     ),
                     tabBarItemStyle: {
                         padding: 15,

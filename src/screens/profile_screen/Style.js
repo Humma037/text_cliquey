@@ -5,6 +5,7 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor:colors.Red
     },
     text_style: {
         fontSize: 12,
@@ -33,13 +34,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: colors.seprator,
-        borderRadius: 30,
+        borderRadius: 15,
         position: 'absolute',
     },
     user_Icon: {
         width: 100,
         height: 100,
-        backgroundColor: colors.themeLightGrey,
+        backgroundColor: colors.seprator,
         paddingHorizontal: 33,
         paddingVertical: 20,
         borderRadius: 50,
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     user_name: {
         color: colors.BLACK,
         textAlign: 'center',
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold',
         zIndex: 1
     },
@@ -64,6 +65,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 11,
         width: '75%',
+        color: '#767676',
+        marginTop:3
     },
     user_data: {
         alignItems: 'center',
@@ -73,21 +76,24 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         paddingHorizontal: 60,
-        paddingTop: 30
+        paddingTop: 20
     },
     heading: {
-        fontSize: 10,
+        fontSize: 11,
         color: '#767676',
         textAlign: 'center'
+    },
+    line_container: {
+        marginTop: 4
     },
     line: {
         backgroundColor: '#767676',
         width: 1,
-        height: 35,
+        height: 27,
         margin: 7,
     },
     numbers_heading: {
-        fontSize: 15,
+        fontSize: 14,
         color: '#000',
         fontWeight: 'bold'
     },
@@ -98,25 +104,25 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingHorizontal: 60,
-        paddingVertical: 25,
+        paddingVertical: 20,
     },
     button: {
         flex: 1,
-        backgroundColor: '#eee',
+        backgroundColor: colors.orange_color,
         padding: 10,
         borderRadius: 30,
         marginHorizontal: 5,
         alignItems: 'center',
         borderWidth: 1,
-        borderColor: 'transparent', 
+        borderColor: 'transparent',
     },
     activeButton: {
-        backgroundColor: colors.orange_color,
+        backgroundColor: '#eee',
     },
     buttonText: {
         color: 'black',
         fontWeight: 'bold',
-        fontSize:12
+        fontSize: 12
     },
     text_container: {
         flexDirection: 'row',
@@ -124,30 +130,30 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: 25,
     },
-    images_container: {
-        marginTop: 20
-    },
     activeTab: {
-        borderBottomWidth: 1,
+        borderBottomWidth: 1.5,
         borderBottomColor: 'orange',
     },
     tabText: {
         color: 'black',
-        fontSize: 12,
+        fontSize: 13,
         fontWeight: 'bold',
-        marginHorizontal: 15
+        // marginHorizontal: 1,
+    },
+    images_container: {
+        marginTop: 15
     },
     images_sub_container: {
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: 20,
+        paddingHorizontal: 12,
     },
     image: {
         width: '30%',
         height: 95,
-        margin: 7,
+        margin: 5,
     },
     images_sub: {
         marginBottom: '25%'

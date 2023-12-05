@@ -6,16 +6,18 @@ const styles = StyleSheet.create({
   Container: {
     flex: 1,
     alignItems: 'center',
+    backgroundColor:colors.white
   },
   // mainImage
   pana_style: {
     alignItems: 'center',
     width: '100%',
-    padding: '10%'
+    // paddingTop: '5%',
+    paddingBottom: '5%'
   },
   Image_style:{
-    width:175.46,
-    height:154.52,
+    width:200,
+    height:180,
     marginBottom:15
   },
   Text_container: {
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: '12%'
   },
   Text: {
-    fontSize: 11,
+    fontSize: 12,
     color: colors.text_color ,       
     textAlign: 'center',
     padding: 8
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop:20
   },
   account_Register: {
     flexDirection: 'row',
@@ -58,9 +61,9 @@ const styles = StyleSheet.create({
   Clickable_Text: {
     color: colors.text_color,
     textAlign: 'center',
-    padding: 10,
-    marginLeft: '25%',
-    fontSize:10
+    paddingLeft: 5,
+    marginLeft: '23%',
+    fontSize:11.5
   }
 });
 

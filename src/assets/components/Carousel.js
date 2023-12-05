@@ -35,7 +35,7 @@ const Carousel = ({ data }) => {
             key={index}
             style={[
               styles.dot,
-              { backgroundColor: index === currentIndex ? '#6A79FF' : '#7d7d7d' },
+              { backgroundColor: index === currentIndex ? '#E8A644' : '#e4e4e4' },
             ]}
             onPress={() => {
               setCurrentIndex(index);
@@ -75,8 +75,8 @@ const styles = StyleSheet.create({
   },
   slide: {
     width: imageWidth,
-    height: 200, 
-    borderRadius: 20, 
+    height: 180, 
+    // borderRadius: 20, 
     overflow: 'hidden', 
     marginRight: imageSpacing,
   },

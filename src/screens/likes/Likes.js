@@ -12,12 +12,12 @@ const Likes = () => {
         <View style={styles.Container}>
       <SecondHeader navigation={navigation} name="Likes" icon="angle-left" />
             <View style={styles.second_sub_container}>
-                <View style={styles.notification}>
+                <ScrollView style={styles.notification}>
                     <View style={styles.data_container}>
                         <Text style={styles.text_heading}>Likes</Text>
                         <Text style={styles.text}>1.1k Likes</Text>
                     </View>
-                    <ScrollView style={styles.this_week_notification}>
+                    <View style={styles.this_week_notification}>
                         <View style={styles.notification_details}>
                             <LikesComp />
                         </View>
@@ -49,8 +49,8 @@ const Likes = () => {
                             <LikesComp />
                         </View>
 
-                    </ScrollView>
-                </View>
+                    </View>
+                </ScrollView>
             </View>
         </View>
     )

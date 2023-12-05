@@ -47,19 +47,22 @@ const Home = () => {
           />
         </View>
       </View>
-      <View style={styles.second_searchBar_container}>
-        <TouchableOpacity onIcon2Press={handleProfileImagePress}>
-        <ProfileImage />
-        </TouchableOpacity>
-        <View style={styles.SearchbarSecond}>
-          <SearchbarSecond />
-        </View>
-      </View>
-
       <ScrollView>
+        <View style={styles.second_searchBar_container}>
+          <TouchableOpacity onIcon2Press={handleProfileImagePress} style={styles.ProfileImage} >
+            <ProfileImage />
+          </TouchableOpacity>
+          <View style={styles.SearchbarSecond}>
+            <SearchbarSecond />
+          </View>
+        </View>
         <View style={styles.scrollableContent}>
-          <ProfileData />
-          <ProfileData />
+          <View style={styles.ProfileData}>
+            <ProfileData />
+          </View>
+          <View style={styles.ProfileData}>
+            <ProfileData />
+          </View>
         </View>
       </ScrollView>
     </View>

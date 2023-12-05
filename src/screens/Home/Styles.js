@@ -5,6 +5,7 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     sub_container: {
         flexDirection: 'row',
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20
     },
     ProfileImage: {
-        padding: 10
+        paddingVertical: 9
     },
     second_searchBar_container: {
         flexDirection: 'row',
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         marginBottom: 100
     },
     scrollableContent: {
-        marginBottom: '22%'
+        marginBottom: '23%'
     }
 
 });

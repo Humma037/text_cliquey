@@ -5,6 +5,7 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     sub_container: {
         width: '100%',
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
         color: colors.light_black,
     },
     text_details:{
-        fontSize: 10,
+        fontSize: 11,
         color: colors.DividingLine,
     },
     inputContainer: {
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     },
     text_nput:{
         color:colors.BLACK,
-        fontSize:11
+        fontSize:12
     },
     profile_cover: {
         width: 150,
@@ -67,6 +68,10 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         textAlign:'center'
     },
+    ProfileImage:{
+        marginTop:6,
+        marginLeft:10
+    }
 
 });
 

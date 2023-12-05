@@ -5,9 +5,13 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     notification: {
-        width: '85%',
+        width: '100%',
+        // alignItems:'center',
+        // justifyContent:'center'
+        marginLeft:6
     },
     text: {
         fontWeight: "bold",
@@ -22,20 +26,23 @@ const styles = StyleSheet.create({
         margin: 5
     },
     notification_details: {
-        margin: 8
+        margin: 8,
+        paddingHorizontal:20
     },
     data_container: {
-        width: '87%',
+        width: '78%',
         flexDirection:'row',
         justifyContent:'space-between',
-        marginHorizontal:17
+        marginHorizontal:37
     },
     this_week_notification: {
-        height: 655,
+        // height: 655,
+        width:'100%',
+        
     },
     second_sub_container:{
-        alignItems:'center',
-        justifyContent:'center'
+        // alignItems:'center',
+        // justifyContent:'center'
     }
 });
 

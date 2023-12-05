@@ -14,24 +14,28 @@ const Design = () => {
     console.log('Search:', text);
   };
 
-  const handleIcon1Press = () => {
-    navigation.navigate('Explore');
-  };
+  // const handleIcon1Press = () => {
+  //   navigation.navigate('Explore');
+  // };
 
   const handleIcon2Press = () => {
     navigation.navigate('Favourites');
   };
 
+  const handleBackButtonPress = () => {
+    navigation.navigate('Explore');
+  };
+
   return (
     <View Style={styles.container}>
       <View style={styles.sub_container}>
-        <TouchableOpacity onPress={handleIcon2Press}>
-        <FontAwesome name="angle-left" size={25} style={styles.bars_Icon} icon="angle-left"/>
+        <TouchableOpacity onPress={handleBackButtonPress}>
+          <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} icon="angle-left" />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons
             onSearch={handleSearch}
-            onIcon1Press={handleIcon1Press}
+            // onIcon1Press={handleIcon1Press}
             onIcon2Press={handleIcon2Press}
             icon1="send-o"
             icon2="heart-o"
@@ -42,7 +46,7 @@ const Design = () => {
         <View style={styles.image_Container}>
           <Text style={styles.text_style}>Mehndi Designs</Text>
           <ImageBackground
-            source={require('../../assets/Images/Rectangle.png')}
+            source={require('../../assets/Images/group_image.webp')}
             style={styles.image_style}
             resizeMode="cover"
           />
@@ -60,12 +64,12 @@ const Design = () => {
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" />
                 </View>
               </TouchableOpacity>
             </View>
@@ -74,12 +78,12 @@ const Design = () => {
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Mehndi Designs" />
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/images_mehndi.jpg')} title="Hair Style" />
                 </View>
               </TouchableOpacity>
             </View>
@@ -88,27 +92,29 @@ const Design = () => {
             <View style={styles.catgories_image_sub_container}>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
                 </View>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" />
                 </View>
               </TouchableOpacity>
             </View>
             {/* row 4 */}
-            <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
-                </View>
-              </TouchableOpacity>
+            <View style={styles.last_catgories_container}>
+              <View style={styles.catgories_image_sub_container}>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <CategoriesDesign backgroundImage={require('../../assets/Images/images_mehndi.jpg')} title="Mehndi Designs" />
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Hair Style" />
+                  </View>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </View>

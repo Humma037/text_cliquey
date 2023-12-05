@@ -19,14 +19,14 @@ const Favourites = () => {
   };
 
   const handleIcon2Press = () => {
-    navigation.navigate('Downloads');
+    navigation.navigate('Design');
   };
 
   return (
     <View Style={styles.container}>
       <View style={styles.sub_container}>
         <TouchableOpacity onPress={handleIcon2Press}>
-          <FontAwesome name="angle-left" size={25} style={styles.bars_Icon} icon="angle-left"/>
+          <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} icon="angle-left" />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons
@@ -44,7 +44,7 @@ const Favourites = () => {
         {/* Scrollable content section */}
         <View style={styles.catgories_style}>
           <View style={styles.heading_second}>
-            <Text style={styles.heading_all_design}>Favorites</Text>
+            <Text style={styles.heading_Favorites}>Favorites</Text>
           </View>
 
           {/* Categories section */}
@@ -53,70 +53,72 @@ const Favourites = () => {
             <View style={styles.catgories_image_sub_container}>
               <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" isFavoriteScreen={true} />
                 </View>
               </View>
               <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" isFavoriteScreen={true} />
                 </View>
               </View>
             </View>
 
             {/* Row 2 */}
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_four.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Mehndi Designs" isFavoriteScreen={true} />
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              </View>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design.jpg')} title="Hair Style" isFavoriteScreen={true} />
                 </View>
-              </TouchableOpacity>
+              </View>
             </View>
 
             {/* Row 3 */}
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Mehndi Designs" isFavoriteScreen={true} />
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              </View>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Hair Style" isFavoriteScreen={true} />
                 </View>
-              </TouchableOpacity>
+              </View>
             </View>
             {/* row 4 */}
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/images_mehndi.jpg')} title="Mehndi Designs" isFavoriteScreen={true} />
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              </View>
+              <View onPress={() => navigation.navigate('Design')}>
                 <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
+                  <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Hair Style" isFavoriteScreen={true} />
                 </View>
-              </TouchableOpacity>
+              </View>
             </View>
-            <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" isFavoriteScreen={true}/>
+            <View style={styles.last_catgorie_container}>
+              <View style={styles.catgories_image_sub_container}>
+                <View onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" isFavoriteScreen={true} />
+                  </View>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
-                <View style={styles.catgories_margin}>
-                  <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" isFavoriteScreen={true}/>
+                <View onPress={() => navigation.navigate('Design')}>
+                  <View style={styles.catgories_margin}>
+                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" isFavoriteScreen={true} />
+                  </View>
                 </View>
-              </TouchableOpacity>
+              </View>
+            </View>
             </View>
           </View>
-        </View>
       </ScrollView>
     </View>
   );

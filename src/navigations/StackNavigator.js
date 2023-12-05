@@ -17,7 +17,9 @@ import Compares from '../screens/compares/Compares';
 import Likes from '../screens/likes/Likes';
 import UploadPhoto from '../screens/upload_photo/UploadPhoto';
 import Downloads from '../screens/downloads/Downloads';
-import Profile from '../screens/edit_profile/EditProfile';
+import Profile from '../screens/profile_screen/Profile';
+import PostImage from '../screens/post_image/PostImage';
+import Comments from '../screens/comment_screen/Comments';
 
 const Stack = createNativeStackNavigator();
 
@@ -44,6 +46,8 @@ const StackNav = () => {
       <Stack.Screen name="Likes" component={Likes} />
       <Stack.Screen name="UploadPhoto" component={UploadPhoto} />
       <Stack.Screen name="Downloads" component={Downloads} />
+      <Stack.Screen name="PostImage" component={PostImage} />
+      <Stack.Screen name="Comments" component={Comments} />
     </Stack.Navigator>
   );
 };

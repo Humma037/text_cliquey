@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     paddingVertical: 7,
     borderRadius: 50,
     color: colors.DividingLine,
+    marginTop:3
   },
   text_heading: {
     fontWeight: 'bold',

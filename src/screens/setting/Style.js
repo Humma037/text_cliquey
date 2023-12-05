@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent:'center',
         backgroundColor: colors.seprator,
-        borderRadius: 20,
+        borderRadius: 15,
         position:'absolute',
         top:40,
     },
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent:'center',
         backgroundColor: colors.seprator,
-        borderRadius: 20,
+        borderRadius: 15,
         margin:5,
     },
     setting_options_text:{

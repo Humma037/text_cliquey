@@ -5,16 +5,19 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     sub_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '100%'
+        width: '100%',
+        // backgroundColor:'green',
+        height:80
     },
     text_style: {
-        fontSize: 12,
-        padding: 10,
-        marginLeft: 10
+        fontSize: 13,
+        padding: 5,
+        // marginTop: 20
     },
     image_Container: {
         width: '100%',
@@ -28,7 +31,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold',
         color: colors.themeGrey,
-        marginTop: '10%'
+        marginTop: '7%'
     },
     catgories_image_container: {
         marginBottom: '20%'
@@ -45,17 +48,20 @@ const styles = StyleSheet.create({
     },
     image_style: {
         width: '100%',
-        height: 155,
+        height: 150,
     },
     bars_Icon: {
-        color: colors.BLACK,
-        backgroundColor: colors.seprator,
-        paddingHorizontal: 12,
-        paddingVertical: 4,
+        color: colors.white,
+        backgroundColor: colors.orange_color,
+        paddingHorizontal: 12.5,
+        paddingVertical: 2.5,
         borderRadius: 25,
-        marginTop: 23,
-        marginLeft:16
+        marginTop: 20,
+        marginLeft:18
     },
+    last_catgories_container:{
+        marginBottom:'5%'
+    }
 });
 
 export default styles;

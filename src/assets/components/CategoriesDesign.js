@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(255, 255, 255, 0.7)',
         width: 168,
         height: 28,
-        borderTopLeftRadius: 55,
-        borderTopRightRadius: 55
+        // borderTopLeftRadius: 55,
+        // borderTopRightRadius: 55
     },
     icons_Container: {
         flexDirection: 'row',

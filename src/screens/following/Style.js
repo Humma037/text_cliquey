@@ -5,6 +5,7 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
+        backgroundColor:colors.white
     },
     notification: {
         width: '90%',
@@ -28,22 +29,37 @@ const styles = StyleSheet.create({
     notification_details: {
         margin: 8
     },
-    notification_container: {
-        height: 175,
-    },
     data_container: {
         width: '93%',
         flexDirection:'row',
         justifyContent:'space-between',
         margin:5
     },
-    this_week_notification: {
-        height: 430,
-    },
     second_sub_container:{
         alignItems:'center',
         justifyContent:'center'
-    }
+    },
+    notification_dont:{
+        width:8,
+        height:8,
+        backgroundColor:colors.color_red,
+        borderRadius:4,
+        position:'absolute',
+        top:'44%',
+        right:'98%',
+        zIndex:1
+    },
+    dimiss_icon:{
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        // backgroundColor:colors.seprator,
+        width:23,
+        paddingHorizontal:3,
+        paddingVertical:2,
+        borderRadius:20,
+        position:'absolute',
+        bottom:65,
+        right:3
+    },
 });
 
 export default styles;

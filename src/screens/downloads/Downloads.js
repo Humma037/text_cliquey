@@ -20,7 +20,7 @@ const Downloads = () => {
     };
 
     const handleIcon2Press = () => {
-        navigation.navigate('Favourites');
+        navigation.navigate('Setting');
     };
 
     return (
@@ -30,6 +30,7 @@ const Downloads = () => {
                     <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} />
                 </TouchableOpacity>
                 <View style={styles.searchbar_style}>
+                <FontAwesome name="search" size={14} style={styles.search_Icon} />
                     <TextInput
                         style={styles.search_Input}
                         placeholder="Search"
@@ -50,12 +51,12 @@ const Downloads = () => {
                         <View style={styles.catgories_image_sub_container}>
                             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                                 <View style={styles.catgories_margin}>
-                                    <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design.jpg')} title="Mehndi Designs" />
                                 </View>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                                 <View style={styles.catgories_margin}>
-                                    <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Hair Style" />
                                 </View>
                             </TouchableOpacity>
                         </View>
@@ -64,12 +65,12 @@ const Downloads = () => {
                         <View style={styles.catgories_image_sub_container}>
                             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                                 <View style={styles.catgories_margin}>
-                                    <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_four.png')} title="Mehndi Designs" />
+                                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
                                 </View>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                                 <View style={styles.catgories_margin}>
-                                    <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" />
                                 </View>
                             </TouchableOpacity>
                         </View>
@@ -78,12 +79,12 @@ const Downloads = () => {
                         <View style={styles.catgories_image_sub_container}>
                             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                                 <View style={styles.catgories_margin}>
-                                    <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_one.png')} title="Mehndi Designs" />
+                                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design.jpg')} title="Mehndi Designs" />
                                 </View>
                             </TouchableOpacity>
                             <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                                 <View style={styles.catgories_margin}>
-                                    <CategoriesDesign backgroundImage={require('../../assets/Images/Rectangle_two.png')} title="Hair Style" />
+                                    <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Hair Style" />
                                 </View>
                             </TouchableOpacity>
                         </View>

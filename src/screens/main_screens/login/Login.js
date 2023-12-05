@@ -29,7 +29,7 @@ const Register = ({ navigation }) => {
         {/* about */}
         <View style={styles.Text_container}>
         <Text style={[MainStyles.heading]}>Login to your Account</Text>
-        <Text style={styles.Text}>Lorem ipsum dolor sit amet consectetur. Id congue pretium curabitur cras. Massa quam convallis phasellus </Text>
+        <Text style={styles.Text}>Lorem ipsum dolor sit amet pretium. Id congue pretium curabitur cras. Massa quam convallis phasellus </Text>
         </View>
         {/* inputs */}
         <View style={styles.TextInput}>
@@ -46,7 +46,7 @@ const Register = ({ navigation }) => {
         </View>
         {/* ClickableText */}
         <ClickableText
-          text="Forgot password?"
+          text="Forgot password ?"
           onPress={() => {
             navigation.navigate('ForgotPassword');
           }}
@@ -58,7 +58,7 @@ const Register = ({ navigation }) => {
         </View>
         {/* bottomText */}
         <View style={styles.account_Register_contanier}>
-          <Text style={styles.account_text}>Dont have an account?</Text>
+          <Text style={styles.account_text}>Dont have an account ?</Text>
           <ClickableText
             text="Sign Up"
             onPress={() => {
