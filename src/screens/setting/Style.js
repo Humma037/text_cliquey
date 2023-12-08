@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         height:170,
     },
     bars_Icon:{
-        fontSize: 30,
+        fontSize: 27,
         color: colors.BLACK,
         margin:20,
     },
@@ -72,6 +72,18 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent:'center',
+    },
+    compare_setting_options:{
+        width: '47.5%',
+        height:110,
+        alignItems: 'center',
+        justifyContent:'center',
+        backgroundColor: colors.seprator,
+        borderRadius: 15,
+        margin:5,
+    },
+    compare_category:{
+        paddingHorizontal:10
     }
 
 });

@@ -30,10 +30,11 @@ const styles = StyleSheet.create({
         width: '93%',
         flexDirection:'row',
         justifyContent:'space-between',
-        marginVertical:15
+        marginVertical:5
     },
     this_week_notification: {
-        height: 655,
+        // height: 655,
+        marginTop:10
     },
     second_sub_container:{
         alignItems:'center',

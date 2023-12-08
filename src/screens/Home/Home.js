@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import SearchBarWithIcons from '../../assets/components/search_bar/CustomSearchBar';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 import styles from './Styles';
 import ProfileImage from '../../assets/components/profile/ProfileImage';
 import SearchbarSecond from '../../assets/components/search_bar/SearchbarSecond';
@@ -35,7 +35,7 @@ const Home = () => {
     <View style={styles.Container}>
       <View style={styles.sub_container}>
         <TouchableOpacity onPress={handleSettingBarPress}>
-          <FontAwesome name="bars" size={25} style={styles.bars_Icon} />
+          <FontAwesome6 name="bars" size={25} style={styles.bars_Icon} />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
           <SearchBarWithIcons
@@ -43,7 +43,7 @@ const Home = () => {
             onIcon1Press={handleIcon1Press}
             onIcon2Press={handleIcon2Press}
             icon1="send-o"
-            icon2="bell-o"
+            icon2="bell-ring-outline"
           />
         </View>
       </View>
@@ -57,7 +57,7 @@ const Home = () => {
           </View>
         </View>
         <View style={styles.scrollableContent}>
-          <View style={styles.ProfileData}>
+          <View style={styles.ProfileData1}>
             <ProfileData />
           </View>
           <View style={styles.ProfileData}>

@@ -18,15 +18,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         left: 120
     },
-    // profile_cover: {
-    //     width: '100%',
-    //     height: 120,
-    //     alignItems: 'center',
-    //     justifyContent: 'center',
-    //     backgroundColor: colors.seprator,
-    //     borderRadius: 20,
-    //     padding: 20
-    // },
     cover_photo: {
         width: '100%',
         height: 143,
@@ -74,7 +65,10 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         paddingHorizontal: 60,
-        paddingTop: 20
+        paddingTop: 15,
+        // alignItems:'center',
+        // justifyContent:'center'
+        marginLeft:8
     },
     heading: {
         fontSize: 11,
@@ -99,24 +93,24 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     button_container: {
-        paddingVertical: 25,
+        paddingVertical: 17,
         width:'100%',
         alignItems:'center',
     },
     button: {
         flexDirection: 'row',
         backgroundColor: '#eee',
-        padding: 9,
+        paddingVertical: 7,
         borderRadius: 30,
-        paddingHorizontal: '4%',
+        paddingHorizontal: '1.5%',
         borderWidth:1,
         borderColor:colors.BLACK,
     },
     buttonText: {
         color: 'black',
         fontWeight: 'bold',
-        marginLeft: 5,
-        fontSize:12,
+        marginLeft: 3,
+        fontSize:10,
     },
     editIcon: {
         color: colors.BLACK,
@@ -124,7 +118,7 @@ const styles = StyleSheet.create({
     photo_cover_Icon: {
         color: colors.white,
         position:'absolute',
-        top:'16.5%',
+        top:'16%',
         right:30,
         backgroundColor:'rgba(67, 66, 64, 1)',
         padding:7,
@@ -144,7 +138,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '63%',
         justifyContent: 'space-between',
-        paddingHorizontal: 30,
+        paddingHorizontal: 25,
     },
     activeTab: {
         borderBottomWidth: 1.5,
@@ -157,22 +151,27 @@ const styles = StyleSheet.create({
         // marginHorizontal: 1,
     },
     images_container: {
-        marginTop: 15,
+        marginTop: 10,
     },
     images_sub_container: {
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: 15,
+        paddingHorizontal: 22,
     },
     image: {
-        width: '30%',
-        height:95,
-        margin: 5,
+        width: '32%',
+        height:100,
+        margin: 4,
     },
     images_sub: {
         marginBottom: '25%'
+    },
+    header_container:{
+        borderTopLeftRadius:20,
+        borderTopRightRadius:20,
+        // backgroundColor:colors.BLACK
     }
 
 });

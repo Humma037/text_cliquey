@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems:'center',
     flexDirection:'row',
     justifyContent:'center',
-    paddingVertical:15
+    paddingVertical:25
   },
   Clickable_Text: {
     color: colors.text_color,

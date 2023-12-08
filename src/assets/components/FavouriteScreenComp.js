@@ -6,8 +6,9 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { useNavigation } from '@react-navigation/native';
+import colors from '../theme/Color';
 
-const CategoriesDesign = ({ backgroundImage, title, isFavoriteScreen }) => {
+const FavouriteScreenComp = ({ backgroundImage, title, isFavoriteScreen }) => {
     const navigation = useNavigation();
 
     const handlePress = () => {
@@ -27,7 +28,7 @@ const CategoriesDesign = ({ backgroundImage, title, isFavoriteScreen }) => {
                     <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
                     <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
                     <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
-                    <FontAwesome name="heart-o" size={13} color={'black'} style={styles.icon_style} />
+                    <FontAwesome name="heart" size={13} color={'red'} style={styles.icon_style} />
                 </View>
             </TouchableOpacity>
         </View>
@@ -61,6 +62,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 10,
+        color:colors.BLACK,
     },
     icon_style: {
         backgroundColor: 'rgba(255, 255, 255, 0.7)',
@@ -69,4 +71,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default CategoriesDesign;
+export default FavouriteScreenComp;

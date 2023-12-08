@@ -1,17 +1,14 @@
 import React from 'react';
 import { View, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'; 
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import colors from '../../theme/Color';
 
-const SearchBarWithIcons = ({ onSearch, onIcon1Press, onIcon2Press, icon1, icon2, isFavoriteScreen }) => {
-  const icon2Color = isFavoriteScreen ? 'red' : 'black';
-
+const CategoriesHeader = ({ onSearch, onIcon1Press, icon1, iconColor }) => {
   return (
     <View style={styles.container}>
       <View style={styles.searchbar_style}>
         <View style={styles.search_container}>
-          {/* Use FontAwesome for the search icon */}
           <FontAwesome name="search" size={13} style={styles.search_Icon} />
           <TextInput
             style={styles.search_Input}
@@ -22,13 +19,7 @@ const SearchBarWithIcons = ({ onSearch, onIcon1Press, onIcon2Press, icon1, icon2
         </View>
         <View style={styles.iconContainer}>
           <TouchableOpacity onPress={onIcon1Press} style={styles.Icon_conatiner}>
-            {/* Use FontAwesome for the first icon */}
-            <FontAwesome name={icon1} size={18} style={styles.back_Icon} />
-          </TouchableOpacity>
-
-          <TouchableOpacity onPress={onIcon2Press} style={styles.Icon_conatiner}>
-            {/* Use FontAwesome for the second icon */}
-            <MaterialCommunityIcons name={icon2} size={18} style={[styles.back_Icon, { color: icon2Color }]} />
+            <FontAwesome name={icon1} size={18} style={[styles.back_Icon, { color: iconColor }]} />
           </TouchableOpacity>
         </View>
       </View>
@@ -36,7 +27,7 @@ const SearchBarWithIcons = ({ onSearch, onIcon1Press, onIcon2Press, icon1, icon2
   );
 };
 
-export default SearchBarWithIcons;
+export default CategoriesHeader;
 
 const styles = StyleSheet.create({
   container: {
@@ -59,7 +50,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 70,
   },
-  Icon_conatiner:{
+  Icon_conatiner: {
     backgroundColor: colors.seprator,
     marginLeft: 5,
     padding: 9,
@@ -73,12 +64,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 25,
     paddingHorizontal: 10,
-    width: 190,
+    width: 230,
     backgroundColor: colors.seprator,
     height: 36.5,
-    marginRight:15
+    marginRight: 18,
   },
-  search_Icon:{
-    color: colors.DividingLine
-  }
+  search_Icon: {
+    color: colors.DividingLine,
+  },
 });

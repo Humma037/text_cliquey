@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     notification_dont:{
         width:8,
         height:8,
-        backgroundColor:colors.color_red,
+        backgroundColor:colors.orange_color,
         borderRadius:4,
         position:'absolute',
         top:'44%',
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     },
     dimiss_icon:{
         backgroundColor: 'rgba(255, 255, 255, 0.7)',
-        // backgroundColor:colors.seprator,
+        // backgroundColor:colors.white,
         width:23,
         paddingHorizontal:3,
         paddingVertical:2,
@@ -60,6 +60,9 @@ const styles = StyleSheet.create({
         bottom:65,
         right:3
     },
+    notification_container:{
+        marginTop:10
+    }
 });
 
 export default styles;

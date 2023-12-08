@@ -3,7 +3,7 @@ import { ScrollView, View, TouchableOpacity, ImageBackground } from 'react-nativ
 import { Text } from 'react-native-paper';
 import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
-import SearchBarWithIcons from '../../assets/components/search_bar/CustomSearchBar';
+import CategoriesHeader from '../../assets/components/custom_hearder/CategoriesHeader';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import CategoriesDesign from '../../assets/components/CategoriesDesign';
 
@@ -18,7 +18,7 @@ const Design = () => {
   //   navigation.navigate('Explore');
   // };
 
-  const handleIcon2Press = () => {
+  const handleIcon1Press = () => {
     navigation.navigate('Favourites');
   };
 
@@ -29,16 +29,16 @@ const Design = () => {
   return (
     <View Style={styles.container}>
       <View style={styles.sub_container}>
-        <TouchableOpacity onPress={handleBackButtonPress}>
-          <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} icon="angle-left" />
+        <TouchableOpacity onPress={handleBackButtonPress} style={styles.bars_Icon}>
+          <FontAwesome name="angle-left" size={30}  icon="angle-left" />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
-          <SearchBarWithIcons
+        <CategoriesHeader
             onSearch={handleSearch}
             // onIcon1Press={handleIcon1Press}
-            onIcon2Press={handleIcon2Press}
-            icon1="send-o"
-            icon2="heart-o"
+            onIcon1Press={handleIcon1Press}
+            icon1="heart-o"
+            iconColor="#000"
           />
         </View>
       </View>
@@ -62,12 +62,12 @@ const Design = () => {
           {/* Row 1 */}
           <View style={styles.catgories_image_container}>
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <TouchableOpacity>
                 <View style={styles.catgories_margin}>
                   <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <TouchableOpacity>
                 <View style={styles.catgories_margin}>
                   <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" />
                 </View>
@@ -76,12 +76,12 @@ const Design = () => {
 
             {/* Row 2 */}
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+            <TouchableOpacity>
                 <View style={styles.catgories_margin}>
                   <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Mehndi Designs" />
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <TouchableOpacity>
                 <View style={styles.catgories_margin}>
                   <CategoriesDesign backgroundImage={require('../../assets/Images/images_mehndi.jpg')} title="Hair Style" />
                 </View>
@@ -90,12 +90,12 @@ const Design = () => {
 
             {/* Row 3 */}
             <View style={styles.catgories_image_sub_container}>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+            <TouchableOpacity>
                 <View style={styles.catgories_margin}>
                   <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Designs" />
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <TouchableOpacity>
                 <View style={styles.catgories_margin}>
                   <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design4.jpg')} title="Hair Style" />
                 </View>
@@ -104,12 +104,12 @@ const Design = () => {
             {/* row 4 */}
             <View style={styles.last_catgories_container}>
               <View style={styles.catgories_image_sub_container}>
-                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+              <TouchableOpacity>
                   <View style={styles.catgories_margin}>
                     <CategoriesDesign backgroundImage={require('../../assets/Images/images_mehndi.jpg')} title="Mehndi Designs" />
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('Design')}>
+                <TouchableOpacity>
                   <View style={styles.catgories_margin}>
                     <CategoriesDesign backgroundImage={require('../../assets/Images/mehndi_design2.jpg')} title="Hair Style" />
                   </View>

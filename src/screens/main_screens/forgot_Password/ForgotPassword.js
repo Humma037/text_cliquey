@@ -44,6 +44,16 @@ const Register = ({ navigation }) => {
                         <ProceedButton title="Confirm" onPress={handleSignInPress} />
                     </View>
                 </View>
+                <View style={styles.account_Register_contanier}>
+                    <Text style={styles.account_text}>Back to</Text>
+                    <ClickableText
+                        text="Sign In"
+                        onPress={() => {
+                            navigation.navigate('Login');
+                        }}
+                        style={styles.account_Register}
+                    />
+                </View>
             </ScrollView>
         </View>
     )

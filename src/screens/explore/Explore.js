@@ -3,10 +3,11 @@ import { ScrollView, View, TouchableOpacity, ImageBackground } from 'react-nativ
 import { Text } from 'react-native-paper';
 import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
-import SearchBarWithIcons from '../../assets/components/search_bar/CustomSearchBar';
+import CategoriesHeader from '../../assets/components/custom_hearder/CategoriesHeader';
 import ProfileImage from '../../assets/components/profile/ProfileImage';
 import Categories from '../../assets/components/Categories';
 import Carousel from '../../assets/components/Carousel';
+import colors from '../../assets/theme/Color';
 
 const Explore = () => {
   const navigation = useNavigation();
@@ -29,7 +30,7 @@ const Explore = () => {
 
   const data = [
     { id: 1, image: require('../../assets/Images/group_image.webp') },
-    { id: 2, image: require('../../assets/Images/group_image.webp') },
+    { id: 2, image: require('../../assets/Images/group_image.webp')},
     { id: 3, image: require('../../assets/Images/group_image.webp') },
   ];
 
@@ -40,12 +41,12 @@ const Explore = () => {
           <ProfileImage />
         </TouchableOpacity>
         <View style={styles.searchbar_style}>
-          <SearchBarWithIcons
+          <CategoriesHeader
             onSearch={handleSearch}
             // onIcon1Press={handleIcon1Press}
             onIcon2Press={handleIcon2Press}
-            icon1="send-o"
-            icon2="heart-o"
+            icon1="heart-o"
+            iconColor="#000"
           />
         </View>
       </View>
@@ -94,7 +95,7 @@ const Explore = () => {
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('Design')}>
                   <View style={styles.catgories_margin}>
-                    <Categories backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Hair Style" />
+                    <Categories backgroundImage={require('../../assets/Images/mehndi_design3.jpg')} title="Mehndi Style" />
                   </View>
                 </TouchableOpacity>
               </View>

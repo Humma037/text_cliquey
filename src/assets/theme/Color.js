@@ -21,7 +21,8 @@ const colors = {
     light_black:'#333232',
     color_red:'#E84D44',
     light_gray:'#E6E6E6',
-    white_rgb:'rgb(253, 243, 288)'
+    white_rgb:'rgb(253, 243, 288)',
+    light_white:'#eee'
   };
   export default colors;
   

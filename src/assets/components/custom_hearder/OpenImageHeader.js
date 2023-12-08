@@ -14,22 +14,26 @@ const OpenImageHeader = ({ navigation, name, icon, backgroundColor, iconColor, n
 
 const styles = StyleSheet.create({
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    // flexDirection: 'row',
+    // justifyContent: 'space-between',
     width: '100%', 
-    paddingHorizontal: '8%',
+    // paddingHorizontal: '5%',
     paddingVertical: 20,
   },
   bars_Icon: {
     paddingHorizontal: 5,
     paddingVertical: 5,
     borderRadius: 25,
+    position:'absolute',
+    left:15
   },
   name_style: {
     fontWeight: 'bold',
-    alignItems: 'center',
+    // alignItems: 'center',
     fontSize: 15,
-    marginRight: '30%',
+    // marginRight: '30%',
+    textAlign:'center',
+    marginTop:2
   },
 });
 

@@ -73,23 +73,23 @@ const Profile = () => {
           <TouchableOpacity
             style={[
               styles.button,
-              activeButton === 1 && styles.activeButton,
-              activeButton === 1 && { borderWidth: 0.5, borderColor: 'black' },
-            ]}
-            onPress={() => handleButtonPress(1)}
-          >
-            <Text style={[styles.buttonText, activeButton === 1 && styles.activeButtonText]}>Follow</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[
-              styles.button,
               activeButton === 2 && styles.activeButton,
               activeButton === 2 && { borderWidth: 0.5, borderColor: 'black' },
             ]}
             onPress={() => handleButtonPress(2)}
           >
-            <Text style={[styles.buttonText, activeButton === 2 && styles.activeButtonText]}>Message</Text>
+            <Text style={[styles.buttonText, activeButton === 2 && styles.activeButtonText]}>Follow</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={[
+              styles.button,
+              activeButton === 1 && styles.activeButton,
+              activeButton === 1 && { borderWidth: 0.5, borderColor: 'black' },
+            ]}
+            onPress={() => handleButtonPress(1)}
+          >
+            <Text style={[styles.buttonText, activeButton === 1 && styles.activeButtonText]}>Message</Text>
           </TouchableOpacity>
         </View>
 

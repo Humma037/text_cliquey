@@ -11,11 +11,12 @@ const styles = StyleSheet.create({
     pana_style: {
         alignItems: 'center',
         width: '100%',
-        padding: '20%'
+        padding: '5%',
+        marginBottom:30
     },
     Image_style:{
         width:230,
-        height:152.52,
+        height:160,
       },
     Text_container: {
         width: '100%',
@@ -30,7 +31,8 @@ const styles = StyleSheet.create({
         color: colors.text_color        
     },
     sub_container: {
-        paddingVertical: 10
+        paddingVertical: 10,
+        marginTop:10
     },
     button_style: {
         width: '100%',
@@ -38,6 +40,30 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingVertical: 5
     },
+    account_Register: {
+        flexDirection: 'row',
+        color: colors.orange_color,
+        marginLeft: 7,
+        fontWeight: 'bold',
+        fontSize:11
+      },
+      account_text: {
+        color: colors.text_color,
+        fontSize:11,
+      },
+      account_Register_contanier:{
+        alignItems:'center',
+        flexDirection:'row',
+        justifyContent:'center',
+        paddingVertical:15
+      },
+      Clickable_Text: {
+        color: colors.text_color,
+        textAlign: 'center',
+        paddingLeft: 5,
+        marginLeft: '23%',
+        fontSize:11.5
+      }
 });
 
 export default styles;

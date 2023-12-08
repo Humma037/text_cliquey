@@ -49,13 +49,14 @@ const styles = StyleSheet.create({
         
     },
     user_Icon: {
-        width: 100,
-        height: 100,
+        width: 110,
+        height: 110,
         backgroundColor: colors.seprator,
-        paddingHorizontal: 32,
-        paddingVertical: 19,
-        borderRadius: 50,
+        paddingHorizontal: 37,
+        paddingVertical: 27,
+        borderRadius: 55,
         color: colors.DividingLine,
+        marginTop:10
     },
     heading: {
         fontSize: 11,

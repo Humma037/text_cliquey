@@ -24,7 +24,7 @@ const Categories = ({ backgroundImage, title }) => {
       {/* Icons */}
       <View style={styles.icons_Container}>
         <Text style={styles.text}>{title}</Text>
-        <FontAwesome name="heart-o" size={18} color="black" style={styles.icons}/>
+        {/* <FontAwesome name="heart-o" size={18} color="black" style={styles.icons}/> */}
       </View>
     </TouchableOpacity>
   );
@@ -41,8 +41,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   icons_Container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    // flexDirection: 'row',
+    // justifyContent: 'space-between',
     paddingHorizontal: 15,
     marginTop: 120,
     width: 165,

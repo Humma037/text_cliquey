@@ -14,25 +14,26 @@ const SecondHeader = ({ navigation, name, icon }) => (
 
 const styles = StyleSheet.create({
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '72%',
-    paddingHorizontal: 25,
-    paddingVertical: 25,
+    width: '100%',
+    paddingVertical: 20,
+    position: 'relative',
   },
   bars_Icon: {
     backgroundColor: colors.orange_color,
     paddingHorizontal: 12,
     paddingBottom: 3,
-    paddingVertical:2,
+    paddingVertical: 2,
     borderRadius: 25,
     color: colors.white,
+    position: 'absolute',
+    left: 25,
   },
   name_style: {
     fontWeight: 'bold',
     color: colors.BLACK,
     margin: 5,
     fontSize: 15,
+    textAlign: 'center',
   },
 });
 

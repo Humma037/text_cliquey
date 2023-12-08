@@ -14,8 +14,6 @@ const styles = StyleSheet.create({
         height:80,
     },
     text_style: {
-        // fontSize: 12,
-        // padding: 10,
         marginLeft: 27
     },
     image_Container: {
@@ -29,21 +27,19 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold',
         color: colors.themeGrey,
-        // marginTop: '5%'
     },
     catgories_image_container: {
-        marginBottom: '20%',
-        // paddingHorizontal:6
+        marginBottom: '22%',
     },
     catgories_image_sub_container: {
         flexDirection: 'row',
-        marginHorizontal: 18,
-        marginVertical:11,
-        justifyContent: 'space-between',
-        // width: '100%',
+        width: '100%',
+        alignItems:'center',
+        justifyContent:'center',
+        marginTop:11
     },
     catgories_margin: {
-        width: '100%',
+        margin:5,
     },
     bars_Icon: {
         color: colors.white,
@@ -51,7 +47,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         paddingVertical: 2,
         borderRadius: 25,
-        marginTop: 23,
+        marginTop: 21,
         marginLeft:13
     },
     last_catgorie_container:{

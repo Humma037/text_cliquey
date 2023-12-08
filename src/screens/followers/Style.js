@@ -66,6 +66,9 @@ const styles = StyleSheet.create({
         bottom:65,
         right:3
     },
+    notification_container:{
+        marginTop:10
+    }
 });
 
 export default styles;

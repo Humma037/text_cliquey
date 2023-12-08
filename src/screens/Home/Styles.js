@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20
     },
     ProfileImage: {
-        paddingVertical: 9
+        paddingVertical: 3,
+        // marginLeft:3
     },
     second_searchBar_container: {
         flexDirection: 'row',
@@ -31,8 +32,12 @@ const styles = StyleSheet.create({
         marginBottom: 100
     },
     scrollableContent: {
-        marginBottom: '23%'
+        marginBottom: '30%'
+    },
+    ProfileData:{
+        marginTop:20
     }
+
 
 });
 

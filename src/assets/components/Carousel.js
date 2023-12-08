@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import { View, Image, StyleSheet, Animated, Dimensions, TouchableOpacity, ScrollView } from 'react-native';
 
 const { width } = Dimensions.get('window');
-const imageWidth = width - 5; 
-const imageSpacing = 30; 
+const imageWidth = width - 15; // Adjusted for better responsiveness
+const imageSpacing = -20; // Adjusted for better responsiveness
 const dotSize = 10;
 
 const Carousel = ({ data }) => {
@@ -58,7 +58,7 @@ const Carousel = ({ data }) => {
       >
         {data.map((item, index) => (
           <View key={item.id} style={styles.slide}>
-            <Image source={item.image} style={styles.image} />
+            <Image source={item.image} style={[styles.image, { borderRadius: item.borderRadius }]} />
           </View>
         ))}
       </ScrollView>
@@ -74,20 +74,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   slide: {
-    width: imageWidth,
-    height: 180, 
-    // borderRadius: 20, 
-    overflow: 'hidden', 
-    marginRight: imageSpacing,
+    width: width * 0.90, // Set width to 80% of the screen width
+    height: width * 0.5, // Adjusted for better responsiveness
+    overflow: 'hidden',
+    // padding:1
   },
   image: {
-    width: '90%',
-    height: '75%',
+    width: '100%', // Adjusted for better responsiveness
+    height: '80%', // Adjusted for better responsiveness
     resizeMode: 'cover',
+    // borderRadius: 5
   },
   paginationContainer: {
     position: 'absolute',
-    bottom: '15%', 
+    bottom: '5%', // Adjusted for better positioning
   },
   pagination: {
     flexDirection: 'row',

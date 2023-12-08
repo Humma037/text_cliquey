@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         paddingHorizontal: 60,
-        paddingTop: 20
+        paddingTop: 20,
+        // marginLeft:7
     },
     heading: {
         fontSize: 11,
@@ -103,15 +104,15 @@ const styles = StyleSheet.create({
     button_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 60,
+        paddingHorizontal: 70,
         paddingVertical: 20,
     },
     button: {
         flex: 1,
         backgroundColor: colors.orange_color,
-        padding: 10,
+        padding: 7,
         borderRadius: 30,
-        marginHorizontal: 5,
+        marginHorizontal: 3,
         alignItems: 'center',
         borderWidth: 1,
         borderColor: 'transparent',
@@ -141,19 +142,19 @@ const styles = StyleSheet.create({
         // marginHorizontal: 1,
     },
     images_container: {
-        marginTop: 15
+        marginTop: 15,
     },
     images_sub_container: {
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: 12,
+        paddingHorizontal: 22,
     },
     image: {
-        width: '30%',
-        height: 95,
-        margin: 5,
+        width: '32%',
+        height:100,
+        margin: 4,
     },
     images_sub: {
         marginBottom: '25%'

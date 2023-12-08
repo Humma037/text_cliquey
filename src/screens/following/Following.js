@@ -25,7 +25,7 @@ const Following = () => {
                             <View style={MainStyles.Direction_Horizental}>
                                 <View style={styles.notification_dont} />
                                 <View style={styles.notification_details}>
-                                    <FollowersComp activeColor={colors.color_red} />
+                                <FollowersComp activeColor={colors.light_white} />
                                 </View>
                             </View>
                             <TouchableOpacity style={styles.dimiss_icon_container}>
@@ -34,7 +34,7 @@ const Following = () => {
                             <View style={MainStyles.Direction_Horizental}>
                                 <View style={styles.notification_dont} />
                                 <View style={styles.notification_details}>
-                                    <FollowersComp activeColor={colors.color_red} />
+                                <FollowersComp activeColor={colors.light_white} />
                                 </View>
                             </View>
                             <TouchableOpacity style={styles.dimiss_icon_container}>
@@ -51,28 +51,28 @@ const Following = () => {
                         </View>
                         <View style={styles.this_week_notification}>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                                <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                             <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.color_red} />
+                            <FollowersComp activeColor={colors.light_white} />
                             </View>
                         </View>
                     </View>

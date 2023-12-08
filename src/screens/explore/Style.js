@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     Profile_Image: {
-        marginTop: 16,
+        marginTop: 10,
         paddingLeft:18
     },
     last_catgorie_container:{

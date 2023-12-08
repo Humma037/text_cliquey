@@ -10,9 +10,9 @@ const Comments = () => {
 
   return (
     <View style={styles.Container}>
-      <SecondHeader navigation={navigation} name="Reply" icon="angle-left" />
+      <SecondHeader navigation={navigation} name="Comments" icon="angle-left" />
       <View style={styles.sub_container}>
-      <Text style={styles.text}>1.1K Peoples Reply on this Comment</Text>
+      <Text style={styles.text}>1.1K Peoples comments on this post</Text>
       <View  style={styles.line}/>
         <View style={styles.notification}>
           <ScrollView style={styles.notification_container}>

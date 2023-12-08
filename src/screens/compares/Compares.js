@@ -13,47 +13,47 @@ const Compares = () => {
         <View style={styles.Container}>
       <SecondHeader navigation={navigation} name="Compares" icon="angle-left" />
             <View style={styles.second_sub_container}>
-                <View style={styles.notification}>
+                <ScrollView style={styles.notification}>
                     <View style={styles.data_container}>
                         <Text style={styles.text_heading}>Compares</Text>
                         <Text style={styles.text}>1.1k Compares</Text>
                     </View>
-                    <ScrollView style={styles.this_week_notification}>
+                    <View style={styles.this_week_notification}>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                            <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
                         <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.orange_color} />
+                        <FollowersComp activeColor={colors.light_white} />
                         </View>
-                    </ScrollView>
-                </View>
+                    </View>
+                </ScrollView>
             </View>
         </View>
     )

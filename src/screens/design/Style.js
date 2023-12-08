@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     },
     image_Container: {
         width: '100%',
-        paddingHorizontal: 17,
+        paddingHorizontal: 19,
     },
     searchbar_style: {
         margin: 5,
@@ -38,13 +38,17 @@ const styles = StyleSheet.create({
     },
     catgories_image_sub_container: {
         flexDirection: 'row',
-        margin: 12,
-        justifyContent: 'space-between',
+        // margin: 5,
+        // justifyContent: 'space-between',
+        width: '100%',
+        alignItems:'center',
+        justifyContent:'center'
     },
     catgories_margin: {
-        width: '100%',
-        paddingLeft: 5,
-        paddingRight: 5,
+        // paddingLeft: 5,
+        padding: 5,
+        // width: '45%',
+        marginTop:11
     },
     image_style: {
         width: '100%',
@@ -53,11 +57,10 @@ const styles = StyleSheet.create({
     bars_Icon: {
         color: colors.white,
         backgroundColor: colors.orange_color,
-        paddingHorizontal: 12.5,
-        paddingVertical: 2.5,
         borderRadius: 25,
         marginTop: 20,
-        marginLeft:18
+        marginLeft:18,
+        padding:8
     },
     last_catgories_container:{
         marginBottom:'5%'

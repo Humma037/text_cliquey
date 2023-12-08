@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import colors from '../../theme/Color';
 import { useNavigation } from '@react-navigation/native';
 
 const CustomButton = ({ onPress, iconName, buttonText, iconColor, buttonColor }) => (
   <TouchableOpacity onPress={onPress} style={[styles.button]}>
-    <FontAwesome name={iconName} size={20} color={iconColor} style={styles.icon} />
+    <EvilIcons name={iconName} size={25} color={iconColor} style={styles.icon} />
     <Text style={styles.buttonText}>{buttonText}</Text>
   </TouchableOpacity>
 );
@@ -30,7 +30,7 @@ const SearchbarSecond = ({ onSearch, onIcon1Press, onIcon2Press }) => {
         <CustomButton
           onPress={handleButtonPress} 
           iconName="image"
-          buttonText="Upload image"
+          buttonText="Upload"
           iconColor={colors.customIconColor}
           buttonColor='#A6A6A6' 
         />
@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
   },
   search_Input: {
     height: 35,
-    width: '54%',
+    width: '59%',
     fontSize: 11,
-    paddingHorizontal: 15,
+    paddingHorizontal: 10,
     backgroundColor: colors.seprator,
     color: colors.BLACK,
     borderRadius: 25,
@@ -60,20 +60,21 @@ const styles = StyleSheet.create({
   button: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 7,
+    paddingHorizontal: 8,
     borderRadius: 25,
     backgroundColor:colors.seprator,
-    height:34,
-    marginHorizontal:4,
+    // height:34,
+    marginHorizontal:5
   },
   icon: {
-    marginRight: 5,
+    marginRight: 2,
     color: colors.BLACK,
-    fontSize:13
   },
   buttonText: {
     color: colors.BLACK,
-    fontSize: 9,
+    fontSize: 10,
+    paddingRight:3
+
   },
 });
 

@@ -14,23 +14,25 @@ const FollowersComp = ({ activeColor }) => {
     <View style={styles.Container}>
       <View style={styles.sub_container}>
         <View style={styles.textAndButtonContainer}>
+          <View style={styles.user_profile}>
           <FontAwesome name="user" size={30} style={styles.user_Icon} />
+          </View>
           <View style={styles.textContainer}>
             <Text style={styles.text_heading}>Mister Perfect</Text>
             <Text style={styles.text}>12:32 AM</Text>
           </View>
-          <View>
-            <View style={styles.button_container}>
-              <TouchableOpacity
-                style={[styles.button, activeButton === 1 && { backgroundColor: activeColor }]}
-                onPress={() => handleButtonPress(1)}
+          <View >
+            <View style={styles.button_sub_container}>
+            <TouchableOpacity
+                style={[styles.button, activeButton === 2 && { backgroundColor: activeColor }]}
+                onPress={() => handleButtonPress(2)}
               >
-                <Text style={styles.buttonText}>Follow Back</Text>
+                <Text style={styles.buttonText}>Follow Back </Text>
               </TouchableOpacity>
 
               <TouchableOpacity
-                style={[styles.button, activeButton === 2 && { backgroundColor: activeColor }]}
-                onPress={() => handleButtonPress(2)}
+                style={[styles.button, activeButton === 1 && { backgroundColor: activeColor }]}
+                onPress={() => handleButtonPress(1)}
               >
                 <Text style={styles.buttonText}>Message</Text>
               </TouchableOpacity>
@@ -55,9 +57,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'space-between',
-    paddingHorizontal: 15,
+    paddingHorizontal: 7,
     backgroundColor: colors.seprator,
-    paddingVertical: 9,
+    paddingVertical: 7,
     borderRadius: 25,
   },
   textContainer: {
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: colors.themeLightGrey,
     paddingHorizontal: 14,
-    paddingVertical: 7,
+    paddingVertical: 8,
     borderRadius: 50,
     color: colors.DividingLine,
   },
@@ -82,20 +84,25 @@ const styles = StyleSheet.create({
     color: colors.DividingLine,
     marginTop: 4,
   },
-  button_container: {
+  button_sub_container: {
     flexDirection: 'row',
-    margin: 10,
+    margin: 5,
+    marginTop:6
   },
   button: {
-    backgroundColor: '#eee',
-    paddingHorizontal: 9,
+    // backgroundColor: '#eee',
+    backgroundColor:colors.orange_color,
+    paddingHorizontal: 7,
     borderRadius: 30,
-    paddingVertical: 9,
+    paddingVertical: 11,
     margin: 4,
   },
   buttonText: {
     color: 'black',
     fontWeight: 'bold',
-    fontSize: 5,
+    fontSize: 7,
   },
+  user_profile:{
+    marginTop:3
+  }
 });

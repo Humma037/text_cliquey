@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     this_week_notification: {
         // height: 655,
         width:'100%',
+        marginTop:10
         
     },
     second_sub_container:{

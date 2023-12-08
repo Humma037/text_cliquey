@@ -22,7 +22,7 @@ const MainProfile = () => {
     return (
         <ScrollView Style={styles.container}>
             {/* Header section */}
-            <SecondHeader name="Lady Gaga" icon="angle-left" navigation={navigation} />
+            <SecondHeader name="My Profile" icon="angle-left" navigation={navigation} />
 
             {/* Text and ImageBackground section */}
             <View style={styles.sub_Container}>
@@ -62,7 +62,7 @@ const MainProfile = () => {
 
             <View style={styles.button_container}>
                 <TouchableOpacity style={styles.button} onPress={handleProfilePress}>
-                    <FontAwesome name="edit" size={20} style={styles.editIcon} />
+                    <FontAwesome name="edit" size={17} style={styles.editIcon} />
                     <Text style={styles.buttonText}>Edit Profile</Text>
                 </TouchableOpacity>
             </View>

@@ -1,22 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ScrollView, Text, View, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './Style';
 import SettingDropDown from '../../assets/components/SettingDropDown';
 import { Avatar, Cloud_computing, Shuttle, Comments } from '../../assets/svg/index';
 
 const Setting = () => {
   const navigation = useNavigation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(true);
 
   const handleSettingBarPress = () => {
     navigation.navigate('Home');
   };
+
+
   return (
     <View style={styles.Container}>
       {/* bar_Icon */}
       <TouchableOpacity onPress={handleSettingBarPress}>
-        <FontAwesome name="bars" style={styles.bars_Icon} />
+        <FontAwesome6 name="bars" style={styles.bars_Icon} />
       </TouchableOpacity>
       <ScrollView>
         <View style={styles.sub_Container}>
@@ -32,79 +39,53 @@ const Setting = () => {
         {/* <ScrollView> */}
         <View style={styles.setting_options_container} >
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Home')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <MaterialCommunityIcons size={30} name='comment-text-multiple-outline' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Messages</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Downloads')}>
-            <Cloud_computing
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <Ionicons size={30} name='cloud-download-outline' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Downloads</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.setting_options_container}>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Home')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <Ionicons size={30} name='images-outline' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Photos</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Home')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <MaterialCommunityIcons size={30} name='movie-open-play-outline' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Videos</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.setting_options_container}>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Likes')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <AntDesign size={30} name='like2' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Likes</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Favourites')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <AntDesign size={30} name='hearto' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Favorites</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.setting_options_container}>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Followers')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <Ionicons size={30} name='people-outline' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Followers</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.setting_options} onPress={() => navigation.navigate('Following')}>
-            <Comments
-              width="30"
-              height="30"
-              style={styles.setting_options_icon}
-            />
+            <MaterialCommunityIcons size={30} name='account-multiple-check-outline' style={styles.setting_options_icon} />
             <Text style={styles.setting_options_text}>Following</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.compare_category}>
+          <TouchableOpacity style={styles.compare_setting_options} onPress={() => navigation.navigate('Compares')}>
+            <Ionicons size={30} name='people-outline' style={styles.setting_options_icon} />
+            <Text style={styles.setting_options_text}>Compares</Text>
           </TouchableOpacity>
         </View>
         <SettingDropDown
           heading="Settings & Privacy"
-          gearIcon="cog"
+          gearIcon="settings"
           buttonData={[
             { text: 'Language', icon: 'language' },
             { text: 'Dark Mode', icon: 'moon-o' },
@@ -112,20 +93,21 @@ const Setting = () => {
         />
         <SettingDropDown
           heading="Help & Support"
-          gearIcon="question-circle-o"
+          gearIcon="help-circle"
+          initiallyExpanded={isDropdownOpen}
           buttonData={[
             { text: 'Help', icon: 'help-buoy-outline', iconLibrary: 'Ionicons' },
-            { text: 'Support', icon: 'headphones' },
-            { text: 'About', icon: 'info-circle' },
-            { text: 'Report Problem', icon: 'warning' },
+            { text: 'Support', icon: 'customerservice', iconLibrary: 'AntDesign' },
+            { text: 'About', icon: 'infocirlceo', iconLibrary: 'AntDesign' },
+            { text: 'Report Problem', icon: 'bug-outline', iconLibrary: 'Ionicons' },
           ]}
         />
         <SettingDropDown
           heading="Logout & Delete"
-          gearIcon="minus-square-o"
+          gearIcon="log-out"
           buttonData={[
-            { text: 'Logout', icon: 'circle-o-notch' },
-            { text: 'Delete Account', icon: 'trash' },
+            { text: 'Logout', icon: 'power', iconLibrary: 'Feather' },
+            { text: 'Delete Account', icon: 'trash-2', iconLibrary: 'Feather' },
           ]}
         />
 

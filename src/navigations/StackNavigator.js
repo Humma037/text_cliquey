@@ -20,6 +20,7 @@ import Downloads from '../screens/downloads/Downloads';
 import Profile from '../screens/profile_screen/Profile';
 import PostImage from '../screens/post_image/PostImage';
 import Comments from '../screens/comment_screen/Comments';
+import MainProfile from '../screens/main_profile/MainProfile';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,7 +34,7 @@ const StackNav = () => {
       <Stack.Screen name="Home" component={BottomBar} />
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
       <Stack.Screen name="Explore" component={BottomBar} />
-      <Stack.Screen name="MainProfile" component={BottomBar} />
+      <Stack.Screen name="MainProfile" component={MainProfile} />
       <Stack.Screen name="Design" component={Design} />
       <Stack.Screen name="Favourites" component={Favourites} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
