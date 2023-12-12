@@ -5,28 +5,30 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
-        // backgroundColor:colors.DividingLine
+        width: '100%',
     },
     PostImage: {
         width: '100%',
         height:'90%',
     },
     container_post_Button: {
-        justifyContent: 'space-between',
         width: '100%',
         flexDirection: 'row',
-        // paddingHorizontal: '10%',
-        // marginVertical: 20,
         alignItems: 'center',
         justifyContent: 'center',
+        justifyContent: 'space-between',
     },
     post_Button: {
-        paddingHorizontal: 12,
+        // paddingHorizontal: 12,
+        width:70,
+        height:30,
         borderRadius: 10,
         borderWidth: 1,
         borderColor: colors.seprator,
         backgroundColor: colors.BLACK,
-        margin: 5,
+        marginTop: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     text_name: {
         fontSize: 11,
@@ -37,8 +39,7 @@ const styles = StyleSheet.create({
     data_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 35,
-        paddingVertical: 8
+        width:'100%',
     },
     name_heading: {
         fontSize: 11,
@@ -55,12 +56,14 @@ const styles = StyleSheet.create({
     },
     PostImageFooter: {
         width:'100%',
-        backgroundColor: 'black',
-        height:110,
-        paddingTop:10,
-        // marginBottom: '30%'
+        backgroundColor: colors.BLACK,
+        height:100,
+        paddingHorizontal:30,
         position:'absolute',
-        bottom:0
+        bottom:0,
+        alignItems: 'center',
+        justifyContent: 'center',
+
     }
 
 });

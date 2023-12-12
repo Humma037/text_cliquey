@@ -10,20 +10,17 @@ const LikesComp = () => {
 
   return (
     <View style={styles.Container}>
-      <View style={styles.sub_container}>
-        <View style={styles.textAndButtonContainer}>
-          <View style={MainStyles.Direction_Horizental}>
-            <FontAwesome name="user" size={30} style={styles.user_Icon} />
-            <View style={styles.textContainer}>
-              <Text style={styles.text_heading}>Mister Perfect</Text>
-              <Text style={styles.text}>12:32 AM</Text>
-            </View>
-            <View>
-            </View>
-            <TouchableOpacity
-              style={styles.button}
-            //   onPress={handleButtonPress}
-            >
+      <View style={styles.textAndButtonContainer}>
+        <View style={styles.data_Container}>
+          <FontAwesome name="user" size={30} style={styles.user_Icon} />
+          <View style={styles.textContainer}>
+            <Text style={styles.text_heading}>Mister Perfect</Text>
+            <Text style={styles.text}>12:32 AM</Text>
+          </View>
+        </View>
+        <View>
+          <View style={styles.button_container}>
+            <TouchableOpacity style={styles.button} onPress={handleButtonPress}>
               <Text style={styles.buttonText}>View Profile</Text>
             </TouchableOpacity>
           </View>
@@ -39,20 +36,23 @@ const styles = StyleSheet.create({
   Container: {
     flex: 1,
   },
-  sub_container: {
+  data_Container: {
     flexDirection: 'row',
+    alignItems: 'center',
+
   },
   textAndButtonContainer: {
     flexDirection: 'row',
-    width: '97%',
+    width: '100%',
     justifyContent: 'space-between',
-    paddingHorizontal: 12,
     backgroundColor: colors.seprator,
-    paddingVertical: 8,
     borderRadius: 25,
+    height: 70,
+    alignItems: 'center',
+    paddingHorizontal:15
   },
   textContainer: {
-    margin: 10,
+    marginHorizontal: 10,
   },
   user_Icon: {
     width: 50,
@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
     paddingVertical: 7,
     borderRadius: 50,
     color: colors.DividingLine,
-    marginTop: 3
   },
   text_heading: {
     fontWeight: 'bold',
@@ -70,19 +69,19 @@ const styles = StyleSheet.create({
     color: colors.light_black,
   },
   text: {
-    fontSize: 8,
+    fontSize: 9,
     color: colors.DividingLine,
     marginTop: 4,
   },
   button: {
     backgroundColor: '#eee',
-    paddingHorizontal: 9,
     borderRadius: 30,
-    paddingVertical: 9,
-    marginVertical: 10,
     borderWidth: 0.5,
     borderColor: colors.BLACK,
-    marginLeft:45
+    width: 85,
+    height: 35,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   buttonText: {
     color: 'black',

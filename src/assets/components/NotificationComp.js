@@ -1,54 +1,71 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import colors from '../theme/Color';
-import MainStyles from '../styles/MainStyles';
 
-const NotificationComp = () => {
+const FollowersComp = ({ activeColor }) => {
+    const [activeButton, setActiveButton] = useState(1);
+
+    const handleButtonPress = (buttonNumber) => {
+        setActiveButton(buttonNumber);
+    };
+
     return (
         <View style={styles.Container}>
-            <View style={styles.sub_container}>
-                <View>
+            <View style={styles.textAndButtonContainer}>
+                <View style={styles.user_profile}>
                     <FontAwesome name="user" size={30} style={styles.user_Icon} />
                 </View>
-                <View >
+                <View style={styles.textContainer}>
                     <Text style={styles.text_heading}>Lady Gaga</Text>
                     <Text style={styles.text}>Lorem ipsum dolor sit amet consectetur. Tellus pulvinar .</Text>
                 </View>
             </View>
         </View>
-    )
-}
+    );
+};
 
-export default NotificationComp
+export default FollowersComp;
 
 const styles = StyleSheet.create({
     Container: {
         flex: 1,
+        width:'100%',
+        justifyContent:'center',
+        alignItems:'center'
     },
-    sub_container:{
-        flexDirection:'row',
-        margin:5
+    textAndButtonContainer: {
+        width:'87%',
+        flexDirection: 'row',
+        backgroundColor: '#f4f4f4',
+        height:70,
+        marginVertical:8,
+        borderRadius:20,
+        alignItems:'center',
+        justifyContent:'center',
+        paddingHorizontal:15
     },
     user_Icon: {
-        width: 60,
-        height: 60,
-        backgroundColor: colors.seprator,
-        paddingHorizontal: 20,
-        paddingVertical: 15,
+        width: 50,
+        height: 50,
+        backgroundColor: colors.themeLightGrey,
+        paddingHorizontal: 14,
+        paddingVertical: 8,
         borderRadius: 50,
         color: colors.DividingLine,
     },
     text_heading: {
-        fontWeight: "bold",
-        fontSize: 12,
+        fontWeight: 'bold',
+        fontSize: 11,
         color: colors.light_black,
-        marginLeft:10
     },
     text: {
-        fontSize: 9.5,
-        color: colors.BLACK,
-        marginLeft:10,
-        width:250
+        fontSize: 10,
+        color: colors.light_black,
+        flexWrap:'wrap',
+        width:260
+    },
+    user_profile: {
+        marginRight: 7
     }
-})
+});

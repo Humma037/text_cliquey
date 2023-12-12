@@ -10,12 +10,12 @@ const styles = StyleSheet.create({
     sub_container: {
         width: '100%',
         flexDirection:'row',
-        margin:20
+        margin:30,
+        height:60,
+        alignItems: 'center',
     },
     data_container: {
-        marginVertical:5,
-        marginHorizontal:8,
-        marginBottom:20
+        marginLeft:7
     },
     user_name: {
         fontWeight: "bold",
@@ -29,9 +29,10 @@ const styles = StyleSheet.create({
     inputContainer: {
         backgroundColor: colors.seprator,
         marginHorizontal:30,
-        borderRadius:20,
+        borderRadius:15,
         paddingLeft:10,
-        height:130
+        height:130,
+        width: '85%',
     },
     text_nput:{
         color:colors.BLACK,
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
         backgroundColor: colors.seprator,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 25,
+        borderRadius: 15,
         marginTop:25,
         marginLeft:30
     },
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
     },
     button_upload:{
         backgroundColor: colors.Button_Background_Color,
-        borderRadius: 18,
+        borderRadius: 15,
         padding:15,
         marginHorizontal:30,
         marginTop:'50%'
@@ -68,11 +69,6 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         textAlign:'center'
     },
-    ProfileImage:{
-        marginTop:6,
-        marginLeft:10
-    }
-
 });
 
 export default styles;

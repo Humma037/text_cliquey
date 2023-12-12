@@ -5,66 +5,87 @@ import colors from '../../assets/theme/Color';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor:colors.white
+        backgroundColor: colors.white
+    },
+    catgories_container: {
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    catgories_image_sub_container: {
+        flexDirection: 'row',
+        paddingHorizontal:20
+    },
+    catgories_margin: {
+        margin: 5,
     },
     sub_container: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '100%',
-        // backgroundColor:'green',
-        height:80
+        width:'100%',
+        padding:20,
+        justifyContent:'space-between'
     },
     text_style: {
         fontSize: 13,
         padding: 5,
-        // marginTop: 20
     },
     image_Container: {
         width: '100%',
-        paddingHorizontal: 19,
-    },
-    searchbar_style: {
-        margin: 5,
+        paddingHorizontal: 18,
     },
     heading_all_design: {
         paddingHorizontal: 25,
         fontSize: 15,
         fontWeight: 'bold',
         color: colors.themeGrey,
-        marginTop: '7%'
-    },
-    catgories_image_container: {
-        marginBottom: '20%'
-    },
-    catgories_image_sub_container: {
-        flexDirection: 'row',
-        // margin: 5,
-        // justifyContent: 'space-between',
-        width: '100%',
-        alignItems:'center',
-        justifyContent:'center'
-    },
-    catgories_margin: {
-        // paddingLeft: 5,
-        padding: 5,
-        // width: '45%',
-        marginTop:11
+        marginTop: '7%',
+        marginBottom:5
     },
     image_style: {
         width: '100%',
         height: 150,
     },
-    bars_Icon: {
-        color: colors.white,
+    back_button_container:{
         backgroundColor: colors.orange_color,
-        borderRadius: 25,
-        marginTop: 20,
-        marginLeft:18,
-        padding:8
+        borderRadius: 25,  
+        width: 37,
+        height: 37, 
     },
-    last_catgories_container:{
-        marginBottom:'5%'
-    }
+    back_button: {
+        color: colors.white,
+        paddingHorizontal:12,
+        paddingVertical:3
+    },
+    last_catgories_container: {
+        marginBottom: '25%'
+    },
+    heart_Icon_container:{
+        backgroundColor: colors.seprator,
+        borderRadius: 25,  
+        width: 37,
+        height: 37, 
+    },
+    heart_Icon:{
+        color: colors.BLACK,
+        paddingHorizontal:9,
+        paddingVertical:10
+    },
+    search_Input: {
+        fontSize: 12,
+        padding: 5,
+      },
+      search_Icon: {
+        color: colors.DividingLine,
+      },
+      search_container: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderRadius: 20,
+        paddingHorizontal: 10,
+        width: 230,
+        backgroundColor: colors.seprator,
+        height: 38,
+      },
 });
 
 export default styles;

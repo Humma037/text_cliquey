@@ -27,13 +27,13 @@ export default function LikeScreen() {
         alignItems: "center",
       }}
     >
-      <TouchableOpacity onPress={openBottomSheet} style={{
+      {/* <TouchableOpacity onPress={openBottomSheet} style={{
         flexDirection: 'row', backgroundColor: colors.seprator,
         paddingVertical: 11, paddingHorizontal: 18, borderRadius: 15,
       }}>
         <EvilIcons name="comment" size={20} color='black' />
         <Text style={{ color: 'black', fontSize: 9, marginLeft: 2 }}>234</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
       <RBSheet
         ref={refRBSheet}

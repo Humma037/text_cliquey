@@ -8,32 +8,36 @@ const OpenImageHeader = ({ navigation, name, icon, backgroundColor, iconColor, n
     <TouchableOpacity onPress={() => navigation.goBack()}>
       <Entypo name={icon} size={20} style={[styles.bars_Icon, { color: iconColor, backgroundColor: iconBackgroundColor }]} />
     </TouchableOpacity>
-    <Text style={[styles.name_style, { color: nameColor }]}>{name}</Text>
+    <View style={styles.name_container}>
+      <Text style={[styles.name_style, { color: nameColor }]}>{name}</Text>
+    </View>
   </View>
 );
 
 const styles = StyleSheet.create({
   header: {
-    // flexDirection: 'row',
-    // justifyContent: 'space-between',
-    width: '100%', 
-    // paddingHorizontal: '5%',
-    paddingVertical: 20,
+    width: '100%',
+    position: 'relative',
+    height: 60,
   },
   bars_Icon: {
     paddingHorizontal: 5,
     paddingVertical: 5,
     borderRadius: 25,
-    position:'absolute',
-    left:15
+    position: 'absolute',
+    left: 25,
+    top: 13
+  },
+  name_container:{
+    alignItems:'center',
+    justifyContent:'center',
+    height:60
   },
   name_style: {
     fontWeight: 'bold',
-    // alignItems: 'center',
     fontSize: 15,
-    // marginRight: '30%',
-    textAlign:'center',
-    marginTop:2
+    textAlign: 'center',
+    justifyContent: 'center',
   },
 });
 

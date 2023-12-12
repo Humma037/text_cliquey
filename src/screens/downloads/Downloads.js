@@ -20,25 +20,29 @@ const Downloads = () => {
 
     return (
         <View Style={styles.container}>
-            <View style={styles.sub_container}>
-                <TouchableOpacity onPress={handleIcon2Press}>
-                    <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} />
-                </TouchableOpacity>
-                <View style={styles.searchbar_style}>
-                    <FontAwesome name="search" size={14} style={styles.search_Icon} />
-                    <TextInput
-                        style={styles.search_Input}
-                        placeholder="Search"
-                        placeholderTextColor='#A6A6A6'
-                    // onChangeText={(text) => onSearch(text)}
-                    />
+            <View style={styles.header_container}>
+                <View style={styles.header_sub_container}>
+                    <TouchableOpacity onPress={handleIcon2Press}>
+                        <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} />
+                    </TouchableOpacity>
+                    {/* <View style={{flexDirection:'row'}}> */}
+                        <View style={styles.searchbar_style}>
+                            <FontAwesome name="search" size={14} style={styles.search_Icon} />
+                            <TextInput
+                                style={styles.search_Input}
+                                placeholder="Search"
+                                placeholderTextColor='#A6A6A6'
+                            // onChangeText={(text) => onSearch(text)}
+                            />
+                        </View>
+                        <TouchableOpacity>
+                            <View style={styles.Filter_button}>
+                                <Text style={styles.Filter_button_text}>Filter</Text>
+                                <AntDesign name="filter" size={14} style={styles.filter_Icon} color='black'/>
+                            </View>
+                        </TouchableOpacity>
+                    {/* </View> */}
                 </View>
-                <TouchableOpacity>
-                    <View style={styles.Filter_button}>
-                    <Text style={styles.Filter_button_text}>Filter</Text>
-                    <AntDesign name="filter" size={14} style={styles.filter_Icon} />
-                    </View>
-                </TouchableOpacity>
             </View>
             <ScrollView>
                 {/* Scrollable content section */}

@@ -12,11 +12,11 @@ const styles = StyleSheet.create({
   pana_style: {
     alignItems: 'center',
     width: '100%',
-    // paddingTop: '5%',
+    paddingTop: '5%',
     paddingBottom: '5%'
   },
   Image_style:{
-    width:200,
+    width:'50%',
     height:180,
     marginBottom:15
   },
@@ -60,10 +60,9 @@ const styles = StyleSheet.create({
   },
   Clickable_Text: {
     color: colors.text_color,
-    textAlign: 'center',
-    paddingLeft: 5,
-    marginLeft: '23%',
-    fontSize:11.5
+    textAlign: 'right',
+    fontSize:11.5,
+    width:'80%'
   }
 });
 

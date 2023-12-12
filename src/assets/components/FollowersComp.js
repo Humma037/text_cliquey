@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import colors from '../theme/Color';
 
-const FollowersComp = ({ activeColor }) => {
+const FollowersComp = ({ activeColor, button1Text, button2Text }) => {
   const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonPress = (buttonNumber) => {
@@ -14,27 +14,29 @@ const FollowersComp = ({ activeColor }) => {
     <View style={styles.Container}>
       <View style={styles.sub_container}>
         <View style={styles.textAndButtonContainer}>
-          <View style={styles.user_profile}>
-          <FontAwesome name="user" size={30} style={styles.user_Icon} />
+          <View style={styles.textAndButton_direction}>
+            <View style={styles.user_profile}>
+              <FontAwesome name="user" size={30} style={styles.user_Icon} />
+            </View>
+            <View style={styles.textContainer}>
+              <Text style={styles.text_heading}>Mister Perfect</Text>
+              <Text style={styles.text}>12:32 AM</Text>
+            </View>
           </View>
-          <View style={styles.textContainer}>
-            <Text style={styles.text_heading}>Mister Perfect</Text>
-            <Text style={styles.text}>12:32 AM</Text>
-          </View>
-          <View >
+          <View>
             <View style={styles.button_sub_container}>
-            <TouchableOpacity
+              <TouchableOpacity
                 style={[styles.button, activeButton === 2 && { backgroundColor: activeColor }]}
                 onPress={() => handleButtonPress(2)}
               >
-                <Text style={styles.buttonText}>Follow Back </Text>
+                <Text style={styles.buttonText}>{button2Text}</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
                 style={[styles.button, activeButton === 1 && { backgroundColor: activeColor }]}
                 onPress={() => handleButtonPress(1)}
               >
-                <Text style={styles.buttonText}>Message</Text>
+                <Text style={styles.buttonText}>{button1Text}</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -57,13 +59,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'space-between',
-    paddingHorizontal: 7,
     backgroundColor: colors.seprator,
-    paddingVertical: 7,
+    padding: 7,
     borderRadius: 25,
+    alignItems:'center',
+    height:75
   },
-  textContainer: {
-    margin: 10,
+  textAndButton_direction:{
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'center'
   },
   user_Icon: {
     width: 50,
@@ -80,29 +85,28 @@ const styles = StyleSheet.create({
     color: colors.light_black,
   },
   text: {
-    fontSize: 8,
+    fontSize: 9,
     color: colors.DividingLine,
-    marginTop: 4,
+    marginTop: 2,
   },
   button_sub_container: {
     flexDirection: 'row',
-    margin: 5,
-    marginTop:6
   },
   button: {
-    // backgroundColor: '#eee',
-    backgroundColor:colors.orange_color,
-    paddingHorizontal: 7,
-    borderRadius: 30,
-    paddingVertical: 11,
-    margin: 4,
+    backgroundColor: colors.orange_color,
+    borderRadius: 25,
+    marginLeft: 3,
+    width:72,
+    height:32,
+    alignItems:'center',
+    justifyContent:'center'
   },
   buttonText: {
     color: 'black',
     fontWeight: 'bold',
-    fontSize: 7,
+    fontSize: 9,
   },
-  user_profile:{
-    marginTop:3
+  user_profile: {
+    marginRight: 5
   }
 });

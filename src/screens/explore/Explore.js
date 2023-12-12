@@ -1,9 +1,9 @@
 import React from 'react';
-import { ScrollView, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { ScrollView, View, TouchableOpacity, ImageBackground, TextInput } from 'react-native';
 import { Text } from 'react-native-paper';
 import styles from './Style';
 import { useNavigation } from '@react-navigation/native';
-import CategoriesHeader from '../../assets/components/custom_hearder/CategoriesHeader';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import ProfileImage from '../../assets/components/profile/ProfileImage';
 import Categories from '../../assets/components/Categories';
 import Carousel from '../../assets/components/Carousel';
@@ -20,36 +20,39 @@ const Explore = () => {
     console.log('Search:', text);
   };
 
-  // const handleIcon1Press = () => {
-  //   navigation.navigate('Home');
-  // };
-
-  const handleIcon2Press = () => {
+  const handleheartButtonPress = () => {
     navigation.navigate('Favourites');
   };
 
   const data = [
     { id: 1, image: require('../../assets/Images/group_image.webp') },
-    { id: 2, image: require('../../assets/Images/group_image.webp')},
+    { id: 2, image: require('../../assets/Images/group_image.webp') },
     { id: 3, image: require('../../assets/Images/group_image.webp') },
   ];
 
   return (
     <View Style={styles.container}>
       <View style={styles.sub_container}>
-        <TouchableOpacity onPress={handleImagePress} style={styles.Profile_Image}>
-          <ProfileImage />
+        <TouchableOpacity >
+          <ProfileImage onPress={handleImagePress} style={styles.Profile_Image} />
         </TouchableOpacity>
-        <View style={styles.searchbar_style}>
-          <CategoriesHeader
-            onSearch={handleSearch}
-            // onIcon1Press={handleIcon1Press}
-            onIcon2Press={handleIcon2Press}
-            icon1="heart-o"
-            iconColor="#000"
-          />
-        </View>
+        {/* <View style={{alignItems:'center', flexDirection:'row'}}> */}
+          <View style={styles.search_container}>
+            <FontAwesome name="search" size={15} style={styles.search_Icon} />
+            <TextInput
+              style={styles.search_Input}
+              placeholder="Search"
+              placeholderTextColor="#888"
+            // onChangeText={onSearch}
+            />
+          </View>
+          <TouchableOpacity onPress={handleheartButtonPress} style={styles.heart_Icon_container}>
+            <FontAwesome name="heart-o" size={19} style={styles.heart_Icon} />
+          </TouchableOpacity>
+        {/* </View> */}
       </View>
+
+
       <ScrollView>
         <View style={styles.image_Container}>
           <Text style={styles.text_style}>Latest Trending Designs</Text>

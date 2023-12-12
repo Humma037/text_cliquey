@@ -1,6 +1,6 @@
 // CategoriesDesign.js
 import React from 'react';
-import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -17,18 +17,19 @@ const CategoriesDesign = ({ backgroundImage, title, isFavoriteScreen }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={handlePress} style={styles.image_container}>
-                <Image
+                <ImageBackground
                     source={backgroundImage}
                     style={styles.background_Image}
                     resizeMode="cover"
-                />
-                <View style={styles.color} />
-                <View style={styles.icons_Container}>
-                    <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
-                    <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
-                    <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
-                    <FontAwesome name="heart-o" size={13} color={'black'} style={styles.icon_style} />
-                </View>
+                >
+                    <View style={styles.color} />
+                    <View style={styles.icons_Container}>
+                        <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
+                        <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
+                        <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
+                        <FontAwesome name="heart-o" size={13} color={'black'} style={styles.icon_style} />
+                    </View>
+                </ImageBackground>
             </TouchableOpacity>
         </View>
     );
@@ -42,12 +43,12 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: 155,
-        position: 'absolute'
+        // position: 'absolute'
     },
     color: {
         backgroundColor: 'rgba(255, 255, 255, 0.7)',
         width: 168,
-        height: 28,
+        height: 30,
         // borderTopLeftRadius: 55,
         // borderTopRightRadius: 55
     },

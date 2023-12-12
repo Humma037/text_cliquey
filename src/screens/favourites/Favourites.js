@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { ScrollView, View, TouchableOpacity, TextInput } from 'react-native';
 import { Text } from 'react-native-paper';
 import styles from './Styles';
 import { useNavigation } from '@react-navigation/native';
@@ -18,26 +18,28 @@ const Favourites = () => {
     navigation.navigate('Explore');
   };
 
-  const handleIcon2Press = () => {
-    navigation.navigate('Design');
+  const handleBackButtonPress = () => {
+    navigation.navigate('Explore');
   };
 
   return (
     <View Style={styles.container}>
       <View style={styles.sub_container}>
-        <TouchableOpacity onPress={handleIcon2Press}>
-          <FontAwesome name="angle-left" size={30} style={styles.bars_Icon} icon="angle-left" />
+        <TouchableOpacity onPress={handleBackButtonPress} style={styles.back_button_container}>
+          <FontAwesome name="angle-left" size={30} style={styles.back_button} />
         </TouchableOpacity>
-        <View style={styles.searchbar_style}>
-          <CategoriesHeader
-            onSearch={handleSearch}
-            // onIcon1Press={handleIcon1Press}
-            // onIcon2Press={handleIcon2Press}
-            icon1="heart"
-            iconColor="red"
-            isFavoriteScreen={true}
+        <View style={styles.search_container}>
+          <FontAwesome name="search" size={15} style={styles.search_Icon} />
+          <TextInput
+            style={styles.search_Input}
+            placeholder="Search"
+            placeholderTextColor="#888"
+          // onChangeText={onSearch}
           />
         </View>
+        <TouchableOpacity onPress={handleBackButtonPress} style={styles.heart_Icon_container}>
+          <FontAwesome name="heart" size={19} style={styles.heart_Icon} />
+        </TouchableOpacity>
       </View>
       <ScrollView>
 

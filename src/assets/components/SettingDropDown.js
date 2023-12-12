@@ -109,10 +109,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginTop:5
   },
-  icon2: {
-    // marginRight: 30,
-
-  },
   heading: {
     fontSize: 14,
     fontWeight: 'bold',

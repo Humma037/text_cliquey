@@ -12,13 +12,17 @@ const styles = StyleSheet.create({
   button: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 8,
-    paddingVertical: 6,
+    // paddingHorizontal: 8,
+    // paddingVertical: 6,
+    width:60,
+    height:35,
+    alignItems:'center',
+    justifyContent:'center'
   },
   buttonText: {
     color: 'black',
     fontSize: 9,
-    margin:5
+    // margin:5
   },
 });
 

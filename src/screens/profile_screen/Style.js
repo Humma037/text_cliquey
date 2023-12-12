@@ -76,8 +76,12 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         paddingHorizontal: 60,
-        paddingTop: 20,
-        // marginLeft:7
+        paddingTop: 15,
+        marginLeft:8,
+        // height:60,
+        alignItems:'center',
+        // justifyContent:'center',
+        // backgroundColor:'blue'
     },
     heading: {
         fontSize: 11,
@@ -85,13 +89,14 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     line_container: {
-        marginTop: 4
+        alignItems:'center',
+        justifyContent:'center',
+        height:40,
     },
     line: {
         backgroundColor: '#767676',
         width: 1,
         height: 27,
-        margin: 7,
     },
     numbers_heading: {
         fontSize: 14,
@@ -104,7 +109,7 @@ const styles = StyleSheet.create({
     button_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 70,
+        paddingHorizontal: 80,
         paddingVertical: 20,
     },
     button: {

@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
     sub_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingTop:10,
-        paddingRight:3,
-        // padding:10
-        height:80,
-        // backgroundColor:'red'
+        // alignContent:'center',
+        // justifyContent:'center',
+        // height:90,
+        paddingVertical:15,
+        paddingHorizontal:20
     },
     slide_Container: {
         padding: 5
@@ -21,18 +21,17 @@ const styles = StyleSheet.create({
     text_style: {
         fontSize: 13,
         padding: 5,
-        // marginLeft: 10,
+        marginLeft: 10,
         marginTop:5,
         fontWeight:'bold',
-        color:colors.light_black
     },
     image_Container: {
         width: '100%',
         paddingHorizontal: 16,
     },
     searchbar_style: {
-        marginHorizontal: 5,
-        marginRight:5
+        // marginHorizontal: 5,
+        // marginRight:5
     },
     heading_all_categories: {
         paddingHorizontal: 25,
@@ -42,27 +41,56 @@ const styles = StyleSheet.create({
     },
     catgories_image_container: {
         // paddingRight: 3
-        padding:5,
+        // padding:5,
+        marginTop:5
+
     },
     catgories_image_sub_container: {
         flexDirection: 'row',
         alignContent:'center',
         justifyContent:'center',
         width: '100%',
-        marginTop:5
-
+        paddingHorizontal:20,
     },
     catgories_margin: {
-        height: 145,
         margin: 5,
     },
-    Profile_Image: {
-        marginTop: 10,
-        paddingLeft:18
+    search_container: {
+        // marginTop: 10,
+        // paddingLeft:18
+        // width:40
     },
     last_catgorie_container:{
         marginBottom:'45%'
-    }
+    },
+    heart_Icon_container:{
+        backgroundColor: colors.seprator,
+        borderRadius: 25,  
+        width: 37,
+        height: 37, 
+        marginLeft:10
+    },
+    heart_Icon:{
+        color: colors.BLACK,
+        paddingHorizontal:9,
+        paddingVertical:10,
+    },
+    search_Input: {
+        fontSize: 12,
+        padding: 5,
+      },
+      search_Icon: {
+        color: colors.DividingLine,
+      },
+      search_container: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderRadius: 20,
+        paddingHorizontal: 10,
+        width: 220,
+        backgroundColor: colors.seprator,
+        height: 38,
+      },
 });
 
 export default styles;

@@ -5,7 +5,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import colors from '../theme/Color';
 import MainStyles from '../styles/MainStyles';
 
-const CommentsComp = () => {
+const ReplyInput = () => {
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -39,26 +39,40 @@ const CommentsComp = () => {
               </View>
             </View>
             <Text style={styles.para_text}>
-              Lorem ipsum doler milra dilrof Lorem ipsum doler milra Lorem ipsum doler dilrof Lorem ipsum doler milra dilrof Lorem ipsum doler.
+              Lorem ipsum doler milra dilrof Lorem ipsum doler milra Lorem ipsum doler dilrof.
             </Text>
           </View>
         </View>
       </View>
+      <View style={styles.comments_container}>
+        <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+          <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Like</Text>
+        </TouchableOpacity>
+        <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7, flexDirection: 'row' }}>
+          <FontAwesome name="thumbs-o-up" color="black" size={14} />
+          <Text style={{ color: 'black', fontSize: 11, paddingBottom: 3, marginLeft: 3 }}>1</Text>
+        </View>
+        <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+          <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Reply</Text>
+        </TouchableOpacity>
+      </View>
+      
     </View>
   );
 };
 
-export default CommentsComp;
+export default ReplyInput;
 const styles = StyleSheet.create({
   Container: {
     flex: 1,
   },
   main_Container: {
     width: '85%',
+    marginLeft:'15%'
   },
   sub_container: {
     backgroundColor: colors.seprator,
-    padding: 10,
+    padding: 12,
     width: '80%',
     borderRadius: 15
   },
@@ -66,7 +80,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'space-between',
-    marginBottom:3
   },
   user_Icon: {
     width: 45,
@@ -76,7 +89,7 @@ const styles = StyleSheet.create({
     paddingVertical: 9,
     borderRadius: 50,
     color: colors.DividingLine,
-    margin: 5
+    marginRight: 5
   },
   name_heading: {
     fontSize: 12,
@@ -101,7 +114,7 @@ const styles = StyleSheet.create({
   ellipsis_Icon: {
     color: colors.DividingLine,
     marginTop: 4,
-    marginLeft: 2,
+    marginLeft: 2
   },
   para_text: {
     color: 'black',
@@ -109,7 +122,7 @@ const styles = StyleSheet.create({
   },
   comments_container: {
     flexDirection: 'row',
-    marginLeft: '16%'
+    marginLeft: '28%'
   },
 
 });

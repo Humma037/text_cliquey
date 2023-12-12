@@ -49,12 +49,7 @@ const Home = () => {
       </View>
       <ScrollView>
         <View style={styles.second_searchBar_container}>
-          <TouchableOpacity onIcon2Press={handleProfileImagePress} style={styles.ProfileImage} >
-            <ProfileImage />
-          </TouchableOpacity>
-          <View style={styles.SearchbarSecond}>
             <SearchbarSecond />
-          </View>
         </View>
         <View style={styles.scrollableContent}>
           <View style={styles.ProfileData1}>

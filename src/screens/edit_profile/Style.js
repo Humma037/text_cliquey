@@ -22,31 +22,30 @@ const styles = StyleSheet.create({
         fontSize: 12,
         width: '100%',
         textAlign:'center',
-        marginTop:12
+        marginTop:15
     },
     profile_cover_container:{
         width: '100%',
         paddingHorizontal:20,
-        paddingVertical:10,
-        marginTop:'5%'
+        marginTop:50
     },
     profile_cover: {
         height: 150,
         backgroundColor: colors.seprator,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 30,
+        borderRadius: 20,
     },
     cover_Icon: {
         color: colors.DividingLine
     },
     profile_cover_text:{
-        fontSize:8,
+        fontSize:10,
         color:colors.DividingLine
     },
     upload_profile_cover_text:{
         textAlign:'center',
-        
+        marginTop:10
     },
     user_Icon: {
         width: 110,
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
         paddingVertical: 27,
         borderRadius: 55,
         color: colors.DividingLine,
-        marginTop:10
+        marginTop:25
     },
     heading: {
         fontSize: 11,
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
     },
     button: {
         flex: 1,
-        backgroundColor: '#eee',
+        backgroundColor: colors.orange_color,
         padding: 10,
         borderRadius: 30,
         marginHorizontal: 5,
@@ -79,22 +78,16 @@ const styles = StyleSheet.create({
         borderColor: 'transparent', 
     },
     activeButton: {
-        backgroundColor: colors.orange_color,
+        backgroundColor: colors.white,
     },
     buttonText: {
         color: 'black',
         fontWeight: 'bold',
         fontSize:12
     },
-    text_container: {
-        flexDirection: 'row',
-        width: '60%',
-        justifyContent: 'space-between',
-        paddingHorizontal: 25,
-    },
     container_dummy: {
         flex: 1,
-        padding: 16,
+        paddingHorizontal: 16,
       },
       input_Container: {
         justifyContent:'center',
@@ -103,14 +96,14 @@ const styles = StyleSheet.create({
       },
       label:{
         textAlign:'center',
-        margin:10,
-        marginTop:20
+        margin:15,
+        marginTop:40
     },
       input: {
         width:'100%',
-        borderRadius: 30,
+        borderRadius: 20,
         paddingHorizontal: 15,
-        fontSize: 14,
+        fontSize: 13,
         color: '#000',
         backgroundColor:colors.seprator
       },

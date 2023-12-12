@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
 import { Text } from 'react-native-paper';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
@@ -15,7 +15,7 @@ const Categories = ({ backgroundImage, title }) => {
   return (
     <TouchableOpacity onPress={handlePress} style={styles.container}>
       {/* Background Image */}
-      <Image
+      <ImageBackground
         source={backgroundImage}
         style={styles.background_Image}
         resizeMode="cover"
@@ -24,7 +24,6 @@ const Categories = ({ backgroundImage, title }) => {
       {/* Icons */}
       <View style={styles.icons_Container}>
         <Text style={styles.text}>{title}</Text>
-        {/* <FontAwesome name="heart-o" size={18} color="black" style={styles.icons}/> */}
       </View>
     </TouchableOpacity>
   );
@@ -35,31 +34,26 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   background_Image: {
-    // flex: 1,
     width: 165,
     height: 150,
     position: 'absolute',
   },
   icons_Container: {
-    // flexDirection: 'row',
-    // justifyContent: 'space-between',
-    paddingHorizontal: 15,
+    flex: 1,
+    // paddingHorizontal: 15,
     marginTop: 120,
     width: 165,
     backgroundColor: 'rgba(255, 255, 255, 0.7)',
-    height:30
-
+    height: 30,
+    alignItems:'center',
+    justifyContent:'center'
   },
   text: {
     fontSize: 10,
-    textAlign:'center',
-    // paddingHorizontal:10,
-    color:colors.BLACK,
-    marginTop:5
+    textAlign: 'center',
+    color: colors.BLACK,
+    // marginTop: 5,
   },
-  icons:{
-    marginTop:5
-  }
 });
 
 export default Categories;

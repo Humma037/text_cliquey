@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   Input_sub_Container: {
-    width:247,
+    width:'65%',
     height: 49,
     flexDirection: 'row',
     borderRadius: 28,

@@ -22,7 +22,7 @@ const MainProfile = () => {
     return (
         <ScrollView Style={styles.container}>
             {/* Header section */}
-            <SecondHeader name="My Profile" icon="angle-left" navigation={navigation} />
+            {/* <SecondHeader name="My Profile" icon="angle-left" navigation={navigation} /> */}
 
             {/* Text and ImageBackground section */}
             <View style={styles.sub_Container}>

@@ -9,36 +9,42 @@ const styles = StyleSheet.create({
     },
     notification: {
         width: '100%',
-        paddingHorizontal:20
+        paddingHorizontal:30,
+    },
+    sub_container: {
+        alignItems:'center',
+        justifyContent:'center'
     },
     text: {
         fontWeight: "bold",
         fontSize: 12,
         color: colors.light_black,
-        margin:5
+        margin: 3
     },
     text_heading: {
         fontWeight: "bold",
         fontSize: 15,
         color: colors.light_black,
-        marginHorizontal: 15
     },
     notification_details: {
-        margin: 8
+        marginVertical: 7
     },
     data_container: {
-        width: '93%',
+        width: '100%',
         flexDirection:'row',
         justifyContent:'space-between',
-        marginVertical:5
-    },
-    this_week_notification: {
-        // height: 655,
-        marginTop:10
+        marginTop:15,
+        paddingHorizontal:5
     },
     second_sub_container:{
         alignItems:'center',
         justifyContent:'center'
+    },
+    notification_container:{
+        marginTop:10
+    },
+    this_week_notification:{
+        marginTop:10
     }
 });
 

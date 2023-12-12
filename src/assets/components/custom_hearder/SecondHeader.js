@@ -8,32 +8,39 @@ const SecondHeader = ({ navigation, name, icon }) => (
     <TouchableOpacity onPress={() => navigation.goBack()}>
       <FontAwesome name={icon} size={30} style={styles.bars_Icon} />
     </TouchableOpacity>
+    <View style={styles.name_container}>
     <Text style={styles.name_style}>{name}</Text>
+    </View>
   </View>
 );
 
 const styles = StyleSheet.create({
   header: {
     width: '100%',
-    paddingVertical: 20,
     position: 'relative',
+    height:60,
   },
   bars_Icon: {
     backgroundColor: colors.orange_color,
     paddingHorizontal: 12,
-    paddingBottom: 3,
     paddingVertical: 2,
     borderRadius: 25,
     color: colors.white,
     position: 'absolute',
     left: 25,
+    top:13,
+    width:37,
+    height:37
+  },
+  name_container:{
+    alignItems:'center',
+    justifyContent:'center',
+    height:60
   },
   name_style: {
     fontWeight: 'bold',
     color: colors.BLACK,
-    margin: 5,
     fontSize: 15,
-    textAlign: 'center',
   },
 });
 

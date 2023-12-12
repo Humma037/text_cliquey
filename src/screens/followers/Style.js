@@ -33,10 +33,11 @@ const styles = StyleSheet.create({
         // height: 175,
     },
     data_container: {
-        width: '93%',
+        width: '100%',
         flexDirection:'row',
         justifyContent:'space-between',
-        margin:5
+        marginTop:25,
+        paddingHorizontal:10
     },
     this_week_notification: {
         // height: 430,

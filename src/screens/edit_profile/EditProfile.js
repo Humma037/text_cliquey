@@ -89,23 +89,23 @@ const EditProfile = () => {
                     <TouchableOpacity
                         style={[
                             styles.button,
-                            activeButton === 1 && styles.activeButton,
-                            activeButton !== 1 && { borderColor: 'black' },
+                            activeButton === 2 && styles.activeButton,
+                            activeButton === 2 && { borderWidth: 0.5, borderColor: 'black' },
                         ]}
-                        onPress={() => handleButtonPress(1)}
+                        onPress={() => handleButtonPress(2)}
                     >
-                        <Text style={styles.buttonText}>Cancel</Text>
+                        <Text style={[styles.buttonText, activeButton === 2 && styles.activeButtonText]}>Cancel</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
                         style={[
                             styles.button,
-                            activeButton === 2 && styles.activeButton,
-                            activeButton !== 2 && { borderColor: 'black' },
+                            activeButton === 1 && styles.activeButton,
+                            activeButton === 1 && { borderWidth: 0.5, borderColor: 'black' },
                         ]}
-                        onPress={() => handleButtonPress(2)}
+                        onPress={() => handleButtonPress(1)}
                     >
-                        <Text style={styles.buttonText}>Save</Text>
+                        <Text style={[styles.buttonText, activeButton === 1 && styles.activeButtonText]}>Save</Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>

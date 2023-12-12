@@ -8,9 +8,9 @@ const styles = StyleSheet.create({
         backgroundColor:colors.white
     },
     sub_container: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%',
+        // alignItems: 'center',
+        // justifyContent: 'center',
+        // width: '100%',
     },
     image_style:{
         alignItems: 'center',
@@ -27,23 +27,24 @@ const styles = StyleSheet.create({
         paddingVertical: 5
     },
     pana_style: {
-        width: '110%',
+        width: '100%',
         height: 300,
         marginTop: 15,
         alignItems: 'center',
         justifyContent: 'center',
     },
     image_width:{
-        width:220,
-        height:230
+        width:'55%',
+        height:'80%'
     },
     button_container:{
         marginTop: '12%', 
+        justifyContent: 'center',
+        alignItems: 'center',   
     },
     button_style: {
         width: '100%',
-        justifyContent: 'center',
-        alignItems: 'center',   
+       
     },
 
 });

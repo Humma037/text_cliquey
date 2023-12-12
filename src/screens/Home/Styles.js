@@ -13,16 +13,12 @@ const styles = StyleSheet.create({
         width: '103%',
         paddingHorizontal: 20
     },
-    ProfileImage: {
-        paddingVertical: 3,
-        // marginLeft:3
-    },
-    second_searchBar_container: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginHorizontal: 20,
-        width: '100%'
-    },
+    // second_searchBar_container: {
+    //     flexDirection: 'row',
+    //     width: '100%',
+    //     alignItems:'center',
+    //     justifyContent:'center'
+    // },
     bars_Icon: {
         color: colors.BLACK,
         marginVertical: 22
@@ -35,7 +31,7 @@ const styles = StyleSheet.create({
         marginBottom: '30%'
     },
     ProfileData:{
-        marginTop:20
+        marginTop:10
     }
 
 

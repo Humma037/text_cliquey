@@ -25,7 +25,7 @@ const Followers = () => {
                             <View style={MainStyles.Direction_Horizental}>
                                 <View style={styles.notification_dont} />
                                 <View style={styles.notification_details}>
-                                    <FollowersComp activeColor={colors.light_white} />
+                                    <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                                 </View>
                             </View>
                             <TouchableOpacity style={styles.dimiss_icon_container}>
@@ -34,7 +34,7 @@ const Followers = () => {
                             <View style={MainStyles.Direction_Horizental}>
                                 <View style={styles.notification_dont} />
                                 <View style={styles.notification_details}>
-                                <FollowersComp activeColor={colors.light_white} />
+                                <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                                 </View>
                             </View>
                             <TouchableOpacity style={styles.dimiss_icon_container}>
@@ -51,28 +51,28 @@ const Followers = () => {
                         </View>
                         <View style={styles.this_week_notification}>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                             <View style={styles.notification_details}>
-                            <FollowersComp activeColor={colors.light_white} />
+                            <FollowersComp activeColor={colors.light_white} button1Text="Message" button2Text="FollowBack"/>
                             </View>
                         </View>
                     </View>

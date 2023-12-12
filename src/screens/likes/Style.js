@@ -9,41 +9,35 @@ const styles = StyleSheet.create({
     },
     notification: {
         width: '100%',
-        // alignItems:'center',
-        // justifyContent:'center'
-        marginLeft:6
+        // marginTop:15,
+        paddingHorizontal:30
     },
     text: {
         fontWeight: "bold",
         fontSize: 12,
         color: colors.light_black,
-        margin: 5
     },
     text_heading: {
         fontWeight: "bold",
         fontSize: 15,
         color: colors.light_black,
-        margin: 5
     },
     notification_details: {
-        margin: 8,
-        paddingHorizontal:20
+        marginVertical: 8,
     },
     data_container: {
-        width: '78%',
+        width: '100%',
         flexDirection:'row',
         justifyContent:'space-between',
-        marginHorizontal:37
+        paddingHorizontal:15,
+        marginTop:20
+
     },
-    this_week_notification: {
-        // height: 655,
-        width:'100%',
-        marginTop:10
-        
+    this_week_notification:{
+        marginTop:10,
     },
     second_sub_container:{
-        // alignItems:'center',
-        // justifyContent:'center'
+        marginBottom:'20%'
     }
 });
 

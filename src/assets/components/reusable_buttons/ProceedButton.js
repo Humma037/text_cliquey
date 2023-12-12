@@ -15,7 +15,7 @@ const ProceedButton = ({ title, onPress }) => {
 const styles = StyleSheet.create({
     button_Container: {
         backgroundColor: colors.Button_Background_Color,
-        width: 247,
+        width: '65%',
         height: 49,
         flexDirection: 'row',
         borderRadius: 28,

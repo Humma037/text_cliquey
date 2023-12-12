@@ -40,12 +40,12 @@ const CreateAccount = ({ navigation }) => {
                 </Svg> */}
                 
                 <View style={styles.button_container}>
-                    <View style={styles.button_style}>
+                    {/* <View style={styles.button_style}> */}
                         <ProceedButton title="Log In" onPress={handleLoginPress} />
-                    </View>
-                    <View style={styles.button_style}>
+                    {/* </View> */}
+                    {/* <View style={styles.button_style}> */}
                         <ProceedButton title="Sign Up" onPress={handleSignInPress} />
-                    </View>
+                    {/* </View> */}
                 </View>
             </View>
         </View>

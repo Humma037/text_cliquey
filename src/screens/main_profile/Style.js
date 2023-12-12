@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         backgroundColor: colors.seprator,
         borderRadius: 20,
         position: 'absolute',
+        top:30
     },
     user_Icon: {
         width: 100,
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         color: colors.DividingLine,
         zIndex: 999,
-        marginTop: 65
+        marginTop: 95
     },
     sub_Container: {
         alignItems: 'center',
@@ -48,7 +49,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 15,
         fontWeight: 'bold',
-        zIndex: 1
+        zIndex: 1,
+        marginTop:30
     },
     description_text: {
         color: '#767676',
@@ -66,9 +68,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: 60,
         paddingTop: 15,
-        // alignItems:'center',
-        // justifyContent:'center'
-        marginLeft:8
+        marginLeft:5,
+        alignItems:'center',
     },
     heading: {
         fontSize: 11,
@@ -76,13 +77,14 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     line_container: {
-        marginTop: 4
+        alignItems:'center',
+        justifyContent:'center',
+        height:60,
     },
     line: {
-        backgroundColor: '#767676',
+        backgroundColor: '#000',
         width: 1,
-        height: 27,
-        margin: 7,
+        height: 26,
     },
     numbers_heading: {
         fontSize: 14,
@@ -93,18 +95,22 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     button_container: {
-        paddingVertical: 17,
+        paddingVertical: 15,
         width:'100%',
         alignItems:'center',
     },
     button: {
         flexDirection: 'row',
         backgroundColor: '#eee',
-        paddingVertical: 7,
-        borderRadius: 30,
-        paddingHorizontal: '1.5%',
+        // padding: 8,
+        borderRadius: 20,
         borderWidth:1,
         borderColor:colors.BLACK,
+        width:110,
+        height:35,
+        alignItems:'center',
+        justifyContent:'center',
+
     },
     buttonText: {
         color: 'black',
@@ -118,19 +124,19 @@ const styles = StyleSheet.create({
     photo_cover_Icon: {
         color: colors.white,
         position:'absolute',
-        top:'16%',
+        top:'12.8%',
         right:30,
         backgroundColor:'rgba(67, 66, 64, 1)',
-        padding:7,
+        padding:6,
         borderRadius:25,
     },
     profile_edit_Icon: {
         color: colors.white,
         position:'absolute',
-        top:'20%',
-        right:'37%',
+        top:'16.8%',
+        right:'37.5%',
         backgroundColor:'rgba(67, 66, 64, 1)',
-        padding:6,
+        padding:5,
         borderRadius:25,
         zIndex:1
     },
@@ -148,7 +154,6 @@ const styles = StyleSheet.create({
         color: 'black',
         fontSize: 13,
         fontWeight: 'bold',
-        // marginHorizontal: 1,
     },
     images_container: {
         marginTop: 10,
@@ -171,7 +176,6 @@ const styles = StyleSheet.create({
     header_container:{
         borderTopLeftRadius:20,
         borderTopRightRadius:20,
-        // backgroundColor:colors.BLACK
     }
 
 });
