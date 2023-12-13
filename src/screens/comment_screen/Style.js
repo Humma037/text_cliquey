@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         margin:5
     },
     notification_details:{
-      margin:5
+      marginVertical:15
     },
     this_week_notification:{
         width:400,
@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
         padding:5,
         width: '100%',
-        height:61
+        // height:61
       },
       commentInput: {
         borderWidth: 1,
         borderColor: '#ccc',
-        // borderRadius: 25,
+        borderRadius: 25,
         paddingVertical: 10,
         paddingHorizontal: 15,
         color: 'black',

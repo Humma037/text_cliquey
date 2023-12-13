@@ -18,7 +18,7 @@ import ReplyInput from '../../assets/components/ReplyInput'
 
 const CommentSheet = () => {
   const navigation = useNavigation({ navigation });
-  const [highlightedName, setHighlightedName] = useState('Lady Gaga'); 
+  const [highlightedName, setHighlightedName] = useState('Lady Gaga');
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -69,7 +69,9 @@ const CommentSheet = () => {
                 </TouchableOpacity>
               </View>
             </View>
-            <ReplyInput />
+            <View style={{ marginLeft: '13%' }}>
+              <ReplyInput />
+            </View>
             <View style={styles.notification_details}>
               <CommentsComp />
               <View style={styles.comments_container}>

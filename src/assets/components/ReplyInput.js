@@ -29,10 +29,8 @@ const ReplyInput = () => {
           <View style={styles.sub_container}>
             <View style={styles.massage_Container}>
               <Text style={styles.name_heading}>Lady Gaga</Text>
-              <View style={MainStyles.Direction_Horizental}>
-                <View style={styles.textContainer}>
+              <View style={{flexDirection:'row', margin:5}}>
                   <Text style={styles.timing_text}>18:09 AM 15/09/2023</Text>
-                </View>
                 <TouchableOpacity onPress={handleCommentPress}>
                   <Entypo name="dots-three-vertical" size={18} style={styles.ellipsis_Icon} />
                 </TouchableOpacity>
@@ -67,18 +65,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   main_Container: {
-    width: '85%',
-    marginLeft:'15%'
+    width: '90%',
   },
   sub_container: {
     backgroundColor: colors.seprator,
-    padding: 12,
-    width: '80%',
-    borderRadius: 15
+    padding: 10,
+    width: '90%',
+    borderRadius: 10,
   },
   massage_Container: {
     flexDirection: 'row',
-    width: '100%',
+    width: '105%',
     justifyContent: 'space-between',
   },
   user_Icon: {
@@ -89,40 +86,36 @@ const styles = StyleSheet.create({
     paddingVertical: 9,
     borderRadius: 50,
     color: colors.DividingLine,
-    marginRight: 5
+    marginHorizontal: 5
   },
   name_heading: {
     fontSize: 12,
     color: colors.BLACK,
     fontWeight: 'bold',
-    // marginBottom: 10
   },
   timing_text: {
     fontWeight: 'bold',
-    fontSize: 9,
+    fontSize: 10,
     color: colors.DividingLine,
-    paddingVertical: 5
   },
   text: {
-    fontSize: 10,
+    fontSize: 11,
     color: colors.BLACK,
   },
   icon: {
     color: colors.BLACK,
-    marginRight: 3,
   },
   ellipsis_Icon: {
     color: colors.DividingLine,
-    marginTop: 4,
-    marginLeft: 2
+    marginLeft: 5,
   },
   para_text: {
     color: 'black',
-    fontSize: 11,
+    fontSize: 12,
   },
   comments_container: {
     flexDirection: 'row',
-    marginLeft: '28%'
+    marginLeft: '16%'
   },
 
 });

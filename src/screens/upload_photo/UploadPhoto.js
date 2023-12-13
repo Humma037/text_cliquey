@@ -20,6 +20,8 @@ const UploadPhoto = () => {
                 iconColor="white"
                 nameColor="black"
                 iconBackgroundColor="#E8A644"
+                headerBackgroundColor="white"
+                headerMainBackgroundColor="white"
             />
             <View style={styles.sub_container}>
                 <View style={styles.ProfileImage}>

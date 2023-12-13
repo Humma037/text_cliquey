@@ -11,12 +11,14 @@ const styles = StyleSheet.create({
   pana_style: {
     alignItems: 'center',
     width: '100%',
-    // padding: '5%',
-    marginBottom: 30
+    padding: '5%',
+    marginBottom: 20,
+    flex:1,
+    height:200
   },
   Image_style: {
-    width: '50%',
-    height: '55%',
+    width: '70%',
+    height: '50%',
     flex:1
   },
   Text_container: {

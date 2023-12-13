@@ -9,11 +9,12 @@ const styles = StyleSheet.create({
     sub_container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        // alignContent:'center',
+        alignContent:'center',
         // justifyContent:'center',
         // height:90,
-        paddingVertical:15,
-        paddingHorizontal:20
+        paddingVertical:10,
+        paddingHorizontal:20,
+        width:'100%',
     },
     slide_Container: {
         padding: 5
@@ -43,7 +44,6 @@ const styles = StyleSheet.create({
         // paddingRight: 3
         // padding:5,
         marginTop:5
-
     },
     catgories_image_sub_container: {
         flexDirection: 'row',
@@ -68,12 +68,14 @@ const styles = StyleSheet.create({
         borderRadius: 25,  
         width: 37,
         height: 37, 
-        marginLeft:10
+        marginLeft:10,
     },
     heart_Icon:{
         color: colors.BLACK,
         paddingHorizontal:9,
         paddingVertical:10,
+        width:37,
+        height:37
     },
     search_Input: {
         fontSize: 12,

@@ -8,15 +8,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor:colors.white
   },
-  // mainImage
   pana_style: {
     alignItems: 'center',
     width: '100%',
-    paddingBottom:'12%'
+    flex:1,
+    height:230
   },
   image_size:{
-    width:175,
-    height:175
+    width:'55%',
+    height:'90%'
   },
   Text_container: {
     width: '100%',

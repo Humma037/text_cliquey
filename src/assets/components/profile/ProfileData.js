@@ -5,8 +5,10 @@ import MainStyles from '../../styles/MainStyles';
 import PostButton from '../reusable_buttons/PostButton';
 import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import Fontisto from 'react-native-vector-icons/Fontisto';
+// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import BottomSheet from '../BottomSheet';
 import PostBottomSheet from '../../components/PostBottomSheet';
 import RBSheet from "react-native-raw-bottom-sheet";
@@ -90,7 +92,7 @@ const ProfileData = () => {
                 </TouchableOpacity>
                 <View style={styles.post_Button}>
                     <PostButton
-                        iconComponent={<AntDesign name="message1" size={14} color='black'  style={styles.icon_image} />}
+                        iconComponent={<AntDesign name="message1" size={14} color='black' style={styles.icon_image} />}
                         buttonText="341"
                         onPress={() => refRBSheet.current.open()}
                     />
@@ -161,12 +163,48 @@ const ProfileData = () => {
                             </TouchableOpacity>
                             <View style={{ marginBottom: 15 }}>
                                 <CommentsComp />
+                                <View style={styles.comments_container}>
+                                    <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Like</Text>
+                                    </TouchableOpacity>
+                                    <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7, flexDirection: 'row' }}>
+                                        <FontAwesome name="thumbs-o-up" color="black" size={14} />
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 3, marginLeft: 3 }}>1</Text>
+                                    </View>
+                                    <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Reply</Text>
+                                    </TouchableOpacity>
+                                </View>
                             </View>
                             <View style={{ marginBottom: 15 }}>
                                 <CommentsComp />
+                                <View style={styles.comments_container}>
+                                    <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Like</Text>
+                                    </TouchableOpacity>
+                                    <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7, flexDirection: 'row' }}>
+                                        <FontAwesome name="thumbs-o-up" color="black" size={14} />
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 3, marginLeft: 3 }}>1</Text>
+                                    </View>
+                                    <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Reply</Text>
+                                    </TouchableOpacity>
+                                </View>
                             </View>
                             <View style={{ marginBottom: 15 }}>
                                 <CommentsComp />
+                                <View style={styles.comments_container}>
+                                    <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Like</Text>
+                                    </TouchableOpacity>
+                                    <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7, flexDirection: 'row' }}>
+                                        <FontAwesome name="thumbs-o-up" color="black" size={14} />
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 3, marginLeft: 3 }}>1</Text>
+                                    </View>
+                                    <TouchableOpacity style={{ alignItems: 'center', justifyContent: 'center', marginTop: 2, marginHorizontal: 7 }}>
+                                        <Text style={{ color: 'black', fontSize: 11, paddingBottom: 5 }}>Reply</Text>
+                                    </TouchableOpacity>
+                                </View>
                             </View>
                         </View>
                     </ScrollView>
@@ -232,7 +270,7 @@ const styles = StyleSheet.create({
     },
     icon_image: {
         color: colors.BLACK,
-        marginHorizontal:3
+        marginHorizontal: 3
     },
     dropdownContainer: {
         position: 'absolute',
@@ -262,4 +300,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginVertical: 10,
     },
+    comments_container: {
+        flexDirection: 'row',
+        marginLeft: '16%'
+      },
 });

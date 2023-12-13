@@ -36,7 +36,7 @@ const Explore = () => {
         <TouchableOpacity >
           <ProfileImage onPress={handleImagePress} style={styles.Profile_Image} />
         </TouchableOpacity>
-        {/* <View style={{alignItems:'center', flexDirection:'row'}}> */}
+        <View style={{ alignItems: 'center', flexDirection: 'row' }}>
           <View style={styles.search_container}>
             <FontAwesome name="search" size={15} style={styles.search_Icon} />
             <TextInput
@@ -46,13 +46,14 @@ const Explore = () => {
             // onChangeText={onSearch}
             />
           </View>
+        </View>
+
+        <View style={{ alignItems: 'center', flexDirection: 'row' }}>
           <TouchableOpacity onPress={handleheartButtonPress} style={styles.heart_Icon_container}>
             <FontAwesome name="heart-o" size={19} style={styles.heart_Icon} />
           </TouchableOpacity>
-        {/* </View> */}
+        </View>
       </View>
-
-
       <ScrollView>
         <View style={styles.image_Container}>
           <Text style={styles.text_style}>Latest Trending Designs</Text>

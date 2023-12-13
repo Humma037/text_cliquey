@@ -29,12 +29,10 @@ const CommentsComp = () => {
           <View style={styles.sub_container}>
             <View style={styles.massage_Container}>
               <Text style={styles.name_heading}>Lady Gaga</Text>
-              <View style={MainStyles.Direction_Horizental}>
-                <View style={styles.textContainer}>
-                  <Text style={styles.timing_text}>18:09 AM 15/09/2023</Text>
-                </View>
+              <View style={{flexDirection:'row', margin:5}}>
+                <Text style={styles.timing_text}>18:09 AM 15/09/2023</Text>
                 <TouchableOpacity onPress={handleCommentPress}>
-                  <Entypo name="dots-three-vertical" size={18} style={styles.ellipsis_Icon} />
+                  <Entypo name="dots-three-vertical" size={19} style={styles.ellipsis_Icon} />
                 </TouchableOpacity>
               </View>
             </View>
@@ -59,14 +57,13 @@ const styles = StyleSheet.create({
   sub_container: {
     backgroundColor: colors.seprator,
     padding: 10,
-    width: '80%',
-    borderRadius: 15
+    width: '85%',
+    borderRadius: 10
   },
   massage_Container: {
     flexDirection: 'row',
-    width: '100%',
+    width: '105%',
     justifyContent: 'space-between',
-    marginBottom:3
   },
   user_Icon: {
     width: 45,
@@ -76,36 +73,32 @@ const styles = StyleSheet.create({
     paddingVertical: 9,
     borderRadius: 50,
     color: colors.DividingLine,
-    margin: 5
+    marginHorizontal: 5
   },
   name_heading: {
     fontSize: 12,
     color: colors.BLACK,
     fontWeight: 'bold',
-    // marginBottom: 10
   },
   timing_text: {
     fontWeight: 'bold',
-    fontSize: 9,
+    fontSize: 10,
     color: colors.DividingLine,
-    paddingVertical: 5
   },
   text: {
-    fontSize: 10,
+    fontSize: 11,
     color: colors.BLACK,
   },
   icon: {
     color: colors.BLACK,
-    marginRight: 3,
   },
   ellipsis_Icon: {
     color: colors.DividingLine,
-    marginTop: 4,
-    marginLeft: 2,
+    marginLeft: 5,
   },
   para_text: {
     color: 'black',
-    fontSize: 11,
+    fontSize: 12,
   },
   comments_container: {
     flexDirection: 'row',

@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
     },
     pana_style: {
         width: '100%',
-        height: 300,
+        height: 270,
         marginTop: 15,
         alignItems: 'center',
         justifyContent: 'center',
     },
     image_width:{
-        width:'55%',
-        height:'80%'
+        width:'60%',
+        height:'85%'
     },
     button_container:{
         marginTop: '12%', 

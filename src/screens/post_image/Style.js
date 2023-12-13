@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     Container: {
         flex: 1,
         width: '100%',
+        BackgroundColor:"green"
     },
     PostImage: {
         width: '100%',

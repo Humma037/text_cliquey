@@ -17,7 +17,7 @@ const FavouriteScreenComp = ({ backgroundImage, title, isFavoriteScreen }) => {
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity  style={styles.image_container}>
+            <TouchableOpacity style={styles.image_container}>
                 <ImageBackground
                     source={backgroundImage}
                     style={styles.background_Image}
@@ -25,10 +25,18 @@ const FavouriteScreenComp = ({ backgroundImage, title, isFavoriteScreen }) => {
                 >
                     <View style={styles.color} />
                     <View style={styles.icons_Container}>
-                        <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
-                        <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
-                        <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
-                        <FontAwesome name="heart" size={13} color={'red'} style={styles.icon_style} />
+                        <TouchableOpacity>
+                            <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <FontAwesome name="heart" size={13} color={'red'} style={styles.icon_style} />
+                        </TouchableOpacity>
                     </View>
                 </ImageBackground>
             </TouchableOpacity>

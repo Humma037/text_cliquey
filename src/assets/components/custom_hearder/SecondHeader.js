@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: 25,
     top:13,
-    width:37,
-    height:37
+    width:35,
+    height:35
   },
   name_container:{
     alignItems:'center',

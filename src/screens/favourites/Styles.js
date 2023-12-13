@@ -51,8 +51,10 @@ const styles = StyleSheet.create({
     },
     back_button: {
         color: colors.white,
-        paddingHorizontal:12,
-        paddingVertical:3
+        paddingHorizontal:11,
+        paddingVertical:3,
+        width: 35,
+        height: 35,
     },
     last_catgorie_container:{
         marginBottom:10

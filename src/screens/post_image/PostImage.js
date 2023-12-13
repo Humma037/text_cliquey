@@ -20,7 +20,9 @@ const PostImage = () => {
                 icon="cross"
                 backgroundColor="black"
                 iconBackgroundColor="#333232"
-            />
+                headerBackgroundColor="black"  
+                headerMainBackgroundColor="black"         
+                 />
             <View style={styles.images_sub_container}>
                 <Image
                     source={require('../../assets/Images/OpenImage.png')}

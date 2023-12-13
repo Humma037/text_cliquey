@@ -3,41 +3,41 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import colors from '../../theme/Color';
 
-const OpenImageHeader = ({ navigation, name, icon, backgroundColor, iconColor, nameColor, iconBackgroundColor }) => (
-  <View style={[styles.header, { backgroundColor }]}>
-    <TouchableOpacity onPress={() => navigation.goBack()}>
-      <Entypo name={icon} size={20} style={[styles.bars_Icon, { color: iconColor, backgroundColor: iconBackgroundColor }]} />
-    </TouchableOpacity>
-    <View style={styles.name_container}>
-      <Text style={[styles.name_style, { color: nameColor }]}>{name}</Text>
+const OpenImageHeader = ({ navigation, name, icon, iconColor, nameColor, iconBackgroundColor, headerBackgroundColor, headerMainBackgroundColor }) => (
+  <View style={[ { backgroundColor: headerMainBackgroundColor }]}>
+    <View style={[styles.header, { backgroundColor: headerBackgroundColor }]}>
+      <TouchableOpacity onPress={() => navigation.goBack()}>
+        <Entypo name={icon} size={25} style={[styles.bars_Icon, { color: iconColor, backgroundColor: iconBackgroundColor }]} />
+      </TouchableOpacity>
+      <View style={styles.name_container}>
+        <Text style={[styles.name_style, { color: nameColor }]}>{name}</Text>
+      </View>
     </View>
   </View>
 );
 
 const styles = StyleSheet.create({
   header: {
-    width: '100%',
-    position: 'relative',
+    width: '90%',
     height: 60,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 25,
   },
   bars_Icon: {
-    paddingHorizontal: 5,
-    paddingVertical: 5,
+    padding: 5,
     borderRadius: 25,
-    position: 'absolute',
-    left: 25,
-    top: 13
   },
-  name_container:{
-    alignItems:'center',
-    justifyContent:'center',
-    height:60
+  name_container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   name_style: {
     fontWeight: 'bold',
     fontSize: 15,
     textAlign: 'center',
-    justifyContent: 'center',
   },
 });
 

@@ -24,10 +24,18 @@ const CategoriesDesign = ({ backgroundImage, title, isFavoriteScreen }) => {
                 >
                     <View style={styles.color} />
                     <View style={styles.icons_Container}>
+                        <TouchableOpacity>
                         <SimpleLineIcons name="cloud-download" size={13} color="black" style={styles.icon_style} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <MaterialCommunityIcons name="select-compare" size={13} color="black" style={styles.icon_style} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <AntDesign name="sharealt" size={13} color="black" style={styles.icon_style} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
                         <FontAwesome name="heart-o" size={13} color={'black'} style={styles.icon_style} />
+                        </TouchableOpacity>
                     </View>
                 </ImageBackground>
             </TouchableOpacity>
